@@ -1,0 +1,297 @@
+{
+  "info": {
+    "_postman_id": "3558292-6e976920-d6c5-4536-a260-5bbef5606c44",
+    "name": "Banese Mobile",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "3558292-4b6d240b-c769-4c00-9a39-ae526df33a8a",
+      "name": "Conta",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "3558292-334e9eea-e51f-4d90-9139-121152bbbda3",
+          "name": "/contas/{conta}",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/xml",
+                "disabled": true
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "{{url}}/contas/015010000010",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "contas",
+                "015010000010"
+              ],
+              "query": [
+                {
+                  "key": "sequenciaTitular",
+                  "value": "2",
+                  "equals": true,
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "3558292-eecf4f5b-f7d5-40f3-baca-d75906cc9504",
+              "name": "/contas/{conta}/resumo",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/xml",
+                    "disabled": true
+                  }
+                ],
+                "body": {},
+                "url": {
+                  "raw": "{{url}}/contas/015010000010?sequenciaTitular=1",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "contas",
+                    "015010000010"
+                  ],
+                  "query": [
+                    {
+                      "key": "sequenciaTitular",
+                      "value": "1",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Length",
+                  "value": "280",
+                  "name": "Content-Length",
+                  "description": "The length of the response body in octets (8-bit bytes)"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 08 Oct 2018 17:17:55 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1",
+                  "name": "X-Powered-By",
+                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"possuiChequeEspecial\":\"1\",\"dataReferencia\":\"2018-08-14T00:00:00-0300\",\"valorLimiteChequesEspecial\":1050.00,\"valorCreditoPreAprovado\":80417.00,\"valorSaldoBloqueadoContaCorrente\":917406266.56,\"valorSaldoPoupanca\":393615.03,\"valorSaldoAplicacoes\":0.00,\"valorSaldoAtual\":-173127.29}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "3558292-36ee4d6b-b586-4441-a671-b34910d1be57",
+          "name": "/contas/{conta}/titulares",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/xml",
+                "disabled": true
+              }
+            ],
+            "body": {},
+            "url": "{{url}}/contas/015010000010/titulares"
+          },
+          "response": [
+            {
+              "id": "3558292-cf94a030-0711-41c8-b75c-aa803c3acb69",
+              "name": "/contas/{conta}/titulares",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/xml",
+                    "disabled": true
+                  }
+                ],
+                "body": {},
+                "url": "{{url}}/contas/015010000010/titulares"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Length",
+                  "value": "105",
+                  "name": "Content-Length",
+                  "description": "The length of the response body in octets (8-bit bytes)"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 08 Oct 2018 17:17:37 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1",
+                  "name": "X-Powered-By",
+                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[{\"nome\":\"MARCIA MENDES DOS SANTOS C MATOS\",\"sequencia\":1},{\"nome\":\"CARLOS ALBERTO SOUZA\",\"sequencia\":2}]"
+            }
+          ]
+        },
+        {
+          "_postman_id": "3558292-fc7288d9-b4e2-46e8-8301-22d504b425df",
+          "name": "/contas/{conta}/extrato",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "{{url}}/contas/015022000044/extrato?dataInicio=2018/08/04&dataFim=2018/09/05&tipo=CONTA_CORRENTE",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "contas",
+                "015022000044",
+                "extrato"
+              ],
+              "query": [
+                {
+                  "key": "dataInicio",
+                  "value": "2018/08/04",
+                  "equals": true
+                },
+                {
+                  "key": "dataFim",
+                  "value": "2018/09/05",
+                  "equals": true
+                },
+                {
+                  "key": "tipo",
+                  "value": "CONTA_CORRENTE",
+                  "equals": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "3558292-213962d6-bf04-4b4c-b797-28ea08bd324c",
+              "name": "/contas/{conta}/extrato",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": {
+                  "raw": "{{url}}/contas/015022000044/extrato?dataInicio=2018/08/04&dataFim=2018/09/05&tipo=TIPO_CONTA_CORRENTE",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "contas",
+                    "015022000044",
+                    "extrato"
+                  ],
+                  "query": [
+                    {
+                      "key": "dataInicio",
+                      "value": "2018/08/04",
+                      "equals": true
+                    },
+                    {
+                      "key": "dataFim",
+                      "value": "2018/09/05",
+                      "equals": true
+                    },
+                    {
+                      "key": "tipo",
+                      "value": "TIPO_CONTA_CORRENTE",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "507"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 10 Oct 2018 14:29:14 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"tipo\": \"TIPO_CONTA_CORRENTE\",\n    \"saldoDisponivel\": 415.68,\n    \"somaCredito\": 1085.67,\n    \"somaDebito\": 0,\n    \"totalCredito\": 1,\n    \"totalDebito\": 0,\n    \"lancamentos\": [\n        {\n            \"flagCTS\": \"1\",\n            \"dataLanc\": \"2018-08-13T00:00:00-0300\",\n            \"documento\": \"0121975\",\n            \"valorLanc\": 1085.67,\n            \"tipoCanal\": 0,\n            \"numTerm\": 13,\n            \"compSist\": \"047 0029 031039390 DNA SERVICOS & GESTAO LTDA - ME 019275335000140\",\n            \"compClie\": \"\",\n            \"dataReferenciaLanc\": \"2018-08-13T00:00:00-0300\",\n            \"agenciaOrigemLanc\": \"029\",\n            \"postoOrigemLanc\": \"00\",\n            \"NSULanc\": \"3000002\",\n            \"codHist\": \"4\",\n            \"tipoLanc\": 0\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
