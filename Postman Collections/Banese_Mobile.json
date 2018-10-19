@@ -23,24 +23,7 @@
               }
             ],
             "body": {},
-            "url": {
-              "raw": "{{url}}/contas/015010000010",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "contas",
-                "015010000010"
-              ],
-              "query": [
-                {
-                  "key": "sequenciaTitular",
-                  "value": "2",
-                  "equals": true,
-                  "disabled": true
-                }
-              ]
-            }
+            "url": "{{url}}/contas/015010846245"
           },
           "response": [
             {
@@ -195,7 +178,7 @@
             "header": [],
             "body": {},
             "url": {
-              "raw": "{{url}}/contas/015022000044/extrato?dataInicio=2018/08/04&dataFim=2018/09/05&tipo=CONTA_CORRENTE",
+              "raw": "{{url}}/contas/015022000044/extrato?inicio=2018-09-05T07:36:16&fim=2018-10-05T07:36:16",
               "host": [
                 "{{url}}"
               ],
@@ -206,18 +189,19 @@
               ],
               "query": [
                 {
-                  "key": "dataInicio",
-                  "value": "2018/08/04",
-                  "equals": true
-                },
-                {
-                  "key": "dataFim",
-                  "value": "2018/09/05",
-                  "equals": true
-                },
-                {
                   "key": "tipo",
                   "value": "CONTA_CORRENTE",
+                  "equals": true,
+                  "disabled": true
+                },
+                {
+                  "key": "inicio",
+                  "value": "2018-09-05T07:36:16",
+                  "equals": true
+                },
+                {
+                  "key": "fim",
+                  "value": "2018-10-05T07:36:16",
                   "equals": true
                 }
               ]
