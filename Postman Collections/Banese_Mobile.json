@@ -178,21 +178,20 @@
             "header": [],
             "body": {},
             "url": {
-              "raw": "{{url}}/contas/015022000044/extrato?inicio=2018-09-05T07:36:16&fim=2018-10-05T07:36:16",
+              "raw": "{{url}}/contas/039010021456/extrato?tipo=CONTA_POUPANCA&inicio=2018-09-05T07:36:16&fim=2018-10-18T07:36:16",
               "host": [
                 "{{url}}"
               ],
               "path": [
                 "contas",
-                "015022000044",
+                "039010021456",
                 "extrato"
               ],
               "query": [
                 {
                   "key": "tipo",
-                  "value": "CONTA_CORRENTE",
-                  "equals": true,
-                  "disabled": true
+                  "value": "CONTA_POUPANCA",
+                  "equals": true
                 },
                 {
                   "key": "inicio",
@@ -201,7 +200,7 @@
                 },
                 {
                   "key": "fim",
-                  "value": "2018-10-05T07:36:16",
+                  "value": "2018-10-18T07:36:16",
                   "equals": true
                 }
               ]
