@@ -273,6 +273,37 @@
               "body": "{\n    \"tipo\": \"TIPO_CONTA_CORRENTE\",\n    \"saldoDisponivel\": 415.68,\n    \"somaCredito\": 1085.67,\n    \"somaDebito\": 0,\n    \"totalCredito\": 1,\n    \"totalDebito\": 0,\n    \"lancamentos\": [\n        {\n            \"flagCTS\": \"1\",\n            \"dataLanc\": \"2018-08-13T00:00:00-0300\",\n            \"documento\": \"0121975\",\n            \"valorLanc\": 1085.67,\n            \"tipoCanal\": 0,\n            \"numTerm\": 13,\n            \"compSist\": \"047 0029 031039390 DNA SERVICOS & GESTAO LTDA - ME 019275335000140\",\n            \"compClie\": \"\",\n            \"dataReferenciaLanc\": \"2018-08-13T00:00:00-0300\",\n            \"agenciaOrigemLanc\": \"029\",\n            \"postoOrigemLanc\": \"00\",\n            \"NSULanc\": \"3000002\",\n            \"codHist\": \"4\",\n            \"tipoLanc\": 0\n        }\n    ]\n}"
             }
           ]
+        },
+        {
+          "_postman_id": "3558292-a945c369-d72e-4e45-979f-29f6172eb3c0",
+          "name": "/contas/{conta}/saldos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/contas/015010000010/saldos?tipo=CONTA_CORRENTE",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "contas",
+                "015010000010",
+                "saldos"
+              ],
+              "query": [
+                {
+                  "key": "tipo",
+                  "value": "CONTA_CORRENTE",
+                  "equals": true
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ]
     }
