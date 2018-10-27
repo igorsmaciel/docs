@@ -291,7 +291,25 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{url}}/contas/039010021456/saldos"
+            "url": {
+              "raw": "{{url}}/contas/039010021456/saldos",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "contas",
+                "039010021456",
+                "saldos"
+              ],
+              "query": [
+                {
+                  "key": "tipo",
+                  "value": "CONTA_POUPANCA",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
           },
           "response": []
         }
