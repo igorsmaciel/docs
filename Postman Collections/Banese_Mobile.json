@@ -328,7 +328,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numPrefixoSms\": \"99999\",\n\t\"numCelularSms\": \"9999\"\n}"
+              "raw": "{\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numCelularSms\": \"999999999\"\n}"
             },
             "url": "{{url}}/contas/039010021456"
           },
