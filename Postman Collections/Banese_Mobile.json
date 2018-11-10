@@ -14,6 +14,12 @@
           "_postman_id": "3558292-334e9eea-e51f-4d90-9139-121152bbbda3",
           "name": "/contas/{conta}",
           "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{token}}"
+              }
+            },
             "method": "GET",
             "header": [
               {
@@ -178,7 +184,7 @@
             "header": [],
             "body": {},
             "url": {
-              "raw": "{{url}}/contas/039010021456/extrato?tipo=CONTA_POUPANCA&inicio=2018-09-05T07:36:16&fim=2018-10-18T07:36:16",
+              "raw": "{{url}}/contas/039010021456/extrato?inicio=2018-09-05T07:36:16&fim=2018-10-18T07:36:16",
               "host": [
                 "{{url}}"
               ],
@@ -191,7 +197,8 @@
                 {
                   "key": "tipo",
                   "value": "CONTA_POUPANCA",
-                  "equals": true
+                  "equals": true,
+                  "disabled": true
                 },
                 {
                   "key": "inicio",
@@ -278,6 +285,12 @@
           "_postman_id": "3558292-a945c369-d72e-4e45-979f-29f6172eb3c0",
           "name": "/contas/{conta}/saldos",
           "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{token}}"
+              }
+            },
             "method": "GET",
             "header": [
               {
@@ -317,6 +330,12 @@
           "_postman_id": "3558292-aa9fae19-b2fe-4318-bf9f-acdfb1c23ce9",
           "name": "/contas/{conta}",
           "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{token}}"
+              }
+            },
             "method": "PATCH",
             "header": [
               {
