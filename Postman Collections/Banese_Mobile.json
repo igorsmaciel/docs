@@ -292,14 +292,7 @@
               }
             },
             "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json",
-                "type": "text",
-                "disabled": true
-              }
-            ],
+            "header": [],
             "body": {
               "mode": "raw",
               "raw": ""
@@ -350,6 +343,40 @@
               "raw": "{\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numCelularSms\": \"999999999\"\n}"
             },
             "url": "{{url}}/contas/039010021456"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "3558292-33834574-a1ca-49ed-b099-4b0047342835",
+      "name": "Transferência",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "3558292-b3130b5e-88e9-4806-a405-5d987f1801c6",
+          "name": "/transferencia/interna/validacao",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{token}}"
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": 039,\n        \"numeroConta\": 010021456\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010000010\"\n   }\n}"
+            },
+            "url": "{{url}}/transferencia/interna/validacao"
           },
           "response": []
         }
