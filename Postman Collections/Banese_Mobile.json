@@ -374,9 +374,36 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": 039,\n        \"numeroConta\": 010021456\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010000010\"\n   }\n}"
+              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": 039,\n        \"numeroConta\": 010021456\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010000010\"\n   },\n   \"tipoContaOrigem\": 1,\n   \"tipoContaDestino\": 2\n}"
             },
             "url": "{{url}}/transferencia/interna/validacao"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "3558292-4251069c-885d-47d2-be72-82918a169baf",
+          "name": "/transferencia/interna",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{token}}"
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": 039,\n        \"numeroConta\": 010021456\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n   },\n   \"tipoContaOrigem\": 1,\n   \"tipoContaDestino\": 2\n}"
+            },
+            "url": "{{url}}/transferencia/interna"
           },
           "response": []
         }
