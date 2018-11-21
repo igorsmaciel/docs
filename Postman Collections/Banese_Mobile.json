@@ -383,6 +383,18 @@
         {
           "_postman_id": "3558292-4251069c-885d-47d2-be72-82918a169baf",
           "name": "/transferencia/interna",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "5556ea29-6d33-4eb3-8aae-c42f60d97b93",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "request": {
             "auth": {
               "type": "bearer",
@@ -401,7 +413,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n\t},\n\t\"idContaDestino\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010616266\"\n    },\n    \"tipoContaOrigem\": 1,\n    \"tipoContaDestino\": 1,\n\t\"valor\": 0.01\n}"
+              "raw": "{\n    \"idContaOrigem\": {\n    \t\"agencia\": \"015\",\n        \"numeroConta\": \"010616266\"\n\t},\n\t\"idContaDestino\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"tipoContaOrigem\": 1,\n    \"tipoContaDestino\": 1,\n    \"descricao\": \"Teste\",\n\t\"valor\": 0.5\n}"
             },
             "url": "http://hbes1161:8080/autws/rest/transferencia/interna"
           },
