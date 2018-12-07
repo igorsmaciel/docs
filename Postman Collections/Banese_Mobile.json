@@ -420,6 +420,48 @@
           "response": []
         }
       ]
+    },
+    {
+      "_postman_id": "3558292-3e80aac6-2b74-4ba7-8131-ea9bdcb24703",
+      "name": "Clube Vantagens",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "3558292-628cb66f-fb78-414e-b605-2159fadc4f79",
+          "name": "/clubevantagens/disponiveis",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/clubevantagens/disponiveis?agencia=002&numeroConta=010138101",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "clubevantagens",
+                "disponiveis"
+              ],
+              "query": [
+                {
+                  "key": "agencia",
+                  "value": "002",
+                  "type": "text"
+                },
+                {
+                  "key": "numeroConta",
+                  "value": "010138101",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
     }
   ]
 }
