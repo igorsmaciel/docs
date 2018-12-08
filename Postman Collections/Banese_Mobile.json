@@ -437,7 +437,7 @@
               "raw": ""
             },
             "url": {
-              "raw": "{{url}}/clubevantagens/disponiveis?agencia=002&numeroConta=010138101",
+              "raw": "{{url}}/clubevantagens/disponiveis?agencia=002&numeroConta=010041132",
               "host": [
                 "{{url}}"
               ],
@@ -449,15 +449,133 @@
                 {
                   "key": "agencia",
                   "value": "002",
-                  "type": "text"
+                  "equals": true
                 },
                 {
                   "key": "numeroConta",
-                  "value": "010138101",
-                  "type": "text"
+                  "value": "010041132",
+                  "equals": true
                 }
               ]
             }
+          },
+          "response": [
+            {
+              "id": "3558292-fec3c74d-462b-4983-bcbb-2f6092104cb9",
+              "name": "/clubevantagens/disponiveis",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{url}}/clubevantagens/disponiveis?agencia=002&numeroConta=010041132",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "clubevantagens",
+                    "disponiveis"
+                  ],
+                  "query": [
+                    {
+                      "key": "agencia",
+                      "value": "002",
+                      "equals": true
+                    },
+                    {
+                      "key": "numeroConta",
+                      "value": "010041132",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "636"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 07 Dec 2018 13:06:11 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"codigo\": 26,\n        \"nome\": \"Plano SUPREMO\",\n        \"tipoMulticonta\": \"PESSOA_FISICA\",\n        \"ativa\": false,\n        \"prioridade\": 1,\n        \"clubeVantagens\": true\n    },\n    {\n        \"codigo\": 27,\n        \"nome\": \"Plano SELETO\",\n        \"tipoMulticonta\": \"PESSOA_FISICA\",\n        \"ativa\": false,\n        \"prioridade\": 2,\n        \"clubeVantagens\": true\n    },\n    {\n        \"codigo\": 28,\n        \"nome\": \"Plano EXCLUSIVO\",\n        \"tipoMulticonta\": \"PESSOA_FISICA\",\n        \"ativa\": false,\n        \"prioridade\": 3,\n        \"clubeVantagens\": true\n    },\n    {\n        \"codigo\": 21,\n        \"nome\": \"Plano ESPECIAL\",\n        \"tipoMulticonta\": \"PESSOA_FISICA\",\n        \"ativa\": false,\n        \"prioridade\": 7,\n        \"clubeVantagens\": true\n    },\n    {\n        \"codigo\": 7,\n        \"nome\": \"Clientes sem Cesta (Serviços Essenciais)\",\n        \"tipoMulticonta\": \"PESSOA_FISICA\",\n        \"ativa\": true,\n        \"prioridade\": 17,\n        \"clubeVantagens\": false\n    }\n]"
+            }
+          ]
+        },
+        {
+          "_postman_id": "3558292-e11c4b28-1d8b-4fc4-bc8f-fe5d056fef80",
+          "name": "/clubevantagens",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/clubevantagens?agencia=002&numeroConta=010041132",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "clubevantagens"
+              ],
+              "query": [
+                {
+                  "key": "agencia",
+                  "value": "002",
+                  "equals": true
+                },
+                {
+                  "key": "numeroConta",
+                  "value": "010041132",
+                  "equals": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "3558292-a63611ef-d6ce-4154-b176-7cd3acf262f0",
+          "name": "/clubevantagens",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"agencia\": \"002\",\n\t\"numeroConta\": \"010041132\",\n\t\"codigoCesta\": 26,\n\t\"diaDebito\": 25\n}"
+            },
+            "url": "{{url}}/clubevantagens"
           },
           "response": []
         }
