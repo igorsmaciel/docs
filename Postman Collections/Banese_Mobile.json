@@ -413,9 +413,9 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"idContaOrigem\": {\n    \t\"agencia\": \"015\",\n        \"numeroConta\": \"010616266\"\n\t},\n\t\"idContaDestino\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"tipoContaOrigem\": 1,\n    \"tipoContaDestino\": 1,\n    \"descricao\": \"Teste\",\n\t\"valor\": 0.5\n}"
+              "raw": "{\r\n    \"idContaOrigem\": {\r\n    \t\"agencia\": \"015\",\r\n        \"numeroConta\": \"010616266\"\r\n        \r\n\t},\r\n\t\"idContaDestino\": {\r\n        \"agencia\": \"039\",\r\n        \"numeroConta\": \"010021456\"\r\n    },\r\n    \"tipoContaOrigem\": 1,\r\n    \"tipoContaDestino\": 1,\r\n    \"descricao\": \"Teste\",\r\n\t\"valor\": 0.5\r\n}"
             },
-            "url": "http://hbes1161:8080/autws/rest/transferencia/interna"
+            "url": "{{url}}/transferencia/interna"
           },
           "response": []
         }
