@@ -105,78 +105,6 @@
           ]
         },
         {
-          "_postman_id": "3558292-36ee4d6b-b586-4441-a671-b34910d1be57",
-          "name": "/contas/{conta}/titulares",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/xml",
-                "disabled": true
-              }
-            ],
-            "body": {},
-            "url": "{{url}}/contas/039010021456/titulares"
-          },
-          "response": [
-            {
-              "id": "3558292-cf94a030-0711-41c8-b75c-aa803c3acb69",
-              "name": "/contas/{conta}/titulares",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/xml",
-                    "disabled": true
-                  }
-                ],
-                "body": {},
-                "url": "{{url}}/contas/015010000010/titulares"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Length",
-                  "value": "105",
-                  "name": "Content-Length",
-                  "description": "The length of the response body in octets (8-bit bytes)"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "name": "Content-Type",
-                  "description": "The mime type of this content"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 08 Oct 2018 17:17:37 GMT",
-                  "name": "Date",
-                  "description": "The date and time that the message was sent"
-                },
-                {
-                  "key": "Server",
-                  "value": "Apache-Coyote/1.1",
-                  "name": "Server",
-                  "description": "A name for the server"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1",
-                  "name": "X-Powered-By",
-                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "[{\"nome\":\"MARCIA MENDES DOS SANTOS C MATOS\",\"sequencia\":1},{\"nome\":\"CARLOS ALBERTO SOUZA\",\"sequencia\":2}]"
-            }
-          ]
-        },
-        {
           "_postman_id": "3558292-fc7288d9-b4e2-46e8-8301-22d504b425df",
           "name": "/contas/{conta}/extrato",
           "request": {
@@ -343,6 +271,127 @@
               "raw": "{\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numCelularSms\": \"999999999\"\n}"
             },
             "url": "{{url}}/contas/039010021456"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "3558292-36ee4d6b-b586-4441-a671-b34910d1be57",
+          "name": "/contas/{conta}/titulares",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/xml",
+                "disabled": true
+              }
+            ],
+            "body": {},
+            "url": "{{url}}/contas/039010021456/titulares"
+          },
+          "response": [
+            {
+              "id": "3558292-cf94a030-0711-41c8-b75c-aa803c3acb69",
+              "name": "/contas/{conta}/titulares",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/xml",
+                    "disabled": true
+                  }
+                ],
+                "body": {},
+                "url": "{{url}}/contas/015010000010/titulares"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Length",
+                  "value": "105",
+                  "name": "Content-Length",
+                  "description": "The length of the response body in octets (8-bit bytes)"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": "The mime type of this content"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 08 Oct 2018 17:17:37 GMT",
+                  "name": "Date",
+                  "description": "The date and time that the message was sent"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1",
+                  "name": "Server",
+                  "description": "A name for the server"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1",
+                  "name": "X-Powered-By",
+                  "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[{\"nome\":\"MARCIA MENDES DOS SANTOS C MATOS\",\"sequencia\":1},{\"nome\":\"CARLOS ALBERTO SOUZA\",\"sequencia\":2}]"
+            }
+          ]
+        },
+        {
+          "_postman_id": "3558292-115fe8bc-a6b0-4e85-bb4f-0b90dd649786",
+          "name": "/contas/{conta}/titulares/{sequenciaTitular}/avisoviagem",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{url}}/contas/039010021456/titulares/1/avisoviagem"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "3558292-d42cce21-6cf8-494b-92e6-58bcc39cb557",
+          "name": "/contas/{conta}/titulares/{sequenciaTitular}/avisoviagem",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"inicioLiberacao\": \"2018-12-15T00:00:00\",\n\t\"fimLiberacao\": \"2018-12-31T00:00:00\"\n}"
+            },
+            "url": "{{url}}/contas/039010021456/titulares/1/avisoviagem"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "3558292-9b14973a-ea32-4f99-a394-de067f1abe9b",
+          "name": "/contas/{conta}/titulares/{sequenciaTitular}/avisoviagem",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{url}}/contas/039010021456/titulares/1/avisoviagem"
           },
           "response": []
         }
