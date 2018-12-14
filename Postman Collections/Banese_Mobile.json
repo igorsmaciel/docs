@@ -286,8 +286,33 @@
                 "disabled": true
               }
             ],
-            "body": {},
-            "url": "{{url}}/contas/039010021456/titulares"
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/contas/015010000010/titulares?isDetalhado=true&sequencia=1",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "contas",
+                "015010000010",
+                "titulares"
+              ],
+              "query": [
+                {
+                  "key": "isDetalhado",
+                  "value": "true",
+                  "equals": true
+                },
+                {
+                  "key": "sequencia",
+                  "value": "1",
+                  "equals": true
+                }
+              ]
+            }
           },
           "response": [
             {
