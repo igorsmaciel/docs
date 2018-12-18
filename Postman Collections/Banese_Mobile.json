@@ -654,6 +654,48 @@
           "response": []
         }
       ]
+    },
+    {
+      "_postman_id": "3558292-76205585-496c-4ca3-90cc-b759c866259c",
+      "name": "Provisionamento",
+      "description": null,
+      "item": [
+        {
+          "_postman_id": "3558292-2e9221e3-f445-40a4-ae11-99396b9c37f9",
+          "name": "/provisionamentos/parametros",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{url}}/provisionamentos/parametros"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "3558292-c396cd07-257c-42bf-8d5c-340980747cc5",
+          "name": "/provisionamentos",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"tipoConta\": 2,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-20T07:42:51\",\r\n\t\"justificativa\": \"TESTE\",\r\n\t\"valor\": 12345.64\r\n} "
+            },
+            "url": "{{url}}/provisionamentos"
+          },
+          "response": []
+        }
+      ]
     }
   ]
 }
