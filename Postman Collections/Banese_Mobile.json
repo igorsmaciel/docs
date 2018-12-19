@@ -689,11 +689,268 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"tipoConta\": 2,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-20T07:42:51\",\r\n\t\"justificativa\": \"TESTE\",\r\n\t\"valor\": 12345.64\r\n} "
+              "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"sequenciaTitular\": 1,\r\n\t\"tipoConta\": 2,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-20\",\r\n\t\"justificativa\": \"TESTE\",\r\n\t\"valor\": 12345.64\r\n} "
             },
             "url": "{{url}}/provisionamentos"
           },
-          "response": []
+          "response": [
+            {
+              "id": "3558292-cf37f70d-cec6-4f24-b0b7-ebc172d338d1",
+              "name": "/provisionamentos",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"sequenciaTitular\": 1,\r\n\t\"tipoConta\": 2,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-26T07:42:51\",\r\n\t\"justificativa\": \"TESTE\",\r\n\t\"valor\": 12345.64\r\n} "
+                },
+                "url": "{{url}}/provisionamentos"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "177"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 18 Dec 2018 12:06:08 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"agencia\": \"039\",\n    \"numeroConta\": \"010021456\",\n    \"sequenciaTitular\": 1,\n    \"tipoConta\": 2,\n    \"agenciaPrevistaSaque\": \"039\",\n    \"data\": \"2018-12-26T07:42:51\",\n    \"valor\": 12345.64,\n    \"justificativa\": \"TESTE\"\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "3558292-5118102c-6cd7-4412-b42e-7cba98df45ed",
+          "name": "/provisionamentos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/provisionamentos?agencia=039&numeroConta=010021456&agenciaSaque=039&dataInicio=2018-12-20&dataFim=2018-12-31",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "provisionamentos"
+              ],
+              "query": [
+                {
+                  "key": "agencia",
+                  "value": "039",
+                  "equals": true
+                },
+                {
+                  "key": "numeroConta",
+                  "value": "010021456",
+                  "equals": true
+                },
+                {
+                  "key": "agenciaSaque",
+                  "value": "039",
+                  "equals": true
+                },
+                {
+                  "key": "dataInicio",
+                  "value": "2018-12-20",
+                  "equals": true
+                },
+                {
+                  "key": "dataFim",
+                  "value": "2018-12-31",
+                  "equals": true
+                },
+                {
+                  "key": "situacao",
+                  "value": "1",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "3558292-85e80635-edfa-4589-ad04-c1e7b7f85712",
+              "name": "/provisionamentos",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{url}}/provisionamentos?agencia=039&numeroConta=010021456&agenciaSaque=039&dataInicio=2018-12-20&dataFim=2018-12-24",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "provisionamentos"
+                  ],
+                  "query": [
+                    {
+                      "key": "agencia",
+                      "value": "039",
+                      "equals": true
+                    },
+                    {
+                      "key": "numeroConta",
+                      "value": "010021456",
+                      "equals": true
+                    },
+                    {
+                      "key": "agenciaSaque",
+                      "value": "039",
+                      "equals": true
+                    },
+                    {
+                      "key": "dataInicio",
+                      "value": "2018-12-20",
+                      "equals": true
+                    },
+                    {
+                      "key": "dataFim",
+                      "value": "2018-12-24",
+                      "equals": true
+                    },
+                    {
+                      "key": "situacao",
+                      "value": "0",
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "983"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 18 Dec 2018 14:00:26 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"dataPrevistaSaque\": \"2018-12-20T00:00:00\",\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\",\n        \"tipoConta\": \"POUPANCA\",\n        \"cpfCnpjSolicitantePortador\": 839754625000015,\n        \"nomeSolicitantePortador\": \"IGOR IURE SANTOS MACIEL\",\n        \"cpfCnpjBeneficiario\": 839754625000015,\n        \"nomeBeneficiario\": \"IGOR IURE SANTOS MACIEL\",\n        \"agenciaSaque\": \"039\",\n        \"postoSaque\": \"00\",\n        \"valorMonetario\": 12345.64,\n        \"situacao\": \"0\",\n        \"justificativa\": \"TESTE\",\n        \"dataInclusao\": \"2018-12-17T00:00:00\",\n        \"agenciaInclusao\": \"988\",\n        \"postoInclusao\": \"01\",\n        \"NSU\": \"V000008\"\n    },\n    {\n        \"dataPrevistaSaque\": \"2018-12-24T00:00:00\",\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\",\n        \"tipoConta\": \"POUPANCA\",\n        \"cpfCnpjSolicitantePortador\": 839754625000015,\n        \"nomeSolicitantePortador\": \"IGOR IURE SANTOS MACIEL\",\n        \"cpfCnpjBeneficiario\": 839754625000015,\n        \"nomeBeneficiario\": \"IGOR IURE SANTOS MACIEL\",\n        \"agenciaSaque\": \"039\",\n        \"postoSaque\": \"00\",\n        \"valorMonetario\": 12345.64,\n        \"situacao\": \"0\",\n        \"justificativa\": \"TESTE\",\n        \"dataInclusao\": \"2018-12-17T00:00:00\",\n        \"agenciaInclusao\": \"988\",\n        \"postoInclusao\": \"01\",\n        \"NSU\": \"V000010\"\n    }\n]"
+            }
+          ]
+        },
+        {
+          "_postman_id": "3558292-43da5b97-fbc9-465d-b5b4-dd74e4cd091b",
+          "name": "/provisionamentos",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"sequenciaTitular\": 1,\r\n\t\"tipoConta\": 2,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-20\"\r\n} "
+            },
+            "url": "{{url}}/provisionamentos"
+          },
+          "response": [
+            {
+              "id": "3558292-b3b61be9-5f2f-42cf-a7e0-8557dd5c3869",
+              "name": "/provisionamentos",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"sequenciaTitular\": 1,\r\n\t\"tipoConta\": 2,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-19\"\r\n} "
+                },
+                "url": "{{url}}/provisionamentos"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "136"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 18 Dec 2018 17:50:23 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"agencia\": \"039\",\n    \"numeroConta\": \"010021456\",\n    \"sequenciaTitular\": 1,\n    \"tipoConta\": 2,\n    \"agenciaPrevistaSaque\": \"039\",\n    \"data\": \"2018-12-19T00:00:00\"\n}"
+            }
+          ]
         }
       ]
     }
