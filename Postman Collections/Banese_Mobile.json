@@ -491,7 +491,56 @@
             },
             "url": "{{url}}/transferencia/interna"
           },
-          "response": []
+          "response": [
+            {
+              "id": "3558292-359b03ec-f0ba-4d32-938d-88e242988a35",
+              "name": "/transferencia/interna",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idContaOrigem\": {\r\n    \t\"agencia\": \"015\",\r\n        \"numeroConta\": \"010616266\"\r\n        \r\n\t},\r\n\t\"idContaDestino\": {\r\n        \"agencia\": \"039\",\r\n        \"numeroConta\": \"010021456\"\r\n    },\r\n    \"tipoContaOrigem\": 1,\r\n    \"tipoContaDestino\": 1,\r\n    \"descricao\": \"Teste\",\r\n\t\"valor\": 0.5\r\n}"
+                },
+                "url": "{{url}}/transferencia/interna"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "554"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 27 Dec 2018 19:43:58 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010616266\",\n        \"sequenciaTitular\": 0\n    },\n    \"idContaDestino\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\",\n        \"sequenciaTitular\": 0\n    },\n    \"tipoContaOrigem\": 1,\n    \"tipoContaDestino\": 1,\n    \"descricao\": \"Teste\",\n    \"titularesOrigem\": [\n        {\n            \"nome\": \"FREDERICO SANTOS DO VALE\",\n            \"cpfCnpj\": \"004196665000016\",\n            \"numeroCic\": \"004196665000016\",\n            \"sequencia\": 1\n        }\n    ],\n    \"titularesDestino\": [\n        {\n            \"nome\": \"IGOR IURE SANTOS MACIEL\",\n            \"cpfCnpj\": \"839754625000015\",\n            \"numeroCic\": \"839754625000015\",\n            \"sequencia\": 1\n        }\n    ],\n    \"valor\": 0.5,\n    \"NSUCredito\": \"V000143\",\n    \"NSUDebito\": \"V000144\",\n    \"NTA\": \"V000144\"\n}"
+            }
+          ]
         }
       ]
     },
@@ -949,6 +998,69 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"agencia\": \"039\",\n    \"numeroConta\": \"010021456\",\n    \"sequenciaTitular\": 1,\n    \"tipoConta\": 2,\n    \"agenciaPrevistaSaque\": \"039\",\n    \"data\": \"2018-12-19T00:00:00\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_postman_id": "3558292-fb8fd474-cb9a-4085-99f2-9755710fbc54",
+      "name": "Pagamentos",
+      "description": null,
+      "item": [
+        {
+          "_postman_id": "3558292-170924eb-245a-4600-a7e7-573a769894c6",
+          "name": "/pagamentos/convenios/{codigoBarras}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{url}}/pagamentos/convenios/856800000015820700260020227397841205181228281208"
+          },
+          "response": [
+            {
+              "id": "3558292-9fc160a1-af13-4799-91ae-55f859325dc7",
+              "name": "/pagamentos/convenios/{codigoBarras}",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "{{url}}/pagamentos/convenios/856800000015820700260020227397841205181228281208"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "227"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 27 Dec 2018 19:42:54 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"tipoPagamento\": \"1\",\n    \"codigoBarras\": \"856800000015820700260020227397841205181228281208\",\n    \"valorDocumento\": 182.07,\n    \"valorTotal\": 182.07,\n    \"nomeConvenio\": \"REC.DETRAN BARR\",\n    \"codigoConvenio\": \"R026\",\n    \"dataVencimento\": \"2018-12-28T00:00:00\"\n}"
             }
           ]
         }
