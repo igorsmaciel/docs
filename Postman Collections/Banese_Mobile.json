@@ -268,11 +268,60 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numCelularSms\": \"999999999\"\n}"
+              "raw": "{\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numCelularSms\": \"911111111\"\n}"
             },
             "url": "{{url}}/contas/039010021456"
           },
-          "response": []
+          "response": [
+            {
+              "id": "3558292-b073cf3b-a524-4777-a954-9a3f3c7ea144",
+              "name": "/contas/{conta}",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numCelularSms\": \"911111111\"\n}"
+                },
+                "url": "{{url}}/contas/039010021456"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "85"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Dec 2018 13:46:00 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"isRemoverNumSms\": false,\n    \"seqTitular\": 1,\n    \"numDddSms\": \"79\",\n    \"numCelularSms\": \"911111111\"\n}"
+            }
+          ]
         },
         {
           "_postman_id": "3558292-36ee4d6b-b586-4441-a671-b34910d1be57",
