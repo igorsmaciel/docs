@@ -1067,7 +1067,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{url}}/pagamentos/convenios/856800000015820700260020227397841205181228281208"
+            "url": "{{url}}/pagamentos/convenios/856000000062625300260027227583629208190228000005"
           },
           "response": [
             {
@@ -1112,6 +1112,33 @@
               "body": "{\n    \"tipoPagamento\": \"1\",\n    \"codigoBarras\": \"856800000015820700260020227397841205181228281208\",\n    \"valorDocumento\": 182.07,\n    \"valorTotal\": 182.07,\n    \"nomeConvenio\": \"REC.DETRAN BARR\",\n    \"codigoConvenio\": \"R026\",\n    \"dataVencimento\": \"2018-12-28T00:00:00\"\n}"
             }
           ]
+        },
+        {
+          "_postman_id": "3558292-c020f3ee-3813-498d-9748-76e08b07314e",
+          "name": "/pagamentos/convenios",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{token}}"
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"codigoBarras\": \"856000000062625300260027227583629208190228000005\",\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"descricao\": \"DUA\",\n    \"valor\":  662.53\n}"
+            },
+            "url": "{{url}}/pagamentos/convenios"
+          },
+          "response": []
         }
       ]
     }
