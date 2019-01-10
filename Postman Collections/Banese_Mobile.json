@@ -110,9 +110,12 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {},
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
             "url": {
-              "raw": "{{url}}/contas/039010021456/extrato?inicio=2018-09-05T07:36:16&fim=2018-10-18T07:36:16",
+              "raw": "{{url}}/contas/039010021456/extrato?dataInicio=2018-09-05T07:36:16&dataFim=2018-10-18T07:36:16&paginacaoInicio=0&paginacaoFim=10",
               "host": [
                 "{{url}}"
               ],
@@ -129,14 +132,24 @@
                   "disabled": true
                 },
                 {
-                  "key": "inicio",
+                  "key": "dataInicio",
                   "value": "2018-09-05T07:36:16",
                   "equals": true
                 },
                 {
-                  "key": "fim",
+                  "key": "dataFim",
                   "value": "2018-10-18T07:36:16",
                   "equals": true
+                },
+                {
+                  "key": "paginacaoInicio",
+                  "value": "0",
+                  "type": "text"
+                },
+                {
+                  "key": "paginacaoFim",
+                  "value": "10",
+                  "type": "text"
                 }
               ]
             }
