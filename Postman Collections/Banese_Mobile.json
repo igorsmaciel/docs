@@ -115,7 +115,7 @@
               "raw": ""
             },
             "url": {
-              "raw": "{{url}}/contas/039010021456/extrato?dataInicio=2018-09-05T07:36:16&dataFim=2018-10-18T07:36:16&paginacaoInicio=0&paginacaoFim=10",
+              "raw": "{{url}}/contas/039010021456/extrato?tipo=CONTA_POUPANCA&dataInicio=2018-09-05T07:36:16&dataFim=2018-10-18T07:36:16&paginacaoInicio=0&paginacaoFim=10",
               "host": [
                 "{{url}}"
               ],
@@ -128,8 +128,7 @@
                 {
                   "key": "tipo",
                   "value": "CONTA_POUPANCA",
-                  "equals": true,
-                  "disabled": true
+                  "equals": true
                 },
                 {
                   "key": "dataInicio",
@@ -144,48 +143,61 @@
                 {
                   "key": "paginacaoInicio",
                   "value": "0",
-                  "type": "text"
+                  "equals": true
                 },
                 {
                   "key": "paginacaoFim",
                   "value": "10",
-                  "type": "text"
+                  "equals": true
                 }
               ]
             }
           },
           "response": [
             {
-              "id": "3558292-213962d6-bf04-4b4c-b797-28ea08bd324c",
+              "id": "3558292-85602cf4-c39b-4dfa-a25a-3f9a6c73b7b3",
               "name": "/contas/{conta}/extrato",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
                 "url": {
-                  "raw": "{{url}}/contas/015022000044/extrato?dataInicio=2018/08/04&dataFim=2018/09/05&tipo=TIPO_CONTA_CORRENTE",
+                  "raw": "{{url}}/contas/039010021456/extrato?tipo=CONTA_POUPANCA&dataInicio=2018-09-05T07:36:16&dataFim=2018-10-18T07:36:16&paginacaoInicio=0&paginacaoFim=10",
                   "host": [
                     "{{url}}"
                   ],
                   "path": [
                     "contas",
-                    "015022000044",
+                    "039010021456",
                     "extrato"
                   ],
                   "query": [
                     {
+                      "key": "tipo",
+                      "value": "CONTA_POUPANCA",
+                      "equals": true
+                    },
+                    {
                       "key": "dataInicio",
-                      "value": "2018/08/04",
+                      "value": "2018-09-05T07:36:16",
                       "equals": true
                     },
                     {
                       "key": "dataFim",
-                      "value": "2018/09/05",
+                      "value": "2018-10-18T07:36:16",
                       "equals": true
                     },
                     {
-                      "key": "tipo",
-                      "value": "TIPO_CONTA_CORRENTE",
+                      "key": "paginacaoInicio",
+                      "value": "0",
+                      "equals": true
+                    },
+                    {
+                      "key": "paginacaoFim",
+                      "value": "10",
                       "equals": true
                     }
                   ]
@@ -209,16 +221,16 @@
                 },
                 {
                   "key": "Content-Length",
-                  "value": "507"
+                  "value": "2521"
                 },
                 {
                   "key": "Date",
-                  "value": "Wed, 10 Oct 2018 14:29:14 GMT"
+                  "value": "Fri, 11 Jan 2019 13:12:53 GMT"
                 }
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"tipo\": \"TIPO_CONTA_CORRENTE\",\n    \"saldoDisponivel\": 415.68,\n    \"somaCredito\": 1085.67,\n    \"somaDebito\": 0,\n    \"totalCredito\": 1,\n    \"totalDebito\": 0,\n    \"lancamentos\": [\n        {\n            \"flagCTS\": \"1\",\n            \"dataLanc\": \"2018-08-13T00:00:00-0300\",\n            \"documento\": \"0121975\",\n            \"valorLanc\": 1085.67,\n            \"tipoCanal\": 0,\n            \"numTerm\": 13,\n            \"compSist\": \"047 0029 031039390 DNA SERVICOS & GESTAO LTDA - ME 019275335000140\",\n            \"compClie\": \"\",\n            \"dataReferenciaLanc\": \"2018-08-13T00:00:00-0300\",\n            \"agenciaOrigemLanc\": \"029\",\n            \"postoOrigemLanc\": \"00\",\n            \"NSULanc\": \"3000002\",\n            \"codHist\": \"4\",\n            \"tipoLanc\": 0\n        }\n    ]\n}"
+              "body": "{\n    \"dataInicio\": \"2018-07-11T10:12:53\",\n    \"dataFim\": \"2019-01-11T10:12:53\",\n    \"paginacaoInicio\": 0,\n    \"paginacaoFim\": 10,\n    \"tipoConta\": \"CONTA_CORRENTE\",\n    \"saldoAtual\": 2046189.23,\n    \"lancamentos\": [\n        {\n            \"agencia\": \"988\",\n            \"canal\": 7,\n            \"data\": \"2019-01-03T16:41:56\",\n            \"dataSistema\": \"2018-12-21T00:00:00\",\n            \"cdHistorico\": 709,\n            \"nsuSistema\": \"V000067\",\n            \"numeroDocumento\": \"0000067\",\n            \"numeroTerminal\": 1,\n            \"valor\": 662.53,\n            \"tipo\": \"D\",\n            \"descricao\": \"DUA\",\n            \"historico\": \"ATM - COBRANCA\"\n        },\n        {\n            \"agencia\": \"988\",\n            \"canal\": 7,\n            \"data\": \"2019-01-03T16:26:39\",\n            \"dataSistema\": \"2018-12-21T00:00:00\",\n            \"cdHistorico\": 709,\n            \"nsuSistema\": \"V000063\",\n            \"numeroDocumento\": \"0000063\",\n            \"numeroTerminal\": 1,\n            \"valor\": 99,\n            \"tipo\": \"D\",\n            \"descricao\": \"DUA\",\n            \"historico\": \"ATM - COBRANCA\"\n        },\n        {\n            \"agencia\": \"988\",\n            \"canal\": 7,\n            \"data\": \"2019-01-03T16:10:43\",\n            \"dataSistema\": \"2018-12-21T00:00:00\",\n            \"cdHistorico\": 709,\n            \"nsuSistema\": \"V000060\",\n            \"numeroDocumento\": \"0000060\",\n            \"numeroTerminal\": 1,\n            \"valor\": 77.79,\n            \"tipo\": \"D\",\n            \"descricao\": \"teste\",\n            \"historico\": \"ATM - COBRANCA\"\n        },\n        {\n            \"agencia\": \"988\",\n            \"canal\": 7,\n            \"data\": \"2019-01-03T16:03:07\",\n            \"dataSistema\": \"2018-12-21T00:00:00\",\n            \"cdHistorico\": 709,\n            \"nsuSistema\": \"V000057\",\n            \"numeroDocumento\": \"0000057\",\n            \"numeroTerminal\": 1,\n            \"valor\": 77.79,\n            \"tipo\": \"D\",\n            \"descricao\": \"Energisa janeiro\",\n            \"historico\": \"ATM - COBRANCA\"\n        },\n        {\n            \"agencia\": \"988\",\n            \"canal\": 7,\n            \"data\": \"2019-01-03T16:01:36\",\n            \"dataSistema\": \"2018-12-21T00:00:00\",\n            \"cdHistorico\": 709,\n            \"nsuSistema\": \"V000051\",\n            \"numeroDocumento\": \"0000051\",\n            \"numeroTerminal\": 1,\n            \"valor\": 99,\n            \"tipo\": \"D\",\n            \"descricao\": \"Energisa janeiro\",\n            \"historico\": \"ATM - COBRANCA\"\n        },\n        {\n            \"agencia\": \"988\",\n            \"canal\": 7,\n            \"data\": \"2019-01-03T15:47:32\",\n            \"dataSistema\": \"2018-12-21T00:00:00\",\n            \"cdHistorico\": 709,\n            \"nsuSistema\": \"V000047\",\n            \"numeroDocumento\": \"0000047\",\n            \"numeroTerminal\": 1,\n            \"valor\": 99,\n            \"tipo\": \"D\",\n            \"descricao\": \"Energisa janeiro\",\n            \"historico\": \"ATM - COBRANCA\"\n        },\n        {\n            \"agencia\": \"988\",\n            \"canal\": 7,\n            \"data\": \"2019-01-03T15:45:39\",\n            \"dataSistema\": \"2018-12-21T00:00:00\",\n            \"cdHistorico\": 709,\n            \"nsuSistema\": \"V000046\",\n            \"numeroDocumento\": \"0000046\",\n            \"numeroTerminal\": 1,\n            \"valor\": 99,\n            \"tipo\": \"D\",\n            \"descricao\": \"Energisa janeiro\",\n            \"historico\": \"ATM - COBRANCA\"\n        },\n        {\n            \"agencia\": \"988\",\n            \"canal\": 7,\n            \"data\": \"2019-01-03T15:40:56\",\n            \"dataSistema\": \"2018-12-21T00:00:00\",\n            \"cdHistorico\": 709,\n            \"nsuSistema\": \"V000045\",\n            \"numeroDocumento\": \"0000045\",\n            \"numeroTerminal\": 1,\n            \"valor\": 99,\n            \"tipo\": \"D\",\n            \"descricao\": \"Energisa janeiro\",\n            \"historico\": \"ATM - COBRANCA\"\n        },\n        {\n            \"agencia\": \"988\",\n            \"canal\": 7,\n            \"data\": \"2019-01-03T15:31:53\",\n            \"dataSistema\": \"2018-12-21T00:00:00\",\n            \"cdHistorico\": 709,\n            \"nsuSistema\": \"V000039\",\n            \"numeroDocumento\": \"0000039\",\n            \"numeroTerminal\": 1,\n            \"valor\": 99,\n            \"tipo\": \"D\",\n            \"descricao\": \"Energisa janeiro\",\n            \"historico\": \"ATM - COBRANCA\"\n        }\n    ]\n}"
             }
           ]
         },
