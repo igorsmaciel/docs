@@ -493,6 +493,126 @@
             "url": "{{url}}/contas/039010021456/titulares/1/avisoviagem"
           },
           "response": []
+        },
+        {
+          "_postman_id": "3558292-69262caa-61b2-463b-9f7f-dad525441cdf",
+          "name": "/contas/{conta}/aplicacoes-correntista",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/contas/015010616266/aplicacoes-correntista?modalidade=2&modalidade=7&modalidade=12&modalidade=16",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "contas",
+                "015010616266",
+                "aplicacoes-correntista"
+              ],
+              "query": [
+                {
+                  "key": "modalidade",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "modalidade",
+                  "value": "7",
+                  "type": "text"
+                },
+                {
+                  "key": "modalidade",
+                  "value": "12",
+                  "type": "text"
+                },
+                {
+                  "key": "modalidade",
+                  "value": "16",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "3558292-f1f9fab6-de33-4fb6-8d81-79c4038c2d59",
+              "name": "/contas/{conta}/aplicacoes-correntista",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{url}}/contas/015010616266/aplicacoes-correntista?modalidade=2&modalidade=7&modalidade=12&modalidade=16",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "contas",
+                    "015010616266",
+                    "aplicacoes-correntista"
+                  ],
+                  "query": [
+                    {
+                      "key": "modalidade",
+                      "value": "2",
+                      "equals": true
+                    },
+                    {
+                      "key": "modalidade",
+                      "value": "7",
+                      "equals": true
+                    },
+                    {
+                      "key": "modalidade",
+                      "value": "12",
+                      "equals": true
+                    },
+                    {
+                      "key": "modalidade",
+                      "value": "16",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "679"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 14 Jan 2019 14:27:21 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"codigoAgencia\": 15,\n        \"numeroMulticonta\": 10616266,\n        \"codigoProduto\": -1,\n        \"nomeProduto\": \"CDB-RDB\",\n        \"modalidade\": \"2\",\n        \"saldoProduto\": {\n            \"saldoBruto\": 0,\n            \"saldoLiquido\": 0\n        }\n    },\n    {\n        \"codigoAgencia\": 15,\n        \"numeroMulticonta\": 10616266,\n        \"codigoProduto\": -1,\n        \"nomeProduto\": \"FUNDO EXPERT\",\n        \"modalidade\": \"7\",\n        \"saldoProduto\": {\n            \"saldoBruto\": 0,\n            \"saldoLiquido\": 24776.84\n        }\n    },\n    {\n        \"codigoAgencia\": 15,\n        \"numeroMulticonta\": 10616266,\n        \"codigoProduto\": -1,\n        \"nomeProduto\": \"CDB Automático\",\n        \"modalidade\": \"12\",\n        \"saldoProduto\": {\n            \"saldoBruto\": 0,\n            \"saldoLiquido\": 19565.5\n        }\n    },\n    {\n        \"codigoAgencia\": 15,\n        \"numeroMulticonta\": 10616266,\n        \"codigoProduto\": -1,\n        \"nomeProduto\": \"CDB Aplic Automático\",\n        \"modalidade\": \"16\",\n        \"saldoProduto\": {\n            \"saldoBruto\": 0,\n            \"saldoLiquido\": 13435\n        }\n    }\n]"
+            }
+          ]
         }
       ]
     },
