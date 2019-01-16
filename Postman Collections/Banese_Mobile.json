@@ -613,6 +613,48 @@
               "body": "[\n    {\n        \"codigoAgencia\": 15,\n        \"numeroMulticonta\": 10616266,\n        \"codigoProduto\": -1,\n        \"nomeProduto\": \"CDB-RDB\",\n        \"modalidade\": \"2\",\n        \"saldoProduto\": {\n            \"saldoBruto\": 0,\n            \"saldoLiquido\": 0\n        }\n    },\n    {\n        \"codigoAgencia\": 15,\n        \"numeroMulticonta\": 10616266,\n        \"codigoProduto\": -1,\n        \"nomeProduto\": \"FUNDO EXPERT\",\n        \"modalidade\": \"7\",\n        \"saldoProduto\": {\n            \"saldoBruto\": 0,\n            \"saldoLiquido\": 24776.84\n        }\n    },\n    {\n        \"codigoAgencia\": 15,\n        \"numeroMulticonta\": 10616266,\n        \"codigoProduto\": -1,\n        \"nomeProduto\": \"CDB Automático\",\n        \"modalidade\": \"12\",\n        \"saldoProduto\": {\n            \"saldoBruto\": 0,\n            \"saldoLiquido\": 19565.5\n        }\n    },\n    {\n        \"codigoAgencia\": 15,\n        \"numeroMulticonta\": 10616266,\n        \"codigoProduto\": -1,\n        \"nomeProduto\": \"CDB Aplic Automático\",\n        \"modalidade\": \"16\",\n        \"saldoProduto\": {\n            \"saldoBruto\": 0,\n            \"saldoLiquido\": 13435\n        }\n    }\n]"
             }
           ]
+        },
+        {
+          "_postman_id": "3558292-4bee62d6-f2a6-4aac-9b6b-4b1e68a4b304",
+          "name": "/contas/{conta}/extrato/resumo",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/contas/039010021456/extrato/resumo?tipo=CONTA_POUPANCA&dataInicio=2018-09-05T07:36:16&dataFim=2018-10-18T07:36:16",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "contas",
+                "039010021456",
+                "extrato",
+                "resumo"
+              ],
+              "query": [
+                {
+                  "key": "tipo",
+                  "value": "CONTA_POUPANCA",
+                  "equals": true
+                },
+                {
+                  "key": "dataInicio",
+                  "value": "2018-09-05T07:36:16",
+                  "equals": true
+                },
+                {
+                  "key": "dataFim",
+                  "value": "2018-10-18T07:36:16",
+                  "equals": true
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ]
     },
