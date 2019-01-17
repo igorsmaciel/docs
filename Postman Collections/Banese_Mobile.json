@@ -625,7 +625,7 @@
               "raw": ""
             },
             "url": {
-              "raw": "{{url}}/contas/039010021456/extrato/resumo?tipo=CONTA_POUPANCA&dataInicio=2018-09-05T07:36:16&dataFim=2018-10-18T07:36:16",
+              "raw": "{{url}}/contas/039010021456/extrato/resumo?dataInicio=2018-01-01T07:36:16&dataFim=2018-12-31T07:36:16",
               "host": [
                 "{{url}}"
               ],
@@ -637,24 +637,84 @@
               ],
               "query": [
                 {
-                  "key": "tipo",
-                  "value": "CONTA_POUPANCA",
-                  "equals": true
-                },
-                {
                   "key": "dataInicio",
-                  "value": "2018-09-05T07:36:16",
+                  "value": "2018-01-01T07:36:16",
                   "equals": true
                 },
                 {
                   "key": "dataFim",
-                  "value": "2018-10-18T07:36:16",
+                  "value": "2018-12-31T07:36:16",
                   "equals": true
                 }
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "id": "3558292-40237064-ee02-43fb-82f9-8571d506be45",
+              "name": "/contas/{conta}/extrato/resumo",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{url}}/contas/039010021456/extrato/resumo?dataInicio=2018-01-01T07:36:16&dataFim=2018-12-31T07:36:16",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "contas",
+                    "039010021456",
+                    "extrato",
+                    "resumo"
+                  ],
+                  "query": [
+                    {
+                      "key": "dataInicio",
+                      "value": "2018-01-01T07:36:16",
+                      "equals": true
+                    },
+                    {
+                      "key": "dataFim",
+                      "value": "2018-12-31T07:36:16",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "491"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 16 Jan 2019 14:36:25 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"dataInicio\": \"2018-01-01T07:36:16\",\n    \"dataFim\": \"2018-12-31T07:36:16\",\n    \"tipoConta\": \"CONTA_CORRENTE\",\n    \"entrada\": {\n        \"quantidade\": 301,\n        \"total\": 11922757.33,\n        \"secoes\": [\n            {\n                \"descricao\": \"Transferências\",\n                \"valor\": 10003825.53\n            },\n            {\n                \"descricao\": \"Outros\",\n                \"valor\": 1918931.8\n            }\n        ]\n    },\n    \"saida\": {\n        \"quantidade\": 570,\n        \"total\": 10065761.41,\n        \"secoes\": [\n            {\n                \"descricao\": \"Pagamentos\",\n                \"valor\": 10059024.21\n            },\n            {\n                \"descricao\": \"Outros\",\n                \"valor\": 6737.2\n            }\n        ]\n    },\n    \"investimento\": {\n        \"quantidade\": 1,\n        \"total\": 1000,\n        \"secoes\": [\n            {\n                \"descricao\": \"Aplicações\",\n                \"valor\": 1000\n            }\n        ]\n    }\n}"
+            }
+          ]
         }
       ]
     },
