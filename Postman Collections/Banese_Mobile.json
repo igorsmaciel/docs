@@ -726,7 +726,49 @@
             },
             "url": "{{url}}/contas/039010021456/subcontas-poupanca"
           },
-          "response": []
+          "response": [
+            {
+              "id": "3558292-7ed613e1-fc4c-45c5-af35-e05accd46556",
+              "name": "/contas/{conta}/subcontas-poupanca",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "{{url}}/contas/039010021456/subcontas-poupanca"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "731"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 18 Jan 2019 13:08:27 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"anteriorMP567\": {\n        \"total\": 513.65,\n        \"subContas\": [\n            {\n                \"modalidade\": 3,\n                \"dia\": 7,\n                \"parcela\": 0,\n                \"tipoRendimento\": 2,\n                \"saldo\": 513.65\n            }\n        ]\n    },\n    \"posteriorMP567\": {\n        \"total\": 13342.11,\n        \"subContas\": [\n            {\n                \"modalidade\": 3,\n                \"dia\": 1,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 12109.88\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 3,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 5,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 6,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 8,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 1232.17\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 11,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 12,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 25,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            }\n        ]\n    }\n}"
+            }
+          ]
         }
       ]
     },
