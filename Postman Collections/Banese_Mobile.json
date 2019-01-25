@@ -236,7 +236,7 @@
         },
         {
           "_postman_id": "3558292-4bee62d6-f2a6-4aac-9b6b-4b1e68a4b304",
-          "name": "/contas/{conta}/extrato/resumo",
+          "name": "/contas/{conta}/resumo-periodo",
           "request": {
             "method": "GET",
             "header": [],
