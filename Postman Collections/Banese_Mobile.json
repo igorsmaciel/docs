@@ -335,6 +335,47 @@
           ]
         },
         {
+          "_postman_id": "3558292-cff7e95a-d737-4cb7-9f41-2cf7c3e9f2c6",
+          "name": "/contas/{conta}/resumo-natureza",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/contas/039010021456/resumo-natureza?dataInicio=2018-11-01&dataFim=2018-12-31&natureza=C",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "contas",
+                "039010021456",
+                "resumo-natureza"
+              ],
+              "query": [
+                {
+                  "key": "dataInicio",
+                  "value": "2018-11-01",
+                  "equals": true
+                },
+                {
+                  "key": "dataFim",
+                  "value": "2018-12-31",
+                  "equals": true
+                },
+                {
+                  "key": "natureza",
+                  "value": "C",
+                  "equals": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
           "_postman_id": "3558292-a945c369-d72e-4e45-979f-29f6172eb3c0",
           "name": "/contas/{conta}/saldos",
           "request": {
