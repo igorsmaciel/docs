@@ -1561,9 +1561,51 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{url}}/pagamentos/titulos/04791525550083230580950297047073177830000028656"
+            "url": "{{url}}/pagamentos/titulos/04796778500000031005601016360900008882504721"
           },
-          "response": []
+          "response": [
+            {
+              "id": "3558292-6e70d3c7-0204-4785-92d4-a0bd0920f9f1",
+              "name": "/pagamentos/titulos/{codigoBarras}",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "{{url}}/pagamentos/titulos/04796778500000031005601016360900008882504721"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "508"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 30 Jan 2019 20:32:13 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"valorACobrar\": 30.99,\n    \"valorNominal\": 31,\n    \"valorJuros\": 0,\n    \"valorMulta\": 0,\n    \"valorDesconto\": 0.01,\n    \"valorAbatimento\": 0,\n    \"idConsulta\": 43296,\n    \"codigoBarras\": \"04796778500000031005601016360900008882504721\",\n    \"vencimento\": \"2019-01-30T00:00:00-0300\",\n    \"pagador\": {\n        \"nome\": \"Fulano\",\n        \"nomeFantasia\": \"Fulano\",\n        \"cpfCnpj\": \"19920121568\"\n    },\n    \"beneficiario\": {\n        \"nome\": \"LUCIVAN SOARES ROCHA DE ANDRADE\",\n        \"nomeFantasia\": \"NAO INFORMADO                                                                                       \",\n        \"cpfCnpj\": \"93448538\"\n    }\n}"
+            }
+          ]
         }
       ]
     }
