@@ -1561,7 +1561,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{url}}/pagamentos/titulos/04796778500000031005601016360900008882504721"
+            "url": "{{url}}/pagamentos/titulos/04797778500000034001403130269400008514604713"
           },
           "response": [
             {
@@ -1604,6 +1604,76 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"valorACobrar\": 30.99,\n    \"valorNominal\": 31,\n    \"valorJuros\": 0,\n    \"valorMulta\": 0,\n    \"valorDesconto\": 0.01,\n    \"valorAbatimento\": 0,\n    \"idConsulta\": 43296,\n    \"codigoBarras\": \"04796778500000031005601016360900008882504721\",\n    \"vencimento\": \"2019-01-30T00:00:00-0300\",\n    \"pagador\": {\n        \"nome\": \"Fulano\",\n        \"nomeFantasia\": \"Fulano\",\n        \"cpfCnpj\": \"19920121568\"\n    },\n    \"beneficiario\": {\n        \"nome\": \"LUCIVAN SOARES ROCHA DE ANDRADE\",\n        \"nomeFantasia\": \"NAO INFORMADO                                                                                       \",\n        \"cpfCnpj\": \"93448538\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "3558292-70c9c79b-eba4-4d6c-9474-8e3a5cfa6ca3",
+          "name": "/pagamentos/titulos",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"idConta\": {\r\n       \"agencia\": \"039\",\r\n       \"numeroConta\": \"010021456\"\r\n   },\r\n   \"recebimentoTitulo\": {\r\n       \"acrescimos\": 0.0,\r\n       \"beneficiario\": {\r\n           \"nome\": \"OTICA DO TRABALHADOR COMERCIO EIRELI\",\r\n\t        \"nomeFantasia\": \"OTICA DO TRABALHADOR\",\r\n\t        \"cpfCnpj\": \"023246658000183\"\r\n       },\r\n       \"codigoBanco\": 47,\r\n       \"codigoBarras\": \"04797778500000034001403130269400008514604713\",\r\n       \"deducoes\": 0.0,\r\n       \"desconto\": 0.01,\r\n       \"descricao\": \"teste\",\r\n       \"idConsulta\": 43389,\r\n       \"multa\": 0.0,\r\n       \"pagador\": {\r\n           \"nome\": \"Empresa X\",\r\n\t        \"nomeFantasia\": \"Empresa X\",\r\n\t        \"cpfCnpj\": \"081340869000187\"\r\n       },\r\n       \"valorDocumento\": 34,\r\n       \"valorRecebimento\": 33.99,\r\n       \"vencimento\": \"2019-01-30T00:00:00-0300\"\r\n   }\r\n}"
+            },
+            "url": "{{url}}/pagamentos/titulos"
+          },
+          "response": [
+            {
+              "id": "3558292-dea5183d-ce8b-4f38-b551-5f25a138c0e0",
+              "name": "/pagamentos/titulos",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n   \"idConta\": {\r\n       \"agencia\": \"039\",\r\n       \"numeroConta\": \"010021456\"\r\n   },\r\n   \"recebimentoTitulo\": {\r\n       \"acrescimos\": 0.0,\r\n       \"beneficiario\": {\r\n           \"nome\": \"OTICA DO TRABALHADOR COMERCIO EIRELI\",\r\n\t        \"nomeFantasia\": \"OTICA DO TRABALHADOR\",\r\n\t        \"cpfCnpj\": \"023246658000183\"\r\n       },\r\n       \"codigoBanco\": 47,\r\n       \"codigoBarras\": \"04797778500000034001403130269400008514604713\",\r\n       \"deducoes\": 0.0,\r\n       \"desconto\": 0.01,\r\n       \"descricao\": \"teste\",\r\n       \"idConsulta\": 43389,\r\n       \"multa\": 0.0,\r\n       \"pagador\": {\r\n           \"nome\": \"Empresa X\",\r\n\t        \"nomeFantasia\": \"Empresa X\",\r\n\t        \"cpfCnpj\": \"081340869000187\"\r\n       },\r\n       \"valorDocumento\": 34,\r\n       \"valorRecebimento\": 33.99,\r\n       \"vencimento\": \"2019-01-30T00:00:00-0300\"\r\n   }\r\n}"
+                },
+                "url": "{{url}}/pagamentos/titulos"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "555"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 01 Feb 2019 20:17:13 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"recebimentoTitulo\": {\n        \"acrescimos\": 0,\n        \"beneficiario\": {\n            \"nome\": \"OTICA DO TRABALHADOR COMERCIO EIRELI\",\n            \"nomeFantasia\": \"OTICA DO TRABALHADOR\",\n            \"cpfCnpj\": \"023246658000183\"\n        },\n        \"pagador\": {\n            \"nome\": \"Empresa X\",\n            \"nomeFantasia\": \"Empresa X\",\n            \"cpfCnpj\": \"081340869000187\"\n        },\n        \"codigoBanco\": 47,\n        \"codigoBarras\": \"04797778500000034001403130269400008514604713\",\n        \"deducoes\": 0,\n        \"desconto\": 0.01,\n        \"descricao\": \"teste\",\n        \"idConsulta\": 43389,\n        \"multa\": 0,\n        \"valorDocumento\": 34,\n        \"valorRecebimento\": 33.99,\n        \"vencimento\": \"2019-01-30T00:00:00-0300\"\n    }\n}"
             }
           ]
         }
