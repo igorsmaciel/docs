@@ -1561,7 +1561,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{url}}/pagamentos/titulos/04795601041636090000190161047023377910000003200"
+            "url": "{{url}}/pagamentos/titulos/04799779000000050005601016360900009021804739"
           },
           "response": [
             {
@@ -1622,7 +1622,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n   \"idConta\": {\r\n       \"agencia\": \"039\",\r\n       \"numeroConta\": \"010021456\"\r\n   },\r\n   \"recebimentoTitulo\": {\r\n       \"acrescimos\": 0.0,\r\n       \"beneficiario\": {\r\n           \"nome\": \"OTICA DO TRABALHADOR COMERCIO EIRELI\",\r\n\t        \"nomeFantasia\": \"OTICA DO TRABALHADOR\",\r\n\t        \"cpfCnpj\": \"023246658000183\"\r\n       },\r\n       \"codigoBanco\": 47,\r\n       \"codigoBarras\": \"04791403113026940000585146047130777850000003400\",\r\n       \"linhaDigitavel\": \"04795601041636090000190161047023377910000003200\",\r\n       \"deducoes\": 0.0,\r\n       \"desconto\": 0.01,\r\n       \"descricao\": \"teste\",\r\n       \"idConsulta\": 43393,\r\n       \"multa\": 0.0,\r\n       \"pagador\": {\r\n           \"nome\": \"Empresa X\",\r\n\t        \"nomeFantasia\": \"Empresa X\",\r\n\t        \"cpfCnpj\": \"081340869000187\"\r\n       },\r\n       \"valorDocumento\": 34,\r\n       \"valorRecebimento\": 33.99,\r\n       \"vencimento\": \"2019-01-30T00:00:00-0300\"\r\n   }\r\n}"
+              "raw": "{\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"recebimentoTitulo\": {\n        \"valorDocumento\": 51.12,\n        \"valorRecebimento\": 51.12,\n        \"valorJuros\": 0.95,\n        \"valorMulta\": 0.42,\n        \"valorDesconto\": 0,\n        \"valorAbatimento\": 0.25,\n        \"codigoBarras\": \"04799779000000050005601016360900009021804739\",\n        \"linhaDigitavel\": \"04795601041636090000190218047398977900000005000\",\n        \"idConsulta\": 43461,\n        \"pagador\": {\n            \"nome\": \"Fulano\",\n            \"nomeFantasia\": \"Fulano\",\n            \"cpfCnpj\": \"19920121568\",\n            \"tipoPessoa\": \"F\"\n        },\n        \"beneficiario\": {\n            \"nome\": \"LUCIVAN SOARES ROCHA DE ANDRADE\",\n            \"nomeFantasia\": \"NAO INFORMADO\",\n            \"cpfCnpj\": \"00093448538\",\n            \"tipoPessoa\": \"F\"\n        },\n        \"codigoBanco\": 47,\n        \"vencimento\": \"2019-02-04T00:00:00-0300\",\n        \"descricao\": \"teste\"\n    }\n}"
             },
             "url": "{{url}}/pagamentos/titulos"
           },
