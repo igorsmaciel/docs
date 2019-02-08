@@ -879,6 +879,27 @@
               "body": "{\n    \"anteriorMP567\": {\n        \"total\": 513.65,\n        \"subContas\": [\n            {\n                \"modalidade\": 3,\n                \"dia\": 7,\n                \"parcela\": 0,\n                \"tipoRendimento\": 2,\n                \"saldo\": 513.65\n            }\n        ]\n    },\n    \"posteriorMP567\": {\n        \"total\": 13342.11,\n        \"subContas\": [\n            {\n                \"modalidade\": 3,\n                \"dia\": 1,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 12109.88\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 3,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 5,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 6,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 8,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 1232.17\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 11,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 12,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            },\n            {\n                \"modalidade\": 3,\n                \"dia\": 25,\n                \"parcela\": 0,\n                \"tipoRendimento\": 1,\n                \"saldo\": 0.01\n            }\n        ]\n    }\n}"
             }
           ]
+        },
+        {
+          "_postman_id": "3558292-94bf8b92-5f92-4d55-bc3d-2d601cfa4148",
+          "name": "/contas/039010021456/celular-sms",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numCelularSms\": \"911111111\"\n}"
+            },
+            "url": "{{url}}/contas/039010021456/celular-sms"
+          },
+          "response": []
         }
       ]
     },
@@ -1561,7 +1582,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{url}}/pagamentos/titulos/04799779000000050005601016360900009021804739"
+            "url": "{{url}}/pagamentos/titulos/75698779600050000001306601017321500302060023"
           },
           "response": [
             {
@@ -1622,7 +1643,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"recebimentoTitulo\": {\n        \"valorDocumento\": 51.12,\n        \"valorRecebimento\": 51.12,\n        \"valorJuros\": 0.95,\n        \"valorMulta\": 0.42,\n        \"valorDesconto\": 0,\n        \"valorAbatimento\": 0.25,\n        \"codigoBarras\": \"04799779000000050005601016360900009021804739\",\n        \"linhaDigitavel\": \"04795601041636090000190218047398977900000005000\",\n        \"idConsulta\": 43461,\n        \"pagador\": {\n            \"nome\": \"Fulano\",\n            \"nomeFantasia\": \"Fulano\",\n            \"cpfCnpj\": \"19920121568\",\n            \"tipoPessoa\": \"F\"\n        },\n        \"beneficiario\": {\n            \"nome\": \"LUCIVAN SOARES ROCHA DE ANDRADE\",\n            \"nomeFantasia\": \"NAO INFORMADO\",\n            \"cpfCnpj\": \"00093448538\",\n            \"tipoPessoa\": \"F\"\n        },\n        \"codigoBanco\": 47,\n        \"vencimento\": \"2019-02-04T00:00:00-0300\",\n        \"descricao\": \"teste\"\n    }\n}"
+              "raw": "{\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"recebimentoTitulo\": {\n        \"valorNominal\": 50000,\n        \"valorRecebimento\": 50000,\n        \"valorJuros\": 0,\n        \"valorMulta\": 0,\n        \"valorDesconto\": 0,\n        \"valorAbatimento\": 0,\n        \"codigoBarras\": \"75698779600050000001306601017321500302060023\",\n        \"linhaDigitavel\": \"75691306640101732150403020600239877960005000000\",\n        \"idConsulta\": 43483,\n        \"beneficiario\": {\n            \"nome\": \"CRISTIANO RONALDO\",\n            \"nomeFantasia\": \"Edner\",\n            \"cpfCnpj\": \"007912816000130\",\n            \"tipoPessoa\": \"J\"\n        },\n        \"pagador\": {\n            \"nome\": \"000099 - MICHELI APARECIDA BANDEIRA\",\n            \"cpfCnpj\": \"05860912978\",\n            \"tipoPessoa\": \"F\"\n        },\n        \"codigoBanco\": \"756\",\n        \"vencimento\": \"2019-02-10T00:00:00-0300\",\n        \"descricao\": \"teste\"\n    }\n}"
             },
             "url": "{{url}}/pagamentos/titulos"
           },
