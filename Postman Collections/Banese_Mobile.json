@@ -105,6 +105,20 @@
           ]
         },
         {
+          "_postman_id": "3558292-33d50419-6cc9-48d7-8b78-b3888a13421a",
+          "name": "/contas/{conta}/informacoes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{url}}/contas/015010000010/informacoes"
+          },
+          "response": []
+        },
+        {
           "_postman_id": "3558292-fc7288d9-b4e2-46e8-8301-22d504b425df",
           "name": "/contas/{conta}/extrato",
           "request": {
@@ -483,16 +497,10 @@
           "response": []
         },
         {
-          "_postman_id": "3558292-aa9fae19-b2fe-4318-bf9f-acdfb1c23ce9",
-          "name": "/contas/{conta}",
+          "_postman_id": "3558292-94bf8b92-5f92-4d55-bc3d-2d601cfa4148",
+          "name": "/contas/{conta}/celular-sms",
           "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{token}}"
-              }
-            },
-            "method": "PATCH",
+            "method": "POST",
             "header": [
               {
                 "key": "Content-Type",
@@ -505,58 +513,9 @@
               "mode": "raw",
               "raw": "{\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numCelularSms\": \"911111111\"\n}"
             },
-            "url": "{{url}}/contas/039010021456"
+            "url": "{{url}}/contas/039010021456/celular-sms"
           },
-          "response": [
-            {
-              "id": "3558292-b073cf3b-a524-4777-a954-9a3f3c7ea144",
-              "name": "/contas/{conta}",
-              "originalRequest": {
-                "method": "PATCH",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numCelularSms\": \"911111111\"\n}"
-                },
-                "url": "{{url}}/contas/039010021456"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Server",
-                  "value": "Apache-Coyote/1.1"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "85"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 28 Dec 2018 13:46:00 GMT"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"isRemoverNumSms\": false,\n    \"seqTitular\": 1,\n    \"numDddSms\": \"79\",\n    \"numCelularSms\": \"911111111\"\n}"
-            }
-          ]
+          "response": []
         },
         {
           "_postman_id": "3558292-36ee4d6b-b586-4441-a671-b34910d1be57",
@@ -881,10 +840,16 @@
           ]
         },
         {
-          "_postman_id": "3558292-94bf8b92-5f92-4d55-bc3d-2d601cfa4148",
-          "name": "/contas/039010021456/celular-sms",
+          "_postman_id": "3558292-aa9fae19-b2fe-4318-bf9f-acdfb1c23ce9",
+          "name": "/contas/{conta}",
           "request": {
-            "method": "POST",
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{token}}"
+              }
+            },
+            "method": "PATCH",
             "header": [
               {
                 "key": "Content-Type",
@@ -897,9 +862,58 @@
               "mode": "raw",
               "raw": "{\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numCelularSms\": \"911111111\"\n}"
             },
-            "url": "{{url}}/contas/039010021456/celular-sms"
+            "url": "{{url}}/contas/039010021456"
           },
-          "response": []
+          "response": [
+            {
+              "id": "3558292-b073cf3b-a524-4777-a954-9a3f3c7ea144",
+              "name": "/contas/{conta}",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"seqTitular\": 1,\n\t\"numDddSms\": \"79\",\n\t\"numCelularSms\": \"911111111\"\n}"
+                },
+                "url": "{{url}}/contas/039010021456"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "85"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 28 Dec 2018 13:46:00 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"isRemoverNumSms\": false,\n    \"seqTitular\": 1,\n    \"numDddSms\": \"79\",\n    \"numCelularSms\": \"911111111\"\n}"
+            }
+          ]
         }
       ]
     },
