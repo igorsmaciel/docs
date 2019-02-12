@@ -1036,6 +1036,97 @@
               "body": "{\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010616266\",\n        \"sequenciaTitular\": 0\n    },\n    \"idContaDestino\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\",\n        \"sequenciaTitular\": 0\n    },\n    \"tipoContaOrigem\": 1,\n    \"tipoContaDestino\": 1,\n    \"descricao\": \"Teste\",\n    \"titularesOrigem\": [\n        {\n            \"nome\": \"FREDERICO SANTOS DO VALE\",\n            \"cpfCnpj\": \"004196665000016\",\n            \"numeroCic\": \"004196665000016\",\n            \"sequencia\": 1\n        }\n    ],\n    \"titularesDestino\": [\n        {\n            \"nome\": \"IGOR IURE SANTOS MACIEL\",\n            \"cpfCnpj\": \"839754625000015\",\n            \"numeroCic\": \"839754625000015\",\n            \"sequencia\": 1\n        }\n    ],\n    \"valor\": 0.5,\n    \"NSUCredito\": \"V000143\",\n    \"NSUDebito\": \"V000144\",\n    \"NTA\": \"V000144\"\n}"
             }
           ]
+        },
+        {
+          "_postman_id": "3558292-8c0fdeff-4b11-4543-9688-c8f02138bcfc",
+          "name": "/transferencia/ted/validacao",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"1230\",\n        \"numeroConta\": \"347795\",\n        \"banco\": \"01\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010000010\"\n   },\n   \"cpfCnpjDestino\": \"05477622750\",\n   \"tipoContaOrigem\": 1,\n   \"tipoContaDestino\": 2,\n   \"valor\": 1.23\n}"
+            },
+            "url": "{{url}}/transferencia/ted/validacao"
+          },
+          "response": [
+            {
+              "id": "3558292-9289358f-7343-4f42-ba71-833964f81afe",
+              "name": "/transferencia/ted/validacao",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"1230\",\n        \"numeroConta\": \"347795\",\n        \"banco\": \"01\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010000010\"\n   },\n   \"cpfCnpjDestino\": \"05477622750\",\n   \"tipoContaOrigem\": 1,\n   \"tipoContaDestino\": 2,\n   \"valor\": 1.23\n}"
+                },
+                "url": "{{url}}/transferencia/ted/validacao"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "218"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 11 Feb 2019 19:24:24 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010000010\"\n    },\n    \"idContaDestino\": {\n        \"banco\": \"01\",\n        \"agencia\": \"1230\",\n        \"numeroConta\": \"347795\"\n    },\n    \"tipoContaOrigem\": 1,\n    \"tipoContaDestino\": 2,\n    \"cpfCnpjDestino\": \"05477622750\",\n    \"valor\": 1.23\n}"
+            }
+          ]
+        },
+        {
+          "_postman_id": "3558292-ce2d08be-c861-40f6-b9b6-552f5592d9f6",
+          "name": "/transferencia/ted",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"1230\",\n        \"numeroConta\": \"347795\",\n        \"banco\": \"01\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010000010\"\n   },\n   \"cpfCnpjDestino\": \"05477622750\",\n   \"tipoContaOrigem\": 1,\n   \"tipoContaDestino\": 2,\n   \"valor\": 1.23\n}"
+            },
+            "url": "{{url}}/transferencia/ted"
+          },
+          "response": []
         }
       ]
     },
