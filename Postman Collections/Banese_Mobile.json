@@ -1122,7 +1122,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\",\n        \"banco\": \"19\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010859070\"\n   },\n   \"tipoContaOrigem\": 1,\n   \"tipoContaDestino\": 1,\n   \"cpfCnpjDestino\": \"06146223522\",\n   \"nomeTitularDestino\": \"Max\",\n   \"finalidade\": 1,\n   \"valor\": 55.55\n}"
+              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\",\n        \"banco\": \"19\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010859070\"\n   },\n   \"tipoContaOrigem\": 1,\n   \"tipoContaDestino\": 1,\n   \"cpfCnpjDestino\": \"06146223522\",\n   \"nomeTitularDestino\": \"ASDADQASD\",\n   \"finalidade\": 5,\n   \"valor\": 55.55\n}"
             },
             "url": "{{url}}/transferencia/ted"
           },
