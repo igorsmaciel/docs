@@ -1122,7 +1122,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\",\n        \"banco\": \"19\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010859070\"\n   },\n   \"tipoContaOrigem\": 1,\n   \"tipoContaDestino\": 1,\n   \"cpfCnpjDestino\": \"06146223522\",\n   \"nomeTitularDestino\": \"ASDADQASD\",\n   \"finalidade\": 5,\n   \"valor\": 55.55\n}"
+              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\",\n        \"banco\": \"19\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n   },\n   \"tipoContaOrigem\": 2,\n   \"tipoContaDestino\": 1,\n   \"cpfCnpjDestino\": \"04923027584\",\n   \"nomeTitularDestino\": \"Max\",\n   \"finalidade\": 5,\n   \"valor\": 3.21\n}"
             },
             "url": "{{url}}/transferencia/ted"
           },
@@ -1753,6 +1753,125 @@
             "url": "{{url}}/pagamentos/titulos"
           },
           "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "3558292-41a2ecee-9e18-4e6a-b980-76d908b40a34",
+      "name": "Bancos",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "3558292-e22bae8a-6ce0-4e4d-8409-0da1d80f1771",
+          "name": "/bancos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{url}}/bancos"
+          },
+          "response": [
+            {
+              "id": "3558292-b524a24b-02e6-4a41-aa3c-83dd84807b4d",
+              "name": "/bancos",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "{{url}}/bancos"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 14 Feb 2019 15:00:06 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"codigo\": \"001\",\n        \"codigoSpb\": \"00000000\",\n        \"nome\": \"BANCO DO BRASIL\"\n    },\n    {\n        \"codigo\": \"002\",\n        \"codigoSpb\": \"00038166\",\n        \"nome\": \"BANCO CENTRAL DO BRASIL\"\n    },\n    {\n        \"codigo\": \"003\",\n        \"codigoSpb\": \"04902979\",\n        \"nome\": \"BANCO DA AMAZONIA\"\n    },\n    {\n        \"codigo\": \"004\",\n        \"codigoSpb\": \"07237373\",\n        \"nome\": \"BANCO DO NORDESTE DO BRASIL\"\n    },\n    {\n        \"codigo\": \"010\",\n        \"codigoSpb\": \"81723108\",\n        \"nome\": \"CC CREDICOAMO\"\n    },\n    {\n        \"codigo\": \"017\",\n        \"codigoSpb\": \"42272526\",\n        \"nome\": \"BNY MELLON BANCO S.A\"\n    },\n    {\n        \"codigo\": \"018\",\n        \"codigoSpb\": \"57839805\",\n        \"nome\": \"BANCO TRICURY S.A\"\n    },\n    {\n        \"codigo\": \"019\",\n        \"codigoSpb\": \"09391857\",\n        \"nome\": \"BANCO AZTECA DO BRASIL S.A.\"\n    },\n    {\n        \"codigo\": \"021\",\n        \"codigoSpb\": \"28127603\",\n        \"nome\": \"BANESTES\"\n    },\n    {\n        \"codigo\": \"024\",\n        \"codigoSpb\": \"10866788\",\n        \"nome\": \"BANDEPE\"\n    },\n    {\n        \"codigo\": \"025\",\n        \"codigoSpb\": \"03323840\",\n        \"nome\": \"BANCO ALFA S.A.\"\n    },\n    {\n        \"codigo\": \"029\",\n        \"codigoSpb\": \"33885724\",\n        \"nome\": \"ITAU BMG CONSIGNADO\"\n    },\n    {\n        \"codigo\": \"033\",\n        \"codigoSpb\": \"90400888\",\n        \"nome\": \"BANCO SANTANDER BANESPA S.A.\"\n    },\n    {\n        \"codigo\": \"036\",\n        \"codigoSpb\": \"06271464\",\n        \"nome\": \"BANCO BRADESCO BBI S.A.\"\n    },\n    {\n        \"codigo\": \"037\",\n        \"codigoSpb\": \"04913711\",\n        \"nome\": \"BANPARA\"\n    },\n    {\n        \"codigo\": \"040\",\n        \"codigoSpb\": \"03609817\",\n        \"nome\": \"BANCO CARGILL S.A.\"\n    },\n    {\n        \"codigo\": \"041\",\n        \"codigoSpb\": \"92702067\",\n        \"nome\": \"BANRISUL\"\n    },\n    {\n        \"codigo\": \"047\",\n        \"codigoSpb\": \"13009717\",\n        \"nome\": \"BANCO DO ESTADO DE SERGIPE\"\n    },\n    {\n        \"codigo\": \"062\",\n        \"codigoSpb\": \"03012230\",\n        \"nome\": \"HIPERCARD BANCO MULTIPLO S.A.\"\n    },\n    {\n        \"codigo\": \"063\",\n        \"codigoSpb\": \"04184779\",\n        \"nome\": \"BANCO BRADESCARD S.A.\"\n    },\n    {\n        \"codigo\": \"065\",\n        \"codigoSpb\": \"48795256\",\n        \"nome\": \"BRACCE\"\n    },\n    {\n        \"codigo\": \"066\",\n        \"codigoSpb\": \"02801938\",\n        \"nome\": \"MORGAN STANLEY\"\n    },\n    {\n        \"codigo\": \"069\",\n        \"codigoSpb\": \"61033106\",\n        \"nome\": \"BPN BRASIL BANCO MULTIPLO S.A.\"\n    },\n    {\n        \"codigo\": \"070\",\n        \"codigoSpb\": \"00000208\",\n        \"nome\": \"BRB\"\n    },\n    {\n        \"codigo\": \"074\",\n        \"codigoSpb\": \"03017677\",\n        \"nome\": \"BANCO J. SAFRA S.A.\"\n    },\n    {\n        \"codigo\": \"075\",\n        \"codigoSpb\": \"03532415\",\n        \"nome\": \"ABN AMRO\"\n    },\n    {\n        \"codigo\": \"076\",\n        \"codigoSpb\": \"07656500\",\n        \"nome\": \"BANCO KDB DO BRASIL S.A.\"\n    },\n    {\n        \"codigo\": \"077\",\n        \"codigoSpb\": \"00416968\",\n        \"nome\": \"Banco Intermedium S.A\"\n    },\n    {\n        \"codigo\": \"078\",\n        \"codigoSpb\": \"34111187\",\n        \"nome\": \"BI BES- ESPIRITO SANTO\"\n    },\n    {\n        \"codigo\": \"079\",\n        \"codigoSpb\": \"09516419\",\n        \"nome\": \"ORIGINAL DO AGRONEGOCIO\"\n    },\n    {\n        \"codigo\": \"082\",\n        \"codigoSpb\": \"7679404 \",\n        \"nome\": \"BANCO TOPAZIO S.A.\"\n    },\n    {\n        \"codigo\": \"083\",\n        \"codigoSpb\": \"10690848\",\n        \"nome\": \"CHINA BRASIL\"\n    },\n    {\n        \"codigo\": \"084\",\n        \"codigoSpb\": \"02398976\",\n        \"nome\": \"UNIPRIME NORTE PARANA\"\n    },\n    {\n        \"codigo\": \"085\",\n        \"codigoSpb\": \"05463212\",\n        \"nome\": \"CC CECRED\"\n    },\n    {\n        \"codigo\": \"087\",\n        \"codigoSpb\": \"00543968\",\n        \"nome\": \"CC UNICRED SANTA CATARINA\"\n    },\n    {\n        \"codigo\": \"088\",\n        \"codigoSpb\": \"11476673\",\n        \"nome\": \"RANDON\"\n    },\n    {\n        \"codigo\": \"089\",\n        \"codigoSpb\": \"62109566\",\n        \"nome\": \"CC DA REGIÃO DA MOGIANA\"\n    },\n    {\n        \"codigo\": \"090\",\n        \"codigoSpb\": \"73085573\",\n        \"nome\": \"CC UNICRED CENTRAL SÃO PAULO\"\n    },\n    {\n        \"codigo\": \"091\",\n        \"codigoSpb\": \"01634601\",\n        \"nome\": \"CC UNICRED CENTRAL RS\"\n    },\n    {\n        \"codigo\": \"092\",\n        \"codigoSpb\": \"12865507\",\n        \"nome\": \"SCFI BRICKELL\"\n    },\n    {\n        \"codigo\": \"094\",\n        \"codigoSpb\": \"11758741\",\n        \"nome\": \"PETRA\"\n    },\n    {\n        \"codigo\": \"096\",\n        \"codigoSpb\": \"00997185\",\n        \"nome\": \"BANCO BM&F S.A.\"\n    },\n    {\n        \"codigo\": \"097\",\n        \"codigoSpb\": \"04632856\",\n        \"nome\": \"CC CENTRAL CREDI\"\n    },\n    {\n        \"codigo\": \"098\",\n        \"codigoSpb\": \"78157146\",\n        \"nome\": \"CC CREDIALIANÇA\"\n    },\n    {\n        \"codigo\": \"099\",\n        \"codigoSpb\": \"03046391\",\n        \"nome\": \"CC UNIPRIME CENTRAL\"\n    },\n    {\n        \"codigo\": \"102\",\n        \"codigoSpb\": \"02332886\",\n        \"nome\": \"SC XP INVESTIMENTOS\"\n    },\n    {\n        \"codigo\": \"104\",\n        \"codigoSpb\": \"00360305\",\n        \"nome\": \"CAIXA ECONÔMICA FEDERAL\"\n    },\n    {\n        \"codigo\": \"107\",\n        \"codigoSpb\": \"15114366\",\n        \"nome\": \"BBM\"\n    },\n    {\n        \"codigo\": \"108\",\n        \"codigoSpb\": \"01800019\",\n        \"nome\": \"SCFI PORTOCRED\"\n    },\n    {\n        \"codigo\": \"112\",\n        \"codigoSpb\": \"04243780\",\n        \"nome\": \"CC UNICRED BRASIL CENTRAL\"\n    },\n    {\n        \"codigo\": \"114\",\n        \"codigoSpb\": \"05790149\",\n        \"nome\": \"CC CECOOPES\"\n    },\n    {\n        \"codigo\": \"119\",\n        \"codigoSpb\": \"13720915\",\n        \"nome\": \"WESTERN UNION\"\n    },\n    {\n        \"codigo\": \"120\",\n        \"codigoSpb\": \"33603457\",\n        \"nome\": \"RODOBENS\"\n    },\n    {\n        \"codigo\": \"121\",\n        \"codigoSpb\": \"10664513\",\n        \"nome\": \"BANCO GERADOR\"\n    },\n    {\n        \"codigo\": \"122\",\n        \"codigoSpb\": \"33147315\",\n        \"nome\": \"BANCO BRADESCO BERJ S.A.\"\n    },\n    {\n        \"codigo\": \"124\",\n        \"codigoSpb\": \"15357060\",\n        \"nome\": \"WOORI BANK\"\n    },\n    {\n        \"codigo\": \"125\",\n        \"codigoSpb\": \"45246410\",\n        \"nome\": \"Brasil Plural S.A.\"\n    },\n    {\n        \"codigo\": \"132\",\n        \"codigoSpb\": \"17453575\",\n        \"nome\": \"ICBC DO BRASIL\"\n    },\n    {\n        \"codigo\": \"136\",\n        \"codigoSpb\": \"00315557\",\n        \"nome\": \"Unicred do Brasil\"\n    },\n    {\n        \"codigo\": \"184\",\n        \"codigoSpb\": \"17298092\",\n        \"nome\": \"Itaú BBA\"\n    },\n    {\n        \"codigo\": \"204\",\n        \"codigoSpb\": \"59438325\",\n        \"nome\": \"BRADESCO CARTOES\"\n    },\n    {\n        \"codigo\": \"208\",\n        \"codigoSpb\": \"30306294\",\n        \"nome\": \"BANCO BTG PACTUAL\"\n    },\n    {\n        \"codigo\": \"212\",\n        \"codigoSpb\": \"92894922\",\n        \"nome\": \"ORIGINAL\"\n    },\n    {\n        \"codigo\": \"213\",\n        \"codigoSpb\": \"54403563\",\n        \"nome\": \"BANCO ARBI\"\n    },\n    {\n        \"codigo\": \"214\",\n        \"codigoSpb\": \"61199881\",\n        \"nome\": \"BANCO DIBENS\"\n    },\n    {\n        \"codigo\": \"217\",\n        \"codigoSpb\": \"91884981\",\n        \"nome\": \"BANCO JOHN DEERE S.A.\"\n    },\n    {\n        \"codigo\": \"218\",\n        \"codigoSpb\": \"71027866\",\n        \"nome\": \"BANCO BONSUCESSO\"\n    },\n    {\n        \"codigo\": \"222\",\n        \"codigoSpb\": \"75647891\",\n        \"nome\": \"CREDIT AGRICOLE BRASIL\"\n    },\n    {\n        \"codigo\": \"224\",\n        \"codigoSpb\": \"58616418\",\n        \"nome\": \"BANCO FIBRA\"\n    },\n    {\n        \"codigo\": \"230\",\n        \"codigoSpb\": \"61071387\",\n        \"nome\": \"UNICARD BANCO MULTIPLO S.A.\"\n    },\n    {\n        \"codigo\": \"233\",\n        \"codigoSpb\": \"62421979\",\n        \"nome\": \"CIFRA\"\n    },\n    {\n        \"codigo\": \"237\",\n        \"codigoSpb\": \"60746948\",\n        \"nome\": \"BANCO BRADESCO\"\n    },\n    {\n        \"codigo\": \"241\",\n        \"codigoSpb\": \"31597552\",\n        \"nome\": \"BANCO CLASSICO\"\n    },\n    {\n        \"codigo\": \"243\",\n        \"codigoSpb\": \"33923798\",\n        \"nome\": \"BANCO STOCK MAXIMA\"\n    },\n    {\n        \"codigo\": \"246\",\n        \"codigoSpb\": \"28195667\",\n        \"nome\": \"BANCO ABC - BRASIL\"\n    },\n    {\n        \"codigo\": \"248\",\n        \"codigoSpb\": \"33485541\",\n        \"nome\": \"BANCO BOAVISTA INTERATLÂNTICO S.A.\"\n    },\n    {\n        \"codigo\": \"249\",\n        \"codigoSpb\": \"61182408\",\n        \"nome\": \"BANCO INVESTCRED\"\n    },\n    {\n        \"codigo\": \"250\",\n        \"codigoSpb\": \"50585090\",\n        \"nome\": \"BCV\"\n    },\n    {\n        \"codigo\": \"254\",\n        \"codigoSpb\": \"14388334\",\n        \"nome\": \"PARANÁ BANCO\"\n    },\n    {\n        \"codigo\": \"263\",\n        \"codigoSpb\": \"33349358\",\n        \"nome\": \"BANCO CACIQUE\"\n    },\n    {\n        \"codigo\": \"265\",\n        \"codigoSpb\": \"33644196\",\n        \"nome\": \"BANCO FATOR\"\n    },\n    {\n        \"codigo\": \"266\",\n        \"codigoSpb\": \"33132044\",\n        \"nome\": \"BANCO CEDULA\"\n    },\n    {\n        \"codigo\": \"300\",\n        \"codigoSpb\": \"33042151\",\n        \"nome\": \"BANCO NACION ARGENTINA\"\n    },\n    {\n        \"codigo\": \"318\",\n        \"codigoSpb\": \"61186680\",\n        \"nome\": \"BANCO BMG\"\n    },\n    {\n        \"codigo\": \"320\",\n        \"codigoSpb\": \"07450604\",\n        \"nome\": \"BANCO INDUSTRIAL E COMERCIAL\"\n    },\n    {\n        \"codigo\": \"341\",\n        \"codigoSpb\": \"60701190\",\n        \"nome\": \"BANCO ITAU\"\n    },\n    {\n        \"codigo\": \"366\",\n        \"codigoSpb\": \"61533584\",\n        \"nome\": \"BANCO SOCIETE GENERALE\"\n    },\n    {\n        \"codigo\": \"370\",\n        \"codigoSpb\": \"61088183\",\n        \"nome\": \"MIZUHO\"\n    },\n    {\n        \"codigo\": \"376\",\n        \"codigoSpb\": \"33172537\",\n        \"nome\": \"BANCO JP MORGAN\"\n    },\n    {\n        \"codigo\": \"389\",\n        \"codigoSpb\": \"17184037\",\n        \"nome\": \"BANCO MERCANTIL DO BRASIL\"\n    },\n    {\n        \"codigo\": \"394\",\n        \"codigoSpb\": \"07207996\",\n        \"nome\": \"BRADESCO FINANCIAMENTOS\"\n    },\n    {\n        \"codigo\": \"399\",\n        \"codigoSpb\": \"01701201\",\n        \"nome\": \"HSBC BANK BRASIL BCO MULTIPLO\"\n    },\n    {\n        \"codigo\": \"409\",\n        \"codigoSpb\": \"33700394\",\n        \"nome\": \"UNIBANCO\"\n    },\n    {\n        \"codigo\": \"412\",\n        \"codigoSpb\": \"15173776\",\n        \"nome\": \"BANCO CAPITAL\"\n    },\n    {\n        \"codigo\": \"422\",\n        \"codigoSpb\": \"58160789\",\n        \"nome\": \"BANCO SAFRA\"\n    },\n    {\n        \"codigo\": \"453\",\n        \"codigoSpb\": \"33124959\",\n        \"nome\": \"BANCO RURAL\"\n    },\n    {\n        \"codigo\": \"456\",\n        \"codigoSpb\": \"60498557\",\n        \"nome\": \"BANCO TOKYO - MITSUBISHI BRASIL\"\n    },\n    {\n        \"codigo\": \"464\",\n        \"codigoSpb\": \"60518222\",\n        \"nome\": \"BANCO SUMITOMO BRASILEIRO\"\n    },\n    {\n        \"codigo\": \"473\",\n        \"codigoSpb\": \"33466988\",\n        \"nome\": \"Banco Caixa Geral - Brasil S.A\"\n    },\n    {\n        \"codigo\": \"477\",\n        \"codigoSpb\": \"33042953\",\n        \"nome\": \"CITIBANK N.A.\"\n    },\n    {\n        \"codigo\": \"479\",\n        \"codigoSpb\": \"60394079\",\n        \"nome\": \"BANCO ITAUBANK S.A.\"\n    },\n    {\n        \"codigo\": \"487\",\n        \"codigoSpb\": \"62331228\",\n        \"nome\": \"DEUTSCHE BANCKS BCO ALEMÃO\"\n    },\n    {\n        \"codigo\": \"488\",\n        \"codigoSpb\": \"46518205\",\n        \"nome\": \"J. P. MORGAN CHASE BANK\"\n    },\n    {\n        \"codigo\": \"492\",\n        \"codigoSpb\": \"49336860\",\n        \"nome\": \"ING BANCK N.V.\"\n    },\n    {\n        \"codigo\": \"494\",\n        \"codigoSpb\": \"51938876\",\n        \"nome\": \"BANCO REPUB ORIENTAL DEL URUGUAY\"\n    },\n    {\n        \"codigo\": \"495\",\n        \"codigoSpb\": \"44189447\",\n        \"nome\": \"BANCO PROVINCIA DE BUENOS AIRES\"\n    },\n    {\n        \"codigo\": \"505\",\n        \"codigoSpb\": \"32062580\",\n        \"nome\": \"BANCO CREDIT SUISSE\"\n    },\n    {\n        \"codigo\": \"600\",\n        \"codigoSpb\": \"59118133\",\n        \"nome\": \"BANCO LUSO BRASILEIRO\"\n    },\n    {\n        \"codigo\": \"604\",\n        \"codigoSpb\": \"31895683\",\n        \"nome\": \"BANCO INDUSTRIAL DO BRASIL\"\n    },\n    {\n        \"codigo\": \"610\",\n        \"codigoSpb\": \"78626983\",\n        \"nome\": \"BANCO VR\"\n    },\n    {\n        \"codigo\": \"611\",\n        \"codigoSpb\": \"61820817\",\n        \"nome\": \"BANCO PAULISTA\"\n    },\n    {\n        \"codigo\": \"612\",\n        \"codigoSpb\": \"31880826\",\n        \"nome\": \"BANCO GUANABARA\"\n    },\n    {\n        \"codigo\": \"613\",\n        \"codigoSpb\": \"60850229\",\n        \"nome\": \"BANCO PECUNIA\"\n    },\n    {\n        \"codigo\": \"623\",\n        \"codigoSpb\": \"59285411\",\n        \"nome\": \"BANCO PANAMERICANO\"\n    },\n    {\n        \"codigo\": \"626\",\n        \"codigoSpb\": \"61348538\",\n        \"nome\": \"BANCO FICSA\"\n    },\n    {\n        \"codigo\": \"630\",\n        \"codigoSpb\": \"58497702\",\n        \"nome\": \"BANCO INTERCAP\"\n    },\n    {\n        \"codigo\": \"633\",\n        \"codigoSpb\": \"68900810\",\n        \"nome\": \"BANCO RENDIMENTO\"\n    },\n    {\n        \"codigo\": \"634\",\n        \"codigoSpb\": \"17351180\",\n        \"nome\": \"BANCO TRIANGULO\"\n    },\n    {\n        \"codigo\": \"637\",\n        \"codigoSpb\": \"60889128\",\n        \"nome\": \"BANCO SOFISA\"\n    },\n    {\n        \"codigo\": \"641\",\n        \"codigoSpb\": \"33870163\",\n        \"nome\": \"ALVORADA\"\n    },\n    {\n        \"codigo\": \"643\",\n        \"codigoSpb\": \"62144175\",\n        \"nome\": \"BANCO PINE\"\n    },\n    {\n        \"codigo\": \"652\",\n        \"codigoSpb\": \"60872504\",\n        \"nome\": \"BANCO ITAÚ HOLDING FINANCEIRA S.A.\"\n    },\n    {\n        \"codigo\": \"653\",\n        \"codigoSpb\": \"61024352\",\n        \"nome\": \"BANCO INDUSVAL\"\n    },\n    {\n        \"codigo\": \"654\",\n        \"codigoSpb\": \"92874270\",\n        \"nome\": \"BANCO A J RENNER\"\n    },\n    {\n        \"codigo\": \"655\",\n        \"codigoSpb\": \"59588111\",\n        \"nome\": \"BANCO VOTORANTIM\"\n    },\n    {\n        \"codigo\": \"707\",\n        \"codigoSpb\": \"62232889\",\n        \"nome\": \"BANCO DAYCOVAL\"\n    },\n    {\n        \"codigo\": \"719\",\n        \"codigoSpb\": \"33884941\",\n        \"nome\": \"BANIF\"\n    },\n    {\n        \"codigo\": \"735\",\n        \"codigoSpb\": \"00253448\",\n        \"nome\": \"BANCO POTENCIAL\"\n    },\n    {\n        \"codigo\": \"739\",\n        \"codigoSpb\": \"00558456\",\n        \"nome\": \"BANCO BGN S.A.\"\n    },\n    {\n        \"codigo\": \"740\",\n        \"codigoSpb\": \"61146577\",\n        \"nome\": \"BANCO BARCLAYS E\"\n    },\n    {\n        \"codigo\": \"741\",\n        \"codigoSpb\": \"00517645\",\n        \"nome\": \"BANCO BRP-BANCO RIBEIRÃO PRETO\"\n    },\n    {\n        \"codigo\": \"743\",\n        \"codigoSpb\": \"00795423\",\n        \"nome\": \"BANCO SEMEAR S.A.\"\n    },\n    {\n        \"codigo\": \"745\",\n        \"codigoSpb\": \"33479023\",\n        \"nome\": \"CITIBANK\"\n    },\n    {\n        \"codigo\": \"746\",\n        \"codigoSpb\": \"30723886\",\n        \"nome\": \"BANCO MODAL\"\n    },\n    {\n        \"codigo\": \"747\",\n        \"codigoSpb\": \"01023570\",\n        \"nome\": \"BANCO RAIOBANK INTERNACIONAL BRASIL\"\n    },\n    {\n        \"codigo\": \"748\",\n        \"codigoSpb\": \"01181521\",\n        \"nome\": \"BANCO COOPERATIVO SICREDI\"\n    },\n    {\n        \"codigo\": \"751\",\n        \"codigoSpb\": \"29030467\",\n        \"nome\": \"SCOTIABANK BRASIL S.A.\"\n    },\n    {\n        \"codigo\": \"752\",\n        \"codigoSpb\": \"01522368\",\n        \"nome\": \"BNP PARIBAS BRASIL\"\n    },\n    {\n        \"codigo\": \"753\",\n        \"codigoSpb\": \"74828799\",\n        \"nome\": \"NOVO BANCO CONTINENTAL\"\n    },\n    {\n        \"codigo\": \"755\",\n        \"codigoSpb\": \"62073200\",\n        \"nome\": \"BANK OF AMERICA MERRILL LYNCH\"\n    },\n    {\n        \"codigo\": \"756\",\n        \"codigoSpb\": \"02038232\",\n        \"nome\": \"BANCO COOPERATIVO DO BRASIL\"\n    },\n    {\n        \"codigo\": \"757\",\n        \"codigoSpb\": \"02318507\",\n        \"nome\": \"BANCO KEB DO BRASIL\"\n    }\n]"
+            }
+          ]
+        },
+        {
+          "_postman_id": "3558292-01f3cd74-2464-4c12-97d0-1ab38f824bbb",
+          "name": "/bancos/{numero_ou_ispb}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{url}}/bancos/001"
+          },
+          "response": [
+            {
+              "id": "3558292-14b0d9bf-8b01-44b9-b9d7-9912eb5ac23e",
+              "name": "/bancos/{numero_ou_ispb}",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "{{url}}/bancos/001"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "64"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 14 Feb 2019 15:00:01 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"codigo\": \"001\",\n    \"codigoSpb\": \"00000000\",\n    \"nome\": \"BANCO DO BRASIL\"\n}"
+            }
+          ]
         }
       ]
     }
