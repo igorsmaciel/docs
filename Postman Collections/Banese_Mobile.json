@@ -1122,11 +1122,60 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\",\n        \"banco\": \"19\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n   },\n   \"tipoContaOrigem\": 2,\n   \"tipoContaDestino\": 1,\n   \"cpfCnpjDestino\": \"04923027584\",\n   \"nomeTitularDestino\": \"Max\",\n   \"finalidade\": 5,\n   \"valor\": 3.21\n}"
+              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\",\n        \"banco\": \"19\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n   },\n   \"tipoContaOrigem\": 2,\n   \"tipoContaDestino\": 1,\n   \"cpfCnpjDestino\": \"04923027584\",\n   \"nomeTitularDestino\": \"Max\",\n   \"finalidade\": 1,\n   \"valor\": 4.56\n}"
             },
             "url": "{{url}}/transferencia/ted"
           },
-          "response": []
+          "response": [
+            {
+              "id": "3558292-6b1529fd-a759-4b94-aa01-4d3043b9e3e2",
+              "name": "/transferencia/ted",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\",\n        \"banco\": \"19\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n   },\n   \"tipoContaOrigem\": 2,\n   \"tipoContaDestino\": 1,\n   \"cpfCnpjDestino\": \"04923027584\",\n   \"nomeTitularDestino\": \"Max\",\n   \"finalidade\": 1,\n   \"valor\": 4.56\n}"
+                },
+                "url": "{{url}}/transferencia/ted"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "280"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 14 Feb 2019 18:37:29 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"idContaDestino\": {\n        \"banco\": \"19\",\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\"\n    },\n    \"tipoContaOrigem\": 2,\n    \"tipoContaDestino\": 1,\n    \"finalidade\": 1,\n    \"cpfCnpjDestino\": \"04923027584\",\n    \"nomeTitularDestino\": \"Max\",\n    \"valor\": 4.56,\n    \"NTA\": \"V000063\"\n}"
+            }
+          ]
         }
       ]
     },
