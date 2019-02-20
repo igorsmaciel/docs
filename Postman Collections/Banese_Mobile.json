@@ -1923,6 +1923,60 @@
           ]
         }
       ]
+    },
+    {
+      "_postman_id": "3558292-9761506d-1ecc-4442-90af-a5695b01250c",
+      "name": "Auth",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "3558292-1df6f0ef-325d-490c-850e-26fc2186317b",
+          "name": "/autenticacao/token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "2030286f-5759-45a1-985e-217c74e9d4bb",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "pm.environment.set(\"token\", jsonData.access_token);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "username",
+                  "value": "039_010021456_1",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "mqwvX5smwrmYYsfG9Vje4s9pKh9bx6voT2Ul5R0KWkY/nOOgvYRsLCeIgyz4vTT9qcptYXT7pXo1HUkjXJL98ZnDF36De5GanNcEEx4LEHz6K7WrRsk+jD3iRt73AUbQznNxzFNYfG/tQ5r1VkTOSFBDJOQi1feS6vyS2Lj7g7gIaV4mCPoOKhXrz9hGi81KuUTjlt7m7/ICIjYljg9foW07qOzjr5BaZZ+NzCQmfiTUj8lFe3LupCxOdv6Xyer5rdX1UorCapnwbsBPFOHIfO56W7z5MLjKNr2KDkrRKPBmED0PMgkFgewvUPwEdtGrq6I968lrvEEzURr8++KSIg==",
+                  "description": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "https://mbhg.banese.b.br:8443/mobile/v1/autenticacao/token"
+          },
+          "response": []
+        }
+      ]
     }
   ]
 }
