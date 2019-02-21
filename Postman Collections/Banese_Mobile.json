@@ -943,7 +943,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": 039,\n        \"numeroConta\": 010021456\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010000010\"\n   },\n   \"tipoContaOrigem\": 1,\n   \"tipoContaDestino\": 2\n}"
+              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"015\",\n        \"numeroConta\": \"010000010\"\n   },\n   \"tipoContaOrigem\": 1,\n   \"tipoContaDestino\": 2\n}"
             },
             "url": "{{url}}/transferencia/interna/validacao"
           },
