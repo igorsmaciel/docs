@@ -1176,6 +1176,82 @@
               "body": "{\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"idContaDestino\": {\n        \"banco\": \"19\",\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\"\n    },\n    \"tipoContaOrigem\": 2,\n    \"tipoContaDestino\": 1,\n    \"finalidade\": 1,\n    \"cpfCnpjDestino\": \"04923027584\",\n    \"nomeTitularDestino\": \"Max\",\n    \"valor\": 4.56,\n    \"NTA\": \"V000063\"\n}"
             }
           ]
+        },
+        {
+          "_postman_id": "3558292-f411334b-4a47-426e-9746-52508c52f983",
+          "name": "/transferencia/doc/validacao",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{token}}"
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\",\n        \"banco\": \"19\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n   },\n   \"tipoContaOrigem\": 1,\n   \"cpfCnpjDestino\": \"04923027584\",\n   \"nomeTitularDestino\": \"Max\",\n   \"mesmaTitularidade\": false,\n   \"finalidade\": 1,\n   \"valor\": 4.56\n}"
+            },
+            "url": "{{url}}/transferencia/doc/validacao"
+          },
+          "response": [
+            {
+              "id": "3558292-f68af92e-c84f-4caf-85d5-0eeb0dfeb62d",
+              "name": "/transferencia/doc/validacao",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\",\n        \"banco\": \"19\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n   },\n   \"tipoContaOrigem\": 1,\n   \"cpfCnpjDestino\": \"04923027584\",\n   \"nomeTitularDestino\": \"Max\",\n   \"mesmaTitularidade\": false,\n   \"finalidade\": 1,\n   \"valor\": 4.56\n}"
+                },
+                "url": "{{url}}/transferencia/doc/validacao"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "337"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 21 Feb 2019 20:04:30 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"idContaDestino\": {\n        \"banco\": \"19\",\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\"\n    },\n    \"tipoContaOrigem\": 1,\n    \"tipoContaDestino\": 1,\n    \"finalidade\": 1,\n    \"cpfCnpjDestino\": \"04923027584\",\n    \"nomeTitular1Origem\": \"IGOR IURE SANTOS MACIEL\",\n    \"nomeTitularDestino\": \"Max\",\n    \"valor\": 4.56,\n    \"mesmaTitularidade\": false\n}"
+            }
+          ]
         }
       ]
     },
