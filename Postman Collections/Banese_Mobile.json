@@ -1252,6 +1252,27 @@
               "body": "{\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"idContaDestino\": {\n        \"banco\": \"19\",\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\"\n    },\n    \"tipoContaOrigem\": 1,\n    \"tipoContaDestino\": 1,\n    \"finalidade\": 1,\n    \"cpfCnpjDestino\": \"04923027584\",\n    \"nomeTitular1Origem\": \"IGOR IURE SANTOS MACIEL\",\n    \"nomeTitularDestino\": \"Max\",\n    \"valor\": 4.56,\n    \"mesmaTitularidade\": false\n}"
             }
           ]
+        },
+        {
+          "_postman_id": "3558292-8960a9a6-7e0f-4e69-80ba-fa9158c8c327",
+          "name": "/transferencia/doc",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"idContaDestino\": {\n        \"agencia\": \"6546\",\n        \"numeroConta\": \"6516565656\",\n        \"banco\": \"19\"\n    },\n    \"idContaOrigem\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n   },\n   \"tipoContaOrigem\": 1,\n   \"cpfCnpjDestino\": \"04923027584\",\n   \"nomeTitularDestino\": \"Max\",\n   \"mesmaTitularidade\": false,\n   \"finalidade\": 1,\n   \"descricao\": \"Teste DOC\",\n   \"valor\": 4.56\n}"
+            },
+            "url": "{{url}}/transferencia/doc"
+          },
+          "response": []
         }
       ]
     },
