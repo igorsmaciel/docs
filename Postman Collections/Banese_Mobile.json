@@ -1833,7 +1833,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{url}}/pagamentos/titulos/75698779600050000001306601017321500302060023"
+            "url": "{{url}}/pagamentos/titulos/03395780300001091019201551000261816891230102"
           },
           "response": [
             {
@@ -1894,11 +1894,60 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"recebimentoTitulo\": {\n        \"valorNominal\": 50000,\n        \"valorRecebimento\": 50000,\n        \"valorJuros\": 0,\n        \"valorMulta\": 0,\n        \"valorDesconto\": 0,\n        \"valorAbatimento\": 0,\n        \"codigoBarras\": \"75698779600050000001306601017321500302060023\",\n        \"linhaDigitavel\": \"75691306640101732150403020600239877960005000000\",\n        \"idConsulta\": 43483,\n        \"beneficiario\": {\n            \"nome\": \"CRISTIANO RONALDO\",\n            \"nomeFantasia\": \"Edner\",\n            \"cpfCnpj\": \"007912816000130\",\n            \"tipoPessoa\": \"J\"\n        },\n        \"pagador\": {\n            \"nome\": \"000099 - MICHELI APARECIDA BANDEIRA\",\n            \"cpfCnpj\": \"05860912978\",\n            \"tipoPessoa\": \"F\"\n        },\n        \"codigoBanco\": \"756\",\n        \"vencimento\": \"2019-02-10T00:00:00-0300\",\n        \"descricao\": \"teste\"\n    }\n}"
+              "raw": "{\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"recebimentoTitulo\": {\n        \"valorNominal\": 1091.01,\n        \"valorRecebimento\": 1091.01,\n        \"valorJuros\": 0,\n        \"valorMulta\": 0,\n        \"valorDesconto\": 0,\n        \"valorAbatimento\": 0,\n        \"codigoBarras\": \"03395780300001091019201551000261816891230102\",\n        \"linhaDigitavel\": \"03399201595100026181168912301022578030000109101\",\n        \"idConsulta\": 43678,\n        \"beneficiario\": {\n            \"nome\": \"CRISTIANO RONALDO\",\n            \"nomeFantasia\": \"Edner\",\n            \"cpfCnpj\": \"007912816000130\",\n            \"tipoPessoa\": \"J\"\n        },\n        \"pagador\": {\n            \"nome\": \"000099 - MICHELI APARECIDA BANDEIRA\",\n            \"cpfCnpj\": \"05860912978\",\n            \"tipoPessoa\": \"F\"\n        },\n        \"codigoBanco\": \"756\",\n        \"vencimento\": \"2019-02-10T00:00:00-0300\",\n        \"descricao\": \"teste\"\n    }\n}"
             },
             "url": "{{url}}/pagamentos/titulos"
           },
-          "response": []
+          "response": [
+            {
+              "id": "3558292-540a34de-dd10-474d-910a-ad4dc8dd4cd1",
+              "name": "/pagamentos/titulos",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"recebimentoTitulo\": {\n        \"valorNominal\": 1091.01,\n        \"valorRecebimento\": 1091.01,\n        \"valorJuros\": 0,\n        \"valorMulta\": 0,\n        \"valorDesconto\": 0,\n        \"valorAbatimento\": 0,\n        \"codigoBarras\": \"03395780300001091019201551000261816891230102\",\n        \"linhaDigitavel\": \"03399201595100026181168912301022578030000109101\",\n        \"idConsulta\": 43678,\n        \"beneficiario\": {\n            \"nome\": \"CRISTIANO RONALDO\",\n            \"nomeFantasia\": \"Edner\",\n            \"cpfCnpj\": \"007912816000130\",\n            \"tipoPessoa\": \"J\"\n        },\n        \"pagador\": {\n            \"nome\": \"000099 - MICHELI APARECIDA BANDEIRA\",\n            \"cpfCnpj\": \"05860912978\",\n            \"tipoPessoa\": \"F\"\n        },\n        \"codigoBanco\": \"756\",\n        \"vencimento\": \"2019-02-10T00:00:00-0300\",\n        \"descricao\": \"teste\"\n    }\n}"
+                },
+                "url": "{{url}}/pagamentos/titulos"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "930"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 28 Feb 2019 17:38:36 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"pagadorFinal\": {\n        \"numeroCic\": \"839754625000015\",\n        \"sequencia\": 1,\n        \"nome\": \"IGOR IURE SANTOS MACIEL\",\n        \"cpfCnpj\": \"83975462515\"\n    },\n    \"nomeTitular1\": \"IGOR IURE SANTOS MACIEL\",\n    \"idSeguranca\": {\n        \"agenciaOrigem\": \"988\",\n        \"dataReferencia\": \"2019-02-18T00:00:00-0300\",\n        \"dataTransacao\": \"2019-02-28T14:38:21-0300\",\n        \"nsu\": \"0003d01\",\n        \"postoOrigem\": \"01\"\n    },\n    \"valorRecebimento\": 1091.01,\n    \"descricao\": \"teste\",\n    \"beneficiario\": {\n        \"nome\": \"CRISTIANO RONALDO\",\n        \"nomeFantasia\": \"Edner\",\n        \"cpfCnpj\": \"007912816000130\",\n        \"tipoPessoa\": \"J\"\n    },\n    \"pagador\": {\n        \"nome\": \"000099 - MICHELI APARECIDA BANDEIRA\",\n        \"cpfCnpj\": \"05860912978\",\n        \"tipoPessoa\": \"F\"\n    },\n    \"valorNominal\": 1091.01,\n    \"valorJuros\": 0,\n    \"valorMulta\": 0,\n    \"valorDesconto\": 0,\n    \"valorAbatimento\": 0,\n    \"codigoBarras\": \"03395780300001091019201551000261816891230102\",\n    \"linhaDigitavel\": \"03399201595100026181168912301022578030000109101\",\n    \"codigoBanco\": \"756\",\n    \"idConsulta\": 43678,\n    \"vencimento\": \"2019-02-10T00:00:00-0300\"\n}"
+            }
+          ]
         }
       ]
     },
