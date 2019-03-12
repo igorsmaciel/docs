@@ -2123,6 +2123,34 @@
           "response": []
         }
       ]
+    },
+    {
+      "_postman_id": "3558292-ca446af1-b710-47a7-819b-d69b859844e5",
+      "name": "Credito",
+      "description": null,
+      "item": [
+        {
+          "_postman_id": "3558292-1bd0b42d-5705-4869-8cb6-593099f4b9a4",
+          "name": "/creditos/rapido",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"consignado\": \"false\",\r\n    \"mesesCarencia\": 0,\r\n    \"numeroParcelas\": 72,\r\n    \"valorCarencia\": 316.34,\r\n    \"valorContrato\": 65449.59,\r\n    \"valorParcela\": 1525.96,\r\n    \"cetAno\": 20.39,\r\n    \"cetMes\": 1.5585,\r\n    \"codigoCalculoJuros\": 1,\r\n    \"iofAdicional\": 248.7085,\r\n    \"iofNormal\": 1896.54,\r\n    \"iofTotal\": 2145.2485,\r\n    \"jurosAno\": 18.86,\r\n    \"jurosMes\": 1.45,\r\n    \"seguro\": {\r\n        \"idContaCredito\": {\r\n            \"agencia\": 29,\r\n            \"numeroConta\": 31030449\r\n        },\r\n        \"parcelaUnica\": \"false\",\r\n        \"valor\": 0.16,\r\n        \"valorParcela\": 104.719344\r\n    },\r\n    \"tac\": 0,\r\n    \"tacAdicional\": 0,\r\n    \"tcir\": 0,\r\n    \"vencimentoContrato\": \"2025-02-17T00:00:00\",\r\n    \"vencimentoParcela1\": \"2019-03-17T00:00:00\",\r\n    \"codigoCarencia\": \"D\",\r\n    \"codigoConvenio\": 7566,\r\n    \"cpfCnpj\": 83975462515,\r\n    \"fontePagadora\": {\r\n        \"codigo\": \"013009717000146\",\r\n        \"nome\": \"BANCO DO ESTADO DE SERGIPE S.A.\"\r\n    },\r\n    \"idConta\": {\r\n        \"agencia\": \"039\",\r\n        \"numeroConta\": \"010021456\"\r\n    },\r\n    \"linhaCredito\": {\r\n        \"codigo\": 4402,\r\n        \"nome\": \"CREDI-RAPIDO VEICULOS\"\r\n    },\r\n    \"matricula\": 83975462515,\r\n    \"numeroMaximoParcelas\": 72,\r\n    \"numeroParcela13Salario\": 0,\r\n    \"numeroTitular\": 1,\r\n    \"taxaIofAdicional\": 0.0082000000000000007,\r\n    \"taxaIofNormal\": 0.0082000000000000007,\r\n    \"valorMaximoCredito\": 65449.59,\r\n    \"valorMaximoParcela\": 1528.12\r\n}"
+            },
+            "url": "{{url}}/creditos/rapido"
+          },
+          "response": []
+        }
+      ]
     }
   ]
 }
