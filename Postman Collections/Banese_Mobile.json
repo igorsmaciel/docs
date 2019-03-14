@@ -2144,11 +2144,60 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"consignado\": \"false\",\r\n    \"mesesCarencia\": 0,\r\n    \"numeroParcelas\": 72,\r\n    \"valorCarencia\": 316.34,\r\n    \"valorContrato\": 65449.59,\r\n    \"valorParcela\": 1525.96,\r\n    \"cetAno\": 20.39,\r\n    \"cetMes\": 1.5585,\r\n    \"codigoCalculoJuros\": 1,\r\n    \"iofAdicional\": 248.7085,\r\n    \"iofNormal\": 1896.54,\r\n    \"iofTotal\": 2145.2485,\r\n    \"jurosAno\": 18.86,\r\n    \"jurosMes\": 1.45,\r\n    \"seguro\": {\r\n        \"idContaCredito\": {\r\n            \"agencia\": 29,\r\n            \"numeroConta\": 31030449\r\n        },\r\n        \"parcelaUnica\": \"false\",\r\n        \"valor\": 0.16,\r\n        \"valorParcela\": 104.719344\r\n    },\r\n    \"tac\": 0,\r\n    \"tacAdicional\": 0,\r\n    \"tcir\": 0,\r\n    \"vencimentoContrato\": \"2025-02-17T00:00:00\",\r\n    \"vencimentoParcela1\": \"2019-03-17T00:00:00\",\r\n    \"codigoCarencia\": \"D\",\r\n    \"codigoConvenio\": 7566,\r\n    \"cpfCnpj\": 83975462515,\r\n    \"fontePagadora\": {\r\n        \"codigo\": \"013009717000146\",\r\n        \"nome\": \"BANCO DO ESTADO DE SERGIPE S.A.\"\r\n    },\r\n    \"idConta\": {\r\n        \"agencia\": \"039\",\r\n        \"numeroConta\": \"010021456\"\r\n    },\r\n    \"linhaCredito\": {\r\n        \"codigo\": 4402,\r\n        \"nome\": \"CREDI-RAPIDO VEICULOS\"\r\n    },\r\n    \"matricula\": 83975462515,\r\n    \"numeroMaximoParcelas\": 72,\r\n    \"numeroParcela13Salario\": 0,\r\n    \"numeroTitular\": 1,\r\n    \"taxaIofAdicional\": 0.0082000000000000007,\r\n    \"taxaIofNormal\": 0.0082000000000000007,\r\n    \"valorMaximoCredito\": 65449.59,\r\n    \"valorMaximoParcela\": 1528.12\r\n}"
+              "raw": "{\r\n    \"consignado\": false,\r\n    \"mesesCarencia\": 0,\r\n    \"numeroParcelas\": 4,\r\n    \"valorCarencia\": 5.28,\r\n    \"valorContrato\": 1041.25,\r\n    \"valorParcela\": 276.91,\r\n    \"cetAno\": 31.56,\r\n    \"cetMes\": 2.312,\r\n    \"codigoCalculoJuros\": 1,\r\n    \"iofAdicional\": 3.9568,\r\n    \"iofNormal\": 6.49,\r\n    \"iofTotal\": 10.4468,\r\n    \"jurosAno\": 25.34,\r\n    \"jurosMes\": 1.9,\r\n    \"tac\": 0,\r\n    \"tacAdicional\": 0,\r\n    \"tcir\": 0,\r\n    \"vencimentoContrato\": \"2019-06-15T00:00:00-03:00\",\r\n    \"vencimentoParcela1\": \"2019-03-15T00:00:00-03:00\",\r\n    \"codigoCarencia\": \"D\",\r\n    \"codigoConvenio\": 6066,\r\n    \"cpfCnpj\": 83975462515,\r\n    \"fontePagadora\": {\r\n        \"codigo\": \"010436979000107\"\r\n    },\r\n    \"idConta\": {\r\n        \"agencia\": \"039\",\r\n        \"numeroConta\": \"010021456\"\r\n    },\r\n    \"linhaCredito\": {\r\n        \"codigo\": 3602\r\n    },\r\n    \"matricula\": 83975462515,\r\n    \"numeroMaximoParcelas\": 4,\r\n    \"numeroParcela13Salario\": 2,\r\n    \"numeroTitular\": 1,\r\n    \"taxaIofAdicional\": 0.38,\r\n    \"taxaIofNormal\": 0.0082,\r\n    \"valorMaximoCredito\": 1041.25,\r\n    \"valorMaximoParcela\": 276.98\r\n}"
             },
             "url": "{{url}}/creditos/rapido"
           },
-          "response": []
+          "response": [
+            {
+              "id": "3558292-e9bfefff-fc8f-423d-8c64-011b3412e4ae",
+              "name": "/creditos/rapido",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"consignado\": false,\r\n    \"mesesCarencia\": 0,\r\n    \"numeroParcelas\": 4,\r\n    \"valorCarencia\": 5.28,\r\n    \"valorContrato\": 1041.25,\r\n    \"valorParcela\": 276.91,\r\n    \"cetAno\": 31.56,\r\n    \"cetMes\": 2.312,\r\n    \"codigoCalculoJuros\": 1,\r\n    \"iofAdicional\": 3.9568,\r\n    \"iofNormal\": 6.49,\r\n    \"iofTotal\": 10.4468,\r\n    \"jurosAno\": 25.34,\r\n    \"jurosMes\": 1.9,\r\n    \"tac\": 0,\r\n    \"tacAdicional\": 0,\r\n    \"tcir\": 0,\r\n    \"vencimentoContrato\": \"2019-06-15T00:00:00-03:00\",\r\n    \"vencimentoParcela1\": \"2019-03-15T00:00:00-03:00\",\r\n    \"codigoCarencia\": \"D\",\r\n    \"codigoConvenio\": 6066,\r\n    \"cpfCnpj\": 83975462515,\r\n    \"fontePagadora\": {\r\n        \"codigo\": \"010436979000107\"\r\n    },\r\n    \"idConta\": {\r\n        \"agencia\": \"039\",\r\n        \"numeroConta\": \"010021456\"\r\n    },\r\n    \"linhaCredito\": {\r\n        \"codigo\": 3602\r\n    },\r\n    \"matricula\": 83975462515,\r\n    \"numeroMaximoParcelas\": 4,\r\n    \"numeroParcela13Salario\": 2,\r\n    \"numeroTitular\": 1,\r\n    \"taxaIofAdicional\": 0.38,\r\n    \"taxaIofNormal\": 0.0082,\r\n    \"valorMaximoCredito\": 1041.25,\r\n    \"valorMaximoParcela\": 276.98\r\n}"
+                },
+                "url": "{{url}}/creditos/rapido"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1070"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 13 Mar 2019 18:15:01 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"fontePagadora\": {\n        \"codigo\": \"010436979000107\",\n        \"nome\": \"FUNDAÇÃO HOSPITALAR DE SAÚDE - SE\"\n    },\n    \"linhaCredito\": {\n        \"codigo\": 3602,\n        \"nome\": \"CREDI-RAPIDO 13º SALARIO PARC (2ª Parc.)\"\n    },\n    \"identificacao\": {\n        \"agenciaOrigem\": \"988\",\n        \"dataReferencia\": \"2019-02-18T00:00:00-0300\",\n        \"dataTransacao\": \"2019-03-13T15:14:59-0300\",\n        \"nsu\": \"0007901\",\n        \"nta\": \"V000121\",\n        \"postoOrigem\": \"01\"\n    },\n    \"consignado\": false,\n    \"mesesCarencia\": 0,\n    \"numeroParcelas\": 4,\n    \"codigoCalculoJuros\": 1,\n    \"numeroMaximoParcelas\": 4,\n    \"numeroParcela13Salario\": 2,\n    \"numeroTitular\": 1,\n    \"valorCarencia\": 5.28,\n    \"valorContrato\": 1041.25,\n    \"valorParcela\": 276.91,\n    \"cetAno\": 31.56,\n    \"cetMes\": 2.312,\n    \"iofAdicional\": 3.9568,\n    \"iofNormal\": 6.49,\n    \"iofTotal\": 10.4468,\n    \"jurosAno\": 25.34,\n    \"jurosMes\": 1.9,\n    \"tac\": 0,\n    \"tacAdicional\": 0,\n    \"tcir\": 0,\n    \"taxaIofAdicional\": 0.38,\n    \"taxaIofNormal\": 0.0082,\n    \"valorMaximoCredito\": 1041.25,\n    \"valorMaximoParcela\": 276.98,\n    \"vencimentoContrato\": \"2019-06-15T00:00:00-0300\",\n    \"vencimentoParcela1\": \"2019-03-15T00:00:00-0300\",\n    \"codigoCarencia\": \"D\",\n    \"codigoConvenio\": \"6066\",\n    \"cpfCnpj\": \"83975462515\",\n    \"matricula\": 83975462515\n}"
+            }
+          ]
         }
       ]
     }
