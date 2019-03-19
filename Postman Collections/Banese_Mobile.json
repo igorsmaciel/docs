@@ -2198,6 +2198,47 @@
               "body": "{\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"fontePagadora\": {\n        \"codigo\": \"010436979000107\",\n        \"nome\": \"FUNDAÇÃO HOSPITALAR DE SAÚDE - SE\"\n    },\n    \"linhaCredito\": {\n        \"codigo\": 3602,\n        \"nome\": \"CREDI-RAPIDO 13º SALARIO PARC (2ª Parc.)\"\n    },\n    \"identificacao\": {\n        \"agenciaOrigem\": \"988\",\n        \"dataReferencia\": \"2019-02-18T00:00:00-0300\",\n        \"dataTransacao\": \"2019-03-13T15:14:59-0300\",\n        \"nsu\": \"0007901\",\n        \"nta\": \"V000121\",\n        \"postoOrigem\": \"01\"\n    },\n    \"consignado\": false,\n    \"mesesCarencia\": 0,\n    \"numeroParcelas\": 4,\n    \"codigoCalculoJuros\": 1,\n    \"numeroMaximoParcelas\": 4,\n    \"numeroParcela13Salario\": 2,\n    \"numeroTitular\": 1,\n    \"valorCarencia\": 5.28,\n    \"valorContrato\": 1041.25,\n    \"valorParcela\": 276.91,\n    \"cetAno\": 31.56,\n    \"cetMes\": 2.312,\n    \"iofAdicional\": 3.9568,\n    \"iofNormal\": 6.49,\n    \"iofTotal\": 10.4468,\n    \"jurosAno\": 25.34,\n    \"jurosMes\": 1.9,\n    \"tac\": 0,\n    \"tacAdicional\": 0,\n    \"tcir\": 0,\n    \"taxaIofAdicional\": 0.38,\n    \"taxaIofNormal\": 0.0082,\n    \"valorMaximoCredito\": 1041.25,\n    \"valorMaximoParcela\": 276.98,\n    \"vencimentoContrato\": \"2019-06-15T00:00:00-0300\",\n    \"vencimentoParcela1\": \"2019-03-15T00:00:00-0300\",\n    \"codigoCarencia\": \"D\",\n    \"codigoConvenio\": \"6066\",\n    \"cpfCnpj\": \"83975462515\",\n    \"matricula\": 83975462515\n}"
             }
           ]
+        },
+        {
+          "_postman_id": "3558292-1744a14f-cb02-4734-984f-f006b4a8d130",
+          "name": "/creditos/rapido/simulacoes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/creditos/rapido/simulacoes?agencia=039&numeroConta=10021456&sequenciaTitular=1",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "creditos",
+                "rapido",
+                "simulacoes"
+              ],
+              "query": [
+                {
+                  "key": "agencia",
+                  "value": "039",
+                  "type": "text"
+                },
+                {
+                  "key": "numeroConta",
+                  "value": "10021456",
+                  "type": "text"
+                },
+                {
+                  "key": "sequenciaTitular",
+                  "value": "1",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ]
     }
