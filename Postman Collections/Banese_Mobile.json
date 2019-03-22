@@ -2241,6 +2241,55 @@
           "response": []
         }
       ]
+    },
+    {
+      "_postman_id": "3558292-0bdaa949-8b75-4f18-9014-7bc585716e1c",
+      "name": "Utils",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "3558292-a42de80a-7c59-4cbf-b277-a621d902dc85",
+          "name": "/utils/encrypt",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"valor\": \"Braynner\",\n\t\"chave\": \"!@#$MySecr3tPassw0rd\"\n}"
+            },
+            "url": "{{url}}/utils/encrypt"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "3558292-9005fb82-da0a-4600-a98e-c7c23159d19c",
+          "name": "/utils/decrypt",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"valor\": \"LslmO5CAkuckd6vrjze2Rg==\",\n    \"chave\": \"!@#$MySecr3tPassw0rd\"\n}"
+            },
+            "url": "{{url}}/utils/decrypt"
+          },
+          "response": []
+        }
+      ]
     }
   ]
 }
