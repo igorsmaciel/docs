@@ -2210,7 +2210,7 @@
               "raw": ""
             },
             "url": {
-              "raw": "{{url}}/creditos/rapido/simulacoes?agencia=039&numeroConta=10021456&sequenciaTitular=1",
+              "raw": "{{url}}/creditos/rapido/simulacoes?agencia=039&numeroConta=010021456&sequenciaTitular=1",
               "host": [
                 "{{url}}"
               ],
@@ -2223,22 +2223,91 @@
                 {
                   "key": "agencia",
                   "value": "039",
-                  "type": "text"
+                  "equals": true
                 },
                 {
                   "key": "numeroConta",
-                  "value": "10021456",
-                  "type": "text"
+                  "value": "010021456",
+                  "equals": true
                 },
                 {
                   "key": "sequenciaTitular",
                   "value": "1",
-                  "type": "text"
+                  "equals": true
                 }
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "id": "3558292-82e36629-f5d6-4c12-ac79-bdc9f7b81576",
+              "name": "/creditos/rapido/simulacoes",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{url}}/creditos/rapido/simulacoes?agencia=039&numeroConta=010021456&sequenciaTitular=1",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "creditos",
+                    "rapido",
+                    "simulacoes"
+                  ],
+                  "query": [
+                    {
+                      "key": "agencia",
+                      "value": "039",
+                      "equals": true
+                    },
+                    {
+                      "key": "numeroConta",
+                      "value": "010021456",
+                      "equals": true
+                    },
+                    {
+                      "key": "sequenciaTitular",
+                      "value": "1",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Apache-Coyote/1.1"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "4906"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 22 Mar 2019 17:27:24 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"taxaIofAdicional\": 0.38,\n    \"taxaIofNormal\": 0.0082,\n    \"vinculos\": [\n        {\n            \"codigo\": 1,\n            \"fontePagadora\": {\n                \"codigo\": \"010436979000107\",\n                \"nome\": \"FUNDAÇÃO HOSPITALAR DE SAÚDE - SE\"\n            },\n            \"produtos\": [\n                {\n                    \"codigo\": 440,\n                    \"nome\": \"CREDI-RAPIDO VEICULOS\",\n                    \"valorMaximoCredito\": 17187.8,\n                    \"linhasCredito\": [\n                        {\n                            \"consignado\": false,\n                            \"codigoCarencia\": \"D\",\n                            \"codigoVinculo\": 1,\n                            \"possuiSeguro\": false,\n                            \"codigoConvenio\": 6043,\n                            \"valorMaximoParcela\": 482.42,\n                            \"valorMaximoCredito\": 17187.8,\n                            \"numeroMaximoParcelas\": 72,\n                            \"numeroParcela13Salario\": 0,\n                            \"linhaCredito\": {\n                                \"codigo\": 4451\n                            },\n                            \"simulacoes\": [\n                                {\n                                    \"vencimentoContrato\": \"2025-02-11T00:00:00-0300\",\n                                    \"vencimentoParcela1\": \"2019-03-11T00:00:00-0300\",\n                                    \"cetAno\": 30.1529,\n                                    \"cetMes\": 2.2205,\n                                    \"numeroParcelas\": 72,\n                                    \"codigoCalculoJuros\": 1,\n                                    \"mesesCarencia\": 0,\n                                    \"iofAdicional\": 65.3136,\n                                    \"iofTotal\": 568.8336,\n                                    \"tcir\": 0,\n                                    \"valorContrato\": 17187.8,\n                                    \"valorParcela\": 481.8,\n                                    \"valorCarencia\": 48.13,\n                                    \"tac\": 0,\n                                    \"tacAdicional\": 0,\n                                    \"jurosAno\": 28.3243,\n                                    \"jurosMes\": 2.1,\n                                    \"parcelasCalculadas\": {\n                                        \"fator\": 0.0271,\n                                        \"valor\": 481.8\n                                    }\n                                },\n                                {\n                                    \"vencimentoContrato\": \"2024-02-11T00:00:00-0300\",\n                                    \"vencimentoParcela1\": \"2019-03-11T00:00:00-0300\",\n                                    \"cetAno\": 30.3819,\n                                    \"cetMes\": 2.2354,\n                                    \"numeroParcelas\": 60,\n                                    \"codigoCalculoJuros\": 1,\n                                    \"mesesCarencia\": 0,\n                                    \"iofAdicional\": 59.9253,\n                                    \"iofTotal\": 514.9253,\n                                    \"tcir\": 0,\n                                    \"valorContrato\": 15769.82,\n                                    \"valorParcela\": 481.19,\n                                    \"valorCarencia\": 44.16,\n                                    \"tac\": 0,\n                                    \"tacAdicional\": 0,\n                                    \"jurosAno\": 28.3243,\n                                    \"jurosMes\": 2.1,\n                                    \"parcelasCalculadas\": {\n                                        \"fator\": 0.0295,\n                                        \"valor\": 481.19\n                                    }\n                                }\n                            ]\n                        }\n                    ]\n                },\n                {\n                    \"codigo\": 362,\n                    \"nome\": \"CREDI-RAPIDO 13º SALARIO PARC (2ª Parc.)\",\n                    \"valorMaximoCredito\": 1041.25,\n                    \"linhasCredito\": [\n                        {\n                            \"consignado\": false,\n                            \"codigoCarencia\": \"D\",\n                            \"codigoVinculo\": 1,\n                            \"possuiSeguro\": false,\n                            \"codigoConvenio\": 6066,\n                            \"valorMaximoParcela\": 276.98,\n                            \"valorMaximoCredito\": 1041.25,\n                            \"numeroMaximoParcelas\": 4,\n                            \"numeroParcela13Salario\": 2,\n                            \"linhaCredito\": {\n                                \"codigo\": 3602\n                            },\n                            \"simulacoes\": [\n                                {\n                                    \"vencimentoContrato\": \"2019-06-15T00:00:00-0300\",\n                                    \"vencimentoParcela1\": \"2019-03-15T00:00:00-0300\",\n                                    \"cetAno\": 31.5587,\n                                    \"cetMes\": 2.312,\n                                    \"numeroParcelas\": 4,\n                                    \"codigoCalculoJuros\": 1,\n                                    \"mesesCarencia\": 0,\n                                    \"iofAdicional\": 3.9568,\n                                    \"iofTotal\": 10.4468,\n                                    \"tcir\": 0,\n                                    \"valorContrato\": 1041.25,\n                                    \"valorParcela\": 276.91,\n                                    \"valorCarencia\": 5.28,\n                                    \"tac\": 0,\n                                    \"tacAdicional\": 0,\n                                    \"jurosAno\": 25.3401,\n                                    \"jurosMes\": 1.9,\n                                    \"parcelasCalculadas\": {\n                                        \"fator\": 0.262,\n                                        \"valor\": 276.91\n                                    }\n                                }\n                            ]\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"codigo\": 2,\n            \"fontePagadora\": {\n                \"codigo\": \"013009717000146\",\n                \"nome\": \"BANCO DO ESTADO DE SERGIPE S.A.\"\n            },\n            \"produtos\": [\n                {\n                    \"codigo\": 440,\n                    \"nome\": \"CREDI-RAPIDO VEICULOS\",\n                    \"valorMaximoCredito\": 96238.91,\n                    \"linhasCredito\": [\n                        {\n                            \"consignado\": false,\n                            \"codigoCarencia\": \"D\",\n                            \"codigoVinculo\": 2,\n                            \"possuiSeguro\": true,\n                            \"codigoConvenio\": 7566,\n                            \"valorMaximoParcela\": 2289.85,\n                            \"valorMaximoCredito\": 96238.91,\n                            \"numeroMaximoParcelas\": 72,\n                            \"numeroParcela13Salario\": 0,\n                            \"linhaCredito\": {\n                                \"codigo\": 4402\n                            },\n                            \"simulacoes\": [\n                                {\n                                    \"vencimentoContrato\": \"2025-02-17T00:00:00-0300\",\n                                    \"vencimentoParcela1\": \"2019-03-17T00:00:00-0300\",\n                                    \"cetAno\": 20.3914,\n                                    \"cetMes\": 1.5585,\n                                    \"numeroParcelas\": 72,\n                                    \"codigoCalculoJuros\": 1,\n                                    \"mesesCarencia\": 0,\n                                    \"iofAdicional\": 365.7078,\n                                    \"iofTotal\": 3154.4778,\n                                    \"tcir\": 0,\n                                    \"valorContrato\": 96238.91,\n                                    \"valorParcela\": 2243.81,\n                                    \"valorCarencia\": 465.15,\n                                    \"tac\": 0,\n                                    \"tacAdicional\": 0,\n                                    \"jurosAno\": 18.857,\n                                    \"jurosMes\": 1.45,\n                                    \"parcelasCalculadas\": {\n                                        \"fator\": 0.0225,\n                                        \"valor\": 2243.81\n                                    },\n                                    \"seguro\": {\n                                        \"valorParcela\": 153.982256,\n                                        \"valor\": 0.16,\n                                        \"parcelaUnica\": false,\n                                        \"idContaCredito\": {\n                                            \"agencia\": \"29\",\n                                            \"numeroConta\": \"31030449\"\n                                        }\n                                    }\n                                },\n                                {\n                                    \"vencimentoContrato\": \"2024-02-17T00:00:00-0300\",\n                                    \"vencimentoParcela1\": \"2019-03-17T00:00:00-0300\",\n                                    \"cetAno\": 20.6102,\n                                    \"cetMes\": 1.5739,\n                                    \"numeroParcelas\": 60,\n                                    \"codigoCalculoJuros\": 1,\n                                    \"mesesCarencia\": 0,\n                                    \"iofAdicional\": 327.4989,\n                                    \"iofTotal\": 2784.5389,\n                                    \"tcir\": 0,\n                                    \"valorContrato\": 86183.91,\n                                    \"valorParcela\": 2240.72,\n                                    \"valorCarencia\": 416.56,\n                                    \"tac\": 0,\n                                    \"tacAdicional\": 0,\n                                    \"jurosAno\": 18.857,\n                                    \"jurosMes\": 1.45,\n                                    \"parcelasCalculadas\": {\n                                        \"fator\": 0.0251,\n                                        \"valor\": 2240.72\n                                    },\n                                    \"seguro\": {\n                                        \"valorParcela\": 137.894256,\n                                        \"valor\": 0.16,\n                                        \"parcelaUnica\": false,\n                                        \"idContaCredito\": {\n                                            \"agencia\": \"29\",\n                                            \"numeroConta\": \"31030449\"\n                                        }\n                                    }\n                                }\n                            ]\n                        },\n                        {\n                            \"consignado\": false,\n                            \"codigoCarencia\": \"D\",\n                            \"codigoVinculo\": 2,\n                            \"possuiSeguro\": false,\n                            \"codigoConvenio\": 7566,\n                            \"valorMaximoParcela\": 2289.85,\n                            \"valorMaximoCredito\": 84707.72,\n                            \"numeroMaximoParcelas\": 72,\n                            \"numeroParcela13Salario\": 0,\n                            \"linhaCredito\": {\n                                \"codigo\": 4452\n                            },\n                            \"simulacoes\": [\n                                {\n                                    \"vencimentoContrato\": \"2025-02-17T00:00:00-0300\",\n                                    \"vencimentoParcela1\": \"2019-03-17T00:00:00-0300\",\n                                    \"cetAno\": 27.8363,\n                                    \"cetMes\": 2.0676,\n                                    \"numeroParcelas\": 72,\n                                    \"codigoCalculoJuros\": 1,\n                                    \"mesesCarencia\": 0,\n                                    \"iofAdicional\": 321.8894,\n                                    \"iofTotal\": 2797.8594,\n                                    \"tcir\": 0,\n                                    \"valorContrato\": 84707.72,\n                                    \"valorParcela\": 2286.27,\n                                    \"valorCarencia\": 550.6,\n                                    \"tac\": 0,\n                                    \"tacAdicional\": 0,\n                                    \"jurosAno\": 26.0802,\n                                    \"jurosMes\": 1.95,\n                                    \"parcelasCalculadas\": {\n                                        \"fator\": 0.026,\n                                        \"valor\": 2286.27\n                                    }\n                                },\n                                {\n                                    \"vencimentoContrato\": \"2024-02-17T00:00:00-0300\",\n                                    \"vencimentoParcela1\": \"2019-03-17T00:00:00-0300\",\n                                    \"cetAno\": 28.0632,\n                                    \"cetMes\": 2.0827,\n                                    \"numeroParcelas\": 60,\n                                    \"codigoCalculoJuros\": 1,\n                                    \"mesesCarencia\": 0,\n                                    \"iofAdicional\": 293.7405,\n                                    \"iofTotal\": 2518.2805,\n                                    \"tcir\": 0,\n                                    \"valorContrato\": 77300.14,\n                                    \"valorParcela\": 2282.78,\n                                    \"valorCarencia\": 502.45,\n                                    \"tac\": 0,\n                                    \"tacAdicional\": 0,\n                                    \"jurosAno\": 26.0802,\n                                    \"jurosMes\": 1.95,\n                                    \"parcelasCalculadas\": {\n                                        \"fator\": 0.0284,\n                                        \"valor\": 2282.78\n                                    }\n                                }\n                            ]\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+            }
+          ]
         }
       ]
     },
