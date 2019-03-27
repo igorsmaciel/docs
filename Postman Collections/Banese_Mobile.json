@@ -1459,6 +1459,12 @@
           "_postman_id": "3558292-c396cd07-257c-42bf-8d5c-340980747cc5",
           "name": "/provisionamentos",
           "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{token}}"
+              }
+            },
             "method": "POST",
             "header": [
               {
@@ -1470,7 +1476,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"sequenciaTitular\": 1,\r\n\t\"tipoConta\": 2,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-20\",\r\n\t\"justificativa\": \"TESTE\",\r\n\t\"valor\": 12345.64\r\n} "
+              "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"sequenciaTitular\": 1,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-20\",\r\n\t\"justificativa\": \"TESTE\",\r\n\t\"valor\": 12345.64\r\n} "
             },
             "url": "{{url}}/provisionamentos"
           },
@@ -1665,7 +1671,7 @@
         },
         {
           "_postman_id": "3558292-43da5b97-fbc9-465d-b5b4-dd74e4cd091b",
-          "name": "/provisionamentos",
+          "name": "/provisionamentos/{conta}/{titular}/{agenciaPrevista}/{data}",
           "request": {
             "method": "DELETE",
             "header": [
@@ -1678,9 +1684,9 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"sequenciaTitular\": 1,\r\n\t\"tipoConta\": 2,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-20\"\r\n} "
+              "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"sequenciaTitular\": 1,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-20\"\r\n} "
             },
-            "url": "{{url}}/provisionamentos"
+            "url": "{{url}}/provisionamentos/039010021456/1/039/2018-12-20"
           },
           "response": [
             {
