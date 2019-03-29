@@ -1678,15 +1678,15 @@
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
+                "type": "text",
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"sequenciaTitular\": 1,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-20\"\r\n} "
             },
-            "url": "{{url}}/provisionamentos/039010021456/1/039/2018-12-20"
+            "url": "{{url}}/provisionamentos/039010021456/1/039/2019-02-19T00:00:00-0300"
           },
           "response": [
             {
