@@ -534,13 +534,13 @@
               "raw": ""
             },
             "url": {
-              "raw": "{{url}}/contas/015010000010/titulares?isDetalhado=true&sequencia=1",
+              "raw": "{{url}}/contas/039010021456/titulares?isDetalhado=true&sequencia=1",
               "host": [
                 "{{url}}"
               ],
               "path": [
                 "contas",
-                "015010000010",
+                "039010021456",
                 "titulares"
               ],
               "query": [
@@ -2150,7 +2150,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"consignado\": false,\r\n    \"mesesCarencia\": 0,\r\n    \"numeroParcelas\": 72,\r\n    \"valorCarencia\": 465.15,\r\n    \"valorContrato\": 96238.91,\r\n    \"valorParcela\": 2243.81,\r\n    \"cetAno\": 20.39,\r\n    \"cetMes\": 1.5585,\r\n    \"codigoCalculoJuros\": 1,\r\n    \"iofAdicional\": 365.7078,\r\n    \"iofNormal\": 2788.77,\r\n    \"iofTotal\": 3154.4778,\r\n    \"jurosAno\": 18.86,\r\n    \"jurosMes\": 1.45,\r\n    \"tac\": 0,\r\n    \"tacAdicional\": 0,\r\n    \"tcir\": 0,\r\n    \"vencimentoContrato\": \"2025-02-17T00:00:00-03:00\",\r\n    \"vencimentoParcela1\": \"2019-03-17T00:00:00-03:00\",\r\n    \"codigoCarencia\": \"D\",\r\n    \"codigoConvenio\": 7566,\r\n    \"cpfCnpj\": 83975462515,\r\n    \"fontePagadora\": {\r\n        \"codigo\": \"013009717000146\"\r\n    },\r\n    \"idConta\": {\r\n        \"agencia\": \"039\",\r\n        \"numeroConta\": \"010021456\"\r\n    },\r\n    \"linhaCredito\": {\r\n        \"codigo\": 4402\r\n    },\r\n    \"seguro\": {\r\n        \"valorParcela\": 137.894256,\r\n        \"parcelaUnica\": false\r\n    },\r\n    \"matricula\": 83975462515,\r\n    \"numeroMaximoParcelas\": 4,\r\n    \"numeroParcela13Salario\": 2,\r\n    \"numeroTitular\": 1,\r\n    \"taxaIofAdicional\": 0.38,\r\n    \"taxaIofNormal\": 0.0082,\r\n    \"valorMaximoCredito\": 96238.91,\r\n    \"valorMaximoParcela\": 2289.85\r\n}"
+              "raw": "{\n    \"consignado\": false,\n    \"mesesCarencia\": 0,\n    \"numeroParcelas\": 72,\n    \"valorCarencia\": 465.15,\n    \"valorContrato\": 96238.91,\n    \"valorParcela\": 2243.81,\n    \"cetAno\": 38.3116,\n    \"cetMes\": 2.7397,\n    \"codigoCalculoJuros\": 1,\n    \"iofAdicional\": 6.1947,\n    \"iofNormal\": 2788.77,\n    \"iofTotal\": 43.0647,\n    \"jurosAno\": 18.86,\n    \"jurosMes\": 1.45,\n    \"tac\": 0,\n    \"tacAdicional\": 0,\n    \"tcir\": 0,\n    \"vencimentoContrato\": \"2020-10-17T00:00:00-0300\",\n    \"vencimentoParcela1\": \"2019-04-17T00:00:00-0300\",\n    \"codigoCarencia\": \"D\",\n    \"codigoConvenio\": 7566,\n    \"cpfCnpj\": 83975462515,\n    \"fontePagadora\": {\n        \"codigo\": \"013009717000146\"\n    },\n    \"idConta\": {\n        \"agencia\": \"039\",\n        \"numeroConta\": \"010021456\"\n    },\n    \"linhaCredito\": {\n        \"codigo\": 853\n    },\n    \"matricula\": 83975462515,\n    \"numeroMaximoParcelas\": 19,\n    \"numeroParcela13Salario\": 0,\n    \"numeroTitular\": 1,\n    \"taxaIofAdicional\": 0.38,\n    \"taxaIofNormal\": 0.0082,\n    \"valorMaximoCredito\": 1630.19,\n    \"valorMaximoParcela\": 111.75\n}"
             },
             "url": "{{url}}/creditos/rapido"
           },
