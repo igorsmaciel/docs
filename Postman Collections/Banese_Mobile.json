@@ -6,13 +6,11 @@
   },
   "item": [
     {
-      "_postman_id": "3558292-4b6d240b-c769-4c00-9a39-ae526df33a8a",
       "name": "Conta",
-      "description": "",
       "item": [
         {
-          "_postman_id": "3558292-334e9eea-e51f-4d90-9139-121152bbbda3",
           "name": "/contas/{conta}",
+          "_postman_id": "3558292-334e9eea-e51f-4d90-9139-121152bbbda3",
           "request": {
             "auth": {
               "type": "bearer",
@@ -28,7 +26,10 @@
                 "disabled": true
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "{{url}}/contas/015010000010"
           },
           "response": [
@@ -44,7 +45,10 @@
                     "disabled": true
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": {
                   "raw": "{{url}}/contas/015010000010?sequenciaTitular=1",
                   "host": [
@@ -57,8 +61,7 @@
                   "query": [
                     {
                       "key": "sequenciaTitular",
-                      "value": "1",
-                      "equals": true
+                      "value": "1"
                     }
                   ]
                 }
@@ -105,29 +108,24 @@
           ]
         },
         {
-          "_postman_id": "3558292-33d50419-6cc9-48d7-8b78-b3888a13421a",
           "name": "/contas/{conta}/informacoes",
+          "_postman_id": "3558292-33d50419-6cc9-48d7-8b78-b3888a13421a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "{{url}}/contas/015010000010/informacoes"
           },
           "response": []
         },
         {
-          "_postman_id": "3558292-fc7288d9-b4e2-46e8-8301-22d504b425df",
           "name": "/contas/{conta}/extrato",
+          "_postman_id": "3558292-fc7288d9-b4e2-46e8-8301-22d504b425df",
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "{{url}}/contas/039010021456/extrato?tipo=CONTA_POUPANCA&dataInicio=2018-09-05T07:36:16&dataFim=2018-10-18T07:36:16&paginacaoInicio=0&paginacaoFim=10",
               "host": [
@@ -141,28 +139,23 @@
               "query": [
                 {
                   "key": "tipo",
-                  "value": "CONTA_POUPANCA",
-                  "equals": true
+                  "value": "CONTA_POUPANCA"
                 },
                 {
                   "key": "dataInicio",
-                  "value": "2018-09-05T07:36:16",
-                  "equals": true
+                  "value": "2018-09-05T07:36:16"
                 },
                 {
                   "key": "dataFim",
-                  "value": "2018-10-18T07:36:16",
-                  "equals": true
+                  "value": "2018-10-18T07:36:16"
                 },
                 {
                   "key": "paginacaoInicio",
-                  "value": "0",
-                  "equals": true
+                  "value": "0"
                 },
                 {
                   "key": "paginacaoFim",
-                  "value": "10",
-                  "equals": true
+                  "value": "10"
                 }
               ]
             }
@@ -174,10 +167,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "{{url}}/contas/039010021456/extrato?tipo=CONTA_POUPANCA&dataInicio=2018-09-05T07:36:16&dataFim=2018-10-18T07:36:16&paginacaoInicio=0&paginacaoFim=10",
                   "host": [
@@ -191,28 +180,23 @@
                   "query": [
                     {
                       "key": "tipo",
-                      "value": "CONTA_POUPANCA",
-                      "equals": true
+                      "value": "CONTA_POUPANCA"
                     },
                     {
                       "key": "dataInicio",
-                      "value": "2018-09-05T07:36:16",
-                      "equals": true
+                      "value": "2018-09-05T07:36:16"
                     },
                     {
                       "key": "dataFim",
-                      "value": "2018-10-18T07:36:16",
-                      "equals": true
+                      "value": "2018-10-18T07:36:16"
                     },
                     {
                       "key": "paginacaoInicio",
-                      "value": "0",
-                      "equals": true
+                      "value": "0"
                     },
                     {
                       "key": "paginacaoFim",
-                      "value": "10",
-                      "equals": true
+                      "value": "10"
                     }
                   ]
                 }
@@ -249,15 +233,14 @@
           ]
         },
         {
-          "_postman_id": "3558292-4bee62d6-f2a6-4aac-9b6b-4b1e68a4b304",
           "name": "/contas/{conta}/resumo-periodo",
+          "_postman_id": "3558292-4bee62d6-f2a6-4aac-9b6b-4b1e68a4b304",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "{{url}}/contas/039010021456/resumo-periodo?dataInicio=2018-01-01T07:36:16&dataFim=2018-12-31T07:36:16",
               "host": [
@@ -271,13 +254,11 @@
               "query": [
                 {
                   "key": "dataInicio",
-                  "value": "2018-01-01T07:36:16",
-                  "equals": true
+                  "value": "2018-01-01T07:36:16"
                 },
                 {
                   "key": "dataFim",
-                  "value": "2018-12-31T07:36:16",
-                  "equals": true
+                  "value": "2018-12-31T07:36:16"
                 }
               ]
             }
@@ -289,10 +270,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "{{url}}/contas/039010021456/resumo-periodo?dataInicio=2018-01-01T07:36:16&dataFim=2018-12-31T07:36:16",
                   "host": [
@@ -306,13 +283,11 @@
                   "query": [
                     {
                       "key": "dataInicio",
-                      "value": "2018-01-01T07:36:16",
-                      "equals": true
+                      "value": "2018-01-01T07:36:16"
                     },
                     {
                       "key": "dataFim",
-                      "value": "2018-12-31T07:36:16",
-                      "equals": true
+                      "value": "2018-12-31T07:36:16"
                     }
                   ]
                 }
@@ -349,15 +324,14 @@
           ]
         },
         {
-          "_postman_id": "3558292-cff7e95a-d737-4cb7-9f41-2cf7c3e9f2c6",
           "name": "/contas/{conta}/resumo-natureza",
+          "_postman_id": "3558292-cff7e95a-d737-4cb7-9f41-2cf7c3e9f2c6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "{{url}}/contas/039010021456/resumo-natureza?dataInicio=2018-11-01T00:00:00-0300&dataFim=2018-12-31T00:00:00-0300&natureza=C",
               "host": [
@@ -371,18 +345,15 @@
               "query": [
                 {
                   "key": "dataInicio",
-                  "value": "2018-11-01T00:00:00-0300",
-                  "equals": true
+                  "value": "2018-11-01T00:00:00-0300"
                 },
                 {
                   "key": "dataFim",
-                  "value": "2018-12-31T00:00:00-0300",
-                  "equals": true
+                  "value": "2018-12-31T00:00:00-0300"
                 },
                 {
                   "key": "natureza",
-                  "value": "C",
-                  "equals": true
+                  "value": "C"
                 }
               ]
             }
@@ -394,10 +365,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "{{url}}/contas/039010021456/resumo-natureza?dataInicio=2018-11-01T00:00:00-0300&dataFim=2018-12-31T00:00:00-0300&natureza=C",
                   "host": [
@@ -411,18 +378,15 @@
                   "query": [
                     {
                       "key": "dataInicio",
-                      "value": "2018-11-01T00:00:00-0300",
-                      "equals": true
+                      "value": "2018-11-01T00:00:00-0300"
                     },
                     {
                       "key": "dataFim",
-                      "value": "2018-12-31T00:00:00-0300",
-                      "equals": true
+                      "value": "2018-12-31T00:00:00-0300"
                     },
                     {
                       "key": "natureza",
-                      "value": "C",
-                      "equals": true
+                      "value": "C"
                     }
                   ]
                 }
@@ -459,8 +423,8 @@
           ]
         },
         {
-          "_postman_id": "3558292-a945c369-d72e-4e45-979f-29f6172eb3c0",
           "name": "/contas/{conta}/saldos",
+          "_postman_id": "3558292-a945c369-d72e-4e45-979f-29f6172eb3c0",
           "request": {
             "auth": {
               "type": "bearer",
@@ -470,10 +434,6 @@
             },
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "{{url}}/contas/039010021456/saldos",
               "host": [
@@ -497,8 +457,11 @@
           "response": []
         },
         {
-          "_postman_id": "3558292-94bf8b92-5f92-4d55-bc3d-2d601cfa4148",
           "name": "/contas/{conta}/celular-sms",
+          "_postman_id": "3558292-94bf8b92-5f92-4d55-bc3d-2d601cfa4148",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -518,8 +481,8 @@
           "response": []
         },
         {
-          "_postman_id": "3558292-36ee4d6b-b586-4441-a671-b34910d1be57",
           "name": "/contas/{conta}/titulares",
+          "_postman_id": "3558292-36ee4d6b-b586-4441-a671-b34910d1be57",
           "request": {
             "method": "GET",
             "header": [
@@ -529,10 +492,6 @@
                 "disabled": true
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "{{url}}/contas/039010021456/titulares?isDetalhado=true&sequencia=1",
               "host": [
@@ -546,13 +505,11 @@
               "query": [
                 {
                   "key": "isDetalhado",
-                  "value": "true",
-                  "equals": true
+                  "value": "true"
                 },
                 {
                   "key": "sequencia",
-                  "value": "1",
-                  "equals": true
+                  "value": "1"
                 }
               ]
             }
@@ -570,7 +527,10 @@
                     "disabled": true
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "{{url}}/contas/015010000010/titulares"
               },
               "status": "OK",
@@ -615,22 +575,24 @@
           ]
         },
         {
-          "_postman_id": "3558292-115fe8bc-a6b0-4e85-bb4f-0b90dd649786",
           "name": "/contas/{conta}/titulares/{sequenciaTitular}/avisoviagem",
+          "_postman_id": "3558292-115fe8bc-a6b0-4e85-bb4f-0b90dd649786",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "{{url}}/contas/039010021456/titulares/1/avisoviagem"
           },
           "response": []
         },
         {
-          "_postman_id": "3558292-d42cce21-6cf8-494b-92e6-58bcc39cb557",
           "name": "/contas/{conta}/titulares/{sequenciaTitular}/avisoviagem",
+          "_postman_id": "3558292-d42cce21-6cf8-494b-92e6-58bcc39cb557",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -650,29 +612,27 @@
           "response": []
         },
         {
-          "_postman_id": "3558292-9b14973a-ea32-4f99-a394-de067f1abe9b",
           "name": "/contas/{conta}/titulares/{sequenciaTitular}/avisoviagem",
+          "_postman_id": "3558292-9b14973a-ea32-4f99-a394-de067f1abe9b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "DELETE",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "{{url}}/contas/039010021456/titulares/1/avisoviagem"
           },
           "response": []
         },
         {
-          "_postman_id": "3558292-69262caa-61b2-463b-9f7f-dad525441cdf",
           "name": "/contas/{conta}/aplicacoes-correntista",
+          "_postman_id": "3558292-69262caa-61b2-463b-9f7f-dad525441cdf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "{{url}}/contas/015010616266/aplicacoes-correntista?modalidade=2&modalidade=7&modalidade=12&modalidade=16",
               "host": [
@@ -714,10 +674,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "{{url}}/contas/015010616266/aplicacoes-correntista?modalidade=2&modalidade=7&modalidade=12&modalidade=16",
                   "host": [
@@ -731,23 +687,19 @@
                   "query": [
                     {
                       "key": "modalidade",
-                      "value": "2",
-                      "equals": true
+                      "value": "2"
                     },
                     {
                       "key": "modalidade",
-                      "value": "7",
-                      "equals": true
+                      "value": "7"
                     },
                     {
                       "key": "modalidade",
-                      "value": "12",
-                      "equals": true
+                      "value": "12"
                     },
                     {
                       "key": "modalidade",
-                      "value": "16",
-                      "equals": true
+                      "value": "16"
                     }
                   ]
                 }
@@ -784,15 +736,14 @@
           ]
         },
         {
-          "_postman_id": "3558292-f36520da-a2f1-4999-b48c-d3193174d687",
           "name": "/contas/{conta}/subcontas-poupanca",
+          "_postman_id": "3558292-f36520da-a2f1-4999-b48c-d3193174d687",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "{{url}}/contas/039010021456/subcontas-poupanca"
           },
           "response": [
@@ -802,10 +753,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "{{url}}/contas/039010021456/subcontas-poupanca"
               },
               "status": "OK",
@@ -840,8 +787,8 @@
           ]
         },
         {
-          "_postman_id": "3558292-aa9fae19-b2fe-4318-bf9f-acdfb1c23ce9",
           "name": "/contas/{conta}",
+          "_postman_id": "3558292-aa9fae19-b2fe-4318-bf9f-acdfb1c23ce9",
           "request": {
             "auth": {
               "type": "bearer",
@@ -915,16 +862,15 @@
             }
           ]
         }
-      ]
+      ],
+      "_postman_id": "3558292-4b6d240b-c769-4c00-9a39-ae526df33a8a"
     },
     {
-      "_postman_id": "3558292-33834574-a1ca-49ed-b099-4b0047342835",
       "name": "Transferência",
-      "description": "",
       "item": [
         {
-          "_postman_id": "3558292-b3130b5e-88e9-4806-a405-5d987f1801c6",
           "name": "/transferencia/interna/validacao",
+          "_postman_id": "3558292-b3130b5e-88e9-4806-a405-5d987f1801c6",
           "request": {
             "auth": {
               "type": "bearer",
@@ -950,7 +896,6 @@
           "response": []
         },
         {
-          "_postman_id": "3558292-4251069c-885d-47d2-be72-82918a169baf",
           "name": "/transferencia/interna",
           "event": [
             {
@@ -964,6 +909,7 @@
               }
             }
           ],
+          "_postman_id": "3558292-4251069c-885d-47d2-be72-82918a169baf",
           "request": {
             "auth": {
               "type": "bearer",
@@ -1038,8 +984,11 @@
           ]
         },
         {
-          "_postman_id": "3558292-8c0fdeff-4b11-4543-9688-c8f02138bcfc",
           "name": "/transferencia/ted/validacao",
+          "_postman_id": "3558292-8c0fdeff-4b11-4543-9688-c8f02138bcfc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -1108,8 +1057,11 @@
           ]
         },
         {
-          "_postman_id": "3558292-ce2d08be-c861-40f6-b9b6-552f5592d9f6",
           "name": "/transferencia/ted",
+          "_postman_id": "3558292-ce2d08be-c861-40f6-b9b6-552f5592d9f6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -1178,8 +1130,11 @@
           ]
         },
         {
-          "_postman_id": "3558292-f411334b-4a47-426e-9746-52508c52f983",
           "name": "/transferencia/doc/validacao",
+          "_postman_id": "3558292-f411334b-4a47-426e-9746-52508c52f983",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "auth": {
               "type": "bearer",
@@ -1254,8 +1209,11 @@
           ]
         },
         {
-          "_postman_id": "3558292-8960a9a6-7e0f-4e69-80ba-fa9158c8c327",
           "name": "/transferencia/doc",
+          "_postman_id": "3558292-8960a9a6-7e0f-4e69-80ba-fa9158c8c327",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -1274,23 +1232,21 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "3558292-33834574-a1ca-49ed-b099-4b0047342835"
     },
     {
-      "_postman_id": "3558292-3e80aac6-2b74-4ba7-8131-ea9bdcb24703",
       "name": "Clube Vantagens",
-      "description": "",
       "item": [
         {
-          "_postman_id": "3558292-628cb66f-fb78-414e-b605-2159fadc4f79",
           "name": "/clubevantagens/disponiveis",
+          "_postman_id": "3558292-628cb66f-fb78-414e-b605-2159fadc4f79",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "{{url}}/clubevantagens/disponiveis?agencia=002&numeroConta=010041132",
               "host": [
@@ -1303,13 +1259,11 @@
               "query": [
                 {
                   "key": "agencia",
-                  "value": "002",
-                  "equals": true
+                  "value": "002"
                 },
                 {
                   "key": "numeroConta",
-                  "value": "010041132",
-                  "equals": true
+                  "value": "010041132"
                 }
               ]
             }
@@ -1321,10 +1275,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "{{url}}/clubevantagens/disponiveis?agencia=002&numeroConta=010041132",
                   "host": [
@@ -1337,13 +1287,11 @@
                   "query": [
                     {
                       "key": "agencia",
-                      "value": "002",
-                      "equals": true
+                      "value": "002"
                     },
                     {
                       "key": "numeroConta",
-                      "value": "010041132",
-                      "equals": true
+                      "value": "010041132"
                     }
                   ]
                 }
@@ -1380,15 +1328,14 @@
           ]
         },
         {
-          "_postman_id": "3558292-e11c4b28-1d8b-4fc4-bc8f-fe5d056fef80",
           "name": "/clubevantagens",
+          "_postman_id": "3558292-e11c4b28-1d8b-4fc4-bc8f-fe5d056fef80",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "{{url}}/clubevantagens?agencia=002&numeroConta=010041132",
               "host": [
@@ -1400,13 +1347,11 @@
               "query": [
                 {
                   "key": "agencia",
-                  "value": "002",
-                  "equals": true
+                  "value": "002"
                 },
                 {
                   "key": "numeroConta",
-                  "value": "010041132",
-                  "equals": true
+                  "value": "010041132"
                 }
               ]
             }
@@ -1414,8 +1359,11 @@
           "response": []
         },
         {
-          "_postman_id": "3558292-a63611ef-d6ce-4154-b176-7cd3acf262f0",
           "name": "/clubevantagens",
+          "_postman_id": "3558292-a63611ef-d6ce-4154-b176-7cd3acf262f0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -1434,30 +1382,31 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "3558292-3e80aac6-2b74-4ba7-8131-ea9bdcb24703"
     },
     {
-      "_postman_id": "3558292-76205585-496c-4ca3-90cc-b759c866259c",
       "name": "Provisionamento",
-      "description": null,
       "item": [
         {
-          "_postman_id": "3558292-2e9221e3-f445-40a4-ae11-99396b9c37f9",
           "name": "/provisionamentos/parametros",
+          "_postman_id": "3558292-2e9221e3-f445-40a4-ae11-99396b9c37f9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "{{url}}/provisionamentos/parametros"
           },
           "response": []
         },
         {
-          "_postman_id": "3558292-c396cd07-257c-42bf-8d5c-340980747cc5",
           "name": "/provisionamentos",
+          "_postman_id": "3558292-c396cd07-257c-42bf-8d5c-340980747cc5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "auth": {
               "type": "bearer",
@@ -1532,15 +1481,14 @@
           ]
         },
         {
-          "_postman_id": "3558292-5118102c-6cd7-4412-b42e-7cba98df45ed",
           "name": "/provisionamentos",
+          "_postman_id": "3558292-5118102c-6cd7-4412-b42e-7cba98df45ed",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "{{url}}/provisionamentos?agencia=039&numeroConta=010021456&agenciaSaque=039&dataInicio=2018-12-20&dataFim=2018-12-31",
               "host": [
@@ -1552,28 +1500,23 @@
               "query": [
                 {
                   "key": "agencia",
-                  "value": "039",
-                  "equals": true
+                  "value": "039"
                 },
                 {
                   "key": "numeroConta",
-                  "value": "010021456",
-                  "equals": true
+                  "value": "010021456"
                 },
                 {
                   "key": "agenciaSaque",
-                  "value": "039",
-                  "equals": true
+                  "value": "039"
                 },
                 {
                   "key": "dataInicio",
-                  "value": "2018-12-20",
-                  "equals": true
+                  "value": "2018-12-20"
                 },
                 {
                   "key": "dataFim",
-                  "value": "2018-12-31",
-                  "equals": true
+                  "value": "2018-12-31"
                 },
                 {
                   "key": "situacao",
@@ -1591,10 +1534,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "{{url}}/provisionamentos?agencia=039&numeroConta=010021456&agenciaSaque=039&dataInicio=2018-12-20&dataFim=2018-12-24",
                   "host": [
@@ -1606,28 +1545,23 @@
                   "query": [
                     {
                       "key": "agencia",
-                      "value": "039",
-                      "equals": true
+                      "value": "039"
                     },
                     {
                       "key": "numeroConta",
-                      "value": "010021456",
-                      "equals": true
+                      "value": "010021456"
                     },
                     {
                       "key": "agenciaSaque",
-                      "value": "039",
-                      "equals": true
+                      "value": "039"
                     },
                     {
                       "key": "dataInicio",
-                      "value": "2018-12-20",
-                      "equals": true
+                      "value": "2018-12-20"
                     },
                     {
                       "key": "dataFim",
-                      "value": "2018-12-24",
-                      "equals": true
+                      "value": "2018-12-24"
                     },
                     {
                       "key": "situacao",
@@ -1670,8 +1604,11 @@
           ]
         },
         {
-          "_postman_id": "3558292-43da5b97-fbc9-465d-b5b4-dd74e4cd091b",
           "name": "/provisionamentos/{conta}/{titular}/{agenciaPrevista}/{data}",
+          "_postman_id": "3558292-43da5b97-fbc9-465d-b5b4-dd74e4cd091b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "DELETE",
             "header": [
@@ -1682,10 +1619,6 @@
                 "value": "application/json"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n\t\"agencia\": \"039\",\r\n\t\"numeroConta\": \"010021456\",\r\n\t\"sequenciaTitular\": 1,\r\n\t\"agenciaPrevistaSaque\": \"039\",\r\n\t\"data\": \"2018-12-20\"\r\n} "
-            },
             "url": "{{url}}/provisionamentos/039010021456/1/039/2019-02-19T00:00:00-0300"
           },
           "response": [
@@ -1739,23 +1672,21 @@
             }
           ]
         }
-      ]
+      ],
+      "_postman_id": "3558292-76205585-496c-4ca3-90cc-b759c866259c"
     },
     {
-      "_postman_id": "3558292-fb8fd474-cb9a-4085-99f2-9755710fbc54",
       "name": "Pagamentos",
-      "description": null,
       "item": [
         {
-          "_postman_id": "3558292-170924eb-245a-4600-a7e7-573a769894c6",
           "name": "/pagamentos/convenios/{codigoBarras}",
+          "_postman_id": "3558292-170924eb-245a-4600-a7e7-573a769894c6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "{{url}}/pagamentos/convenios/856000000062625300260027227583629208190228000005"
           },
           "response": [
@@ -1765,10 +1696,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "{{url}}/pagamentos/convenios/856800000015820700260020227397841205181228281208"
               },
               "status": "OK",
@@ -1803,8 +1730,11 @@
           ]
         },
         {
-          "_postman_id": "3558292-c020f3ee-3813-498d-9748-76e08b07314e",
           "name": "/pagamentos/convenios",
+          "_postman_id": "3558292-c020f3ee-3813-498d-9748-76e08b07314e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "auth": {
               "type": "bearer",
@@ -1830,15 +1760,14 @@
           "response": []
         },
         {
-          "_postman_id": "3558292-3ff3a3a4-a8ea-454a-b7ed-a161f2c44e64",
           "name": "/pagamentos/titulos/{codigoBarras}",
+          "_postman_id": "3558292-3ff3a3a4-a8ea-454a-b7ed-a161f2c44e64",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "{{url}}/pagamentos/titulos/03395780300001091019201551000261816891230102"
           },
           "response": [
@@ -1848,10 +1777,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "{{url}}/pagamentos/titulos/04795601041636090000190161047023377910000003200"
               },
               "status": "OK",
@@ -1886,8 +1811,11 @@
           ]
         },
         {
-          "_postman_id": "3558292-70c9c79b-eba4-4d6c-9474-8e3a5cfa6ca3",
           "name": "/pagamentos/titulos",
+          "_postman_id": "3558292-70c9c79b-eba4-4d6c-9474-8e3a5cfa6ca3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -1955,23 +1883,21 @@
             }
           ]
         }
-      ]
+      ],
+      "_postman_id": "3558292-fb8fd474-cb9a-4085-99f2-9755710fbc54"
     },
     {
-      "_postman_id": "3558292-41a2ecee-9e18-4e6a-b980-76d908b40a34",
       "name": "Bancos",
-      "description": "",
       "item": [
         {
-          "_postman_id": "3558292-e22bae8a-6ce0-4e4d-8409-0da1d80f1771",
           "name": "/bancos",
+          "_postman_id": "3558292-e22bae8a-6ce0-4e4d-8409-0da1d80f1771",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "{{url}}/bancos"
           },
           "response": [
@@ -1981,10 +1907,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "{{url}}/bancos"
               },
               "status": "OK",
@@ -2019,15 +1941,14 @@
           ]
         },
         {
-          "_postman_id": "3558292-01f3cd74-2464-4c12-97d0-1ab38f824bbb",
           "name": "/bancos/{numero_ou_ispb}",
+          "_postman_id": "3558292-01f3cd74-2464-4c12-97d0-1ab38f824bbb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "{{url}}/bancos/001"
           },
           "response": [
@@ -2037,10 +1958,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": "{{url}}/bancos/001"
               },
               "status": "OK",
@@ -2074,15 +1991,13 @@
             }
           ]
         }
-      ]
+      ],
+      "_postman_id": "3558292-41a2ecee-9e18-4e6a-b980-76d908b40a34"
     },
     {
-      "_postman_id": "3558292-9761506d-1ecc-4442-90af-a5695b01250c",
       "name": "Auth",
-      "description": "",
       "item": [
         {
-          "_postman_id": "3558292-1df6f0ef-325d-490c-850e-26fc2186317b",
           "name": "/autenticacao/token",
           "event": [
             {
@@ -2097,6 +2012,10 @@
               }
             }
           ],
+          "_postman_id": "3558292-1df6f0ef-325d-490c-850e-26fc2186317b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -2113,13 +2032,11 @@
                 {
                   "key": "username",
                   "value": "039_010021456_1",
-                  "description": "",
                   "type": "text"
                 },
                 {
                   "key": "password",
                   "value": "mqwvX5smwrmYYsfG9Vje4s9pKh9bx6voT2Ul5R0KWkY/nOOgvYRsLCeIgyz4vTT9qcptYXT7pXo1HUkjXJL98ZnDF36De5GanNcEEx4LEHz6K7WrRsk+jD3iRt73AUbQznNxzFNYfG/tQ5r1VkTOSFBDJOQi1feS6vyS2Lj7g7gIaV4mCPoOKhXrz9hGi81KuUTjlt7m7/ICIjYljg9foW07qOzjr5BaZZ+NzCQmfiTUj8lFe3LupCxOdv6Xyer5rdX1UorCapnwbsBPFOHIfO56W7z5MLjKNr2KDkrRKPBmED0PMgkFgewvUPwEdtGrq6I968lrvEEzURr8++KSIg==",
-                  "description": "",
                   "type": "text"
                 }
               ]
@@ -2128,16 +2045,18 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "3558292-9761506d-1ecc-4442-90af-a5695b01250c"
     },
     {
-      "_postman_id": "3558292-ca446af1-b710-47a7-819b-d69b859844e5",
       "name": "Credito",
-      "description": null,
       "item": [
         {
-          "_postman_id": "3558292-1bd0b42d-5705-4869-8cb6-593099f4b9a4",
           "name": "/creditos/rapido",
+          "_postman_id": "3558292-1bd0b42d-5705-4869-8cb6-593099f4b9a4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -2206,15 +2125,14 @@
           ]
         },
         {
-          "_postman_id": "3558292-1744a14f-cb02-4734-984f-f006b4a8d130",
           "name": "/creditos/rapido/simulacoes",
+          "_postman_id": "3558292-1744a14f-cb02-4734-984f-f006b4a8d130",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "{{url}}/creditos/rapido/simulacoes?agencia=039&numeroConta=010021456&sequenciaTitular=1",
               "host": [
@@ -2228,18 +2146,15 @@
               "query": [
                 {
                   "key": "agencia",
-                  "value": "039",
-                  "equals": true
+                  "value": "039"
                 },
                 {
                   "key": "numeroConta",
-                  "value": "010021456",
-                  "equals": true
+                  "value": "010021456"
                 },
                 {
                   "key": "sequenciaTitular",
-                  "value": "1",
-                  "equals": true
+                  "value": "1"
                 }
               ]
             }
@@ -2251,10 +2166,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
                 "url": {
                   "raw": "{{url}}/creditos/rapido/simulacoes?agencia=039&numeroConta=010021456&sequenciaTitular=1",
                   "host": [
@@ -2268,18 +2179,15 @@
                   "query": [
                     {
                       "key": "agencia",
-                      "value": "039",
-                      "equals": true
+                      "value": "039"
                     },
                     {
                       "key": "numeroConta",
-                      "value": "010021456",
-                      "equals": true
+                      "value": "010021456"
                     },
                     {
                       "key": "sequenciaTitular",
-                      "value": "1",
-                      "equals": true
+                      "value": "1"
                     }
                   ]
                 }
@@ -2315,16 +2223,18 @@
             }
           ]
         }
-      ]
+      ],
+      "_postman_id": "3558292-ca446af1-b710-47a7-819b-d69b859844e5"
     },
     {
-      "_postman_id": "3558292-0bdaa949-8b75-4f18-9014-7bc585716e1c",
       "name": "Utils",
-      "description": "",
       "item": [
         {
-          "_postman_id": "3558292-a42de80a-7c59-4cbf-b277-a621d902dc85",
           "name": "/utils/encrypt",
+          "_postman_id": "3558292-a42de80a-7c59-4cbf-b277-a621d902dc85",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -2344,8 +2254,11 @@
           "response": []
         },
         {
-          "_postman_id": "3558292-9005fb82-da0a-4600-a98e-c7c23159d19c",
           "name": "/utils/decrypt",
+          "_postman_id": "3558292-9005fb82-da0a-4600-a98e-c7c23159d19c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -2364,7 +2277,8 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "3558292-0bdaa949-8b75-4f18-9014-7bc585716e1c"
     }
   ]
 }
