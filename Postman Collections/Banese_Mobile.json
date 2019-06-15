@@ -5806,6 +5806,50 @@
           }
         }
       }
+    },
+    "/agencias": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "/agencias",
+        "tags": [
+          "Agencias"
+        ],
+        "operationId": "AgenciasGet",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "segmentadas",
+            "in": "query",
+            "required": true,
+            "type": "boolean",
+            "description": ""
+          },
+          {
+            "name": "agenciaOrigem",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -9028,57 +9072,62 @@
     "/transferencia/interna/validacaorequest": {
       "title": "/transferencia/interna/validacaorequest",
       "example": {
-        "idContaOrigem": {
-          "agencia": "015",
-          "numeroConta": "010616266"
-        },
         "idContaDestino": {
           "agencia": "039",
           "numeroConta": "010021456"
         },
+        "mesmaTitularidade": false,
+        "valor": 0.05,
+        "idContaOrigem": {
+          "agencia": "039",
+          "numeroConta": "010021456"
+        },
         "tipoContaOrigem": 1,
-        "tipoContaDestino": 1,
-        "descricao": "Teste",
-        "valor": 0.5
+        "descricao": "",
+        "tipoContaDestino": 2
       },
       "type": "object",
       "properties": {
-        "idContaOrigem": {
-          "$ref": "#/definitions/IdContaOrigem"
-        },
         "idContaDestino": {
           "$ref": "#/definitions/IdContaDestino"
         },
-        "tipoContaOrigem": {
-          "type": "integer",
-          "format": "int32"
+        "mesmaTitularidade": {
+          "type": "boolean"
         },
-        "tipoContaDestino": {
+        "valor": {
+          "type": "number",
+          "format": "double"
+        },
+        "idContaOrigem": {
+          "$ref": "#/definitions/IdContaOrigem"
+        },
+        "tipoContaOrigem": {
           "type": "integer",
           "format": "int32"
         },
         "descricao": {
           "type": "string"
         },
-        "valor": {
-          "type": "number",
-          "format": "double"
+        "tipoContaDestino": {
+          "type": "integer",
+          "format": "int32"
         }
       },
       "required": [
-        "idContaOrigem",
         "idContaDestino",
+        "mesmaTitularidade",
+        "valor",
+        "idContaOrigem",
         "tipoContaOrigem",
-        "tipoContaDestino",
         "descricao",
-        "valor"
+        "tipoContaDestino"
       ]
     },
-    "IdContaOrigem": {
-      "title": "IdContaOrigem",
+    "IdContaDestino": {
+      "title": "IdContaDestino",
       "example": {
-        "agencia": "015",
-        "numeroConta": "010616266"
+        "agencia": "039",
+        "numeroConta": "010021456"
       },
       "type": "object",
       "properties": {
@@ -9094,8 +9143,8 @@
         "numeroConta"
       ]
     },
-    "IdContaDestino": {
-      "title": "IdContaDestino",
+    "IdContaOrigem": {
+      "title": "IdContaOrigem",
       "example": {
         "agencia": "039",
         "numeroConta": "010021456"
@@ -9902,9 +9951,10 @@
         "numeroConta": "010021456",
         "sequenciaTitular": 1,
         "agenciaPrevistaSaque": "039",
-        "data": "2018-12-20",
+        "data": "2019-05-13",
         "justificativa": "TESTE",
-        "valor": 12345.64
+        "valor": 12345.64,
+        "tipoConta": "CONTA_POUPANCA"
       },
       "type": "object",
       "properties": {
@@ -9930,6 +9980,9 @@
         "valor": {
           "type": "number",
           "format": "double"
+        },
+        "tipoConta": {
+          "type": "string"
         }
       },
       "required": [
@@ -9939,7 +9992,8 @@
         "agenciaPrevistaSaque",
         "data",
         "justificativa",
-        "valor"
+        "valor",
+        "tipoConta"
       ]
     },
     "/provisionamentos": {
@@ -12318,6 +12372,9 @@
     },
     {
       "name": "Utils"
+    },
+    {
+      "name": "Agencias"
     }
   ]
 }
