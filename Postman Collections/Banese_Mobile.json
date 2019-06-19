@@ -3389,47 +3389,7 @@
         "responses": {
           "200": {
             "description": "",
-            "schema": {
-              "$ref": "#/definitions/~1transferencia~1ted"
-            },
-            "examples": {
-              "application/json": {
-                "idContaOrigem": {
-                  "agencia": "039",
-                  "numeroConta": "010021456"
-                },
-                "idContaDestino": {
-                  "banco": "19",
-                  "agencia": "6546",
-                  "numeroConta": "6516565656"
-                },
-                "tipoContaOrigem": 2,
-                "tipoContaDestino": 1,
-                "finalidade": 1,
-                "cpfCnpjDestino": "04923027584",
-                "nomeTitularDestino": "Max",
-                "valor": 4.56,
-                "NTA": "V000063"
-              }
-            },
-            "headers": {
-              "Server": {
-                "type": "string",
-                "default": "Apache-Coyote/1.1"
-              },
-              "X-Powered-By": {
-                "type": "string",
-                "default": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
-              },
-              "Content-Length": {
-                "type": "string",
-                "default": "280"
-              },
-              "Date": {
-                "type": "string",
-                "default": "Thu, 14 Feb 2019 18:37:29 GMT"
-              }
-            }
+            "headers": {}
           }
         }
       }
@@ -3842,11 +3802,12 @@
                 "agencia": "039",
                 "numeroConta": "010021456",
                 "sequenciaTitular": 1,
-                "tipoConta": 2,
-                "agenciaPrevistaSaque": "039",
-                "data": "2018-12-26T07:42:51",
+                "agenciaPrevistaSaque": "39",
+                "nomeAgenciaPrevistaSaque": "AREIA BRANCA",
+                "data": "2019-06-21T03:00:00+00:00",
                 "valor": 12345.64,
-                "justificativa": "TESTE"
+                "justificativa": "TESTE",
+                "tipoConta": "CONTA_CORRENTE"
               }
             },
             "headers": {
@@ -3860,11 +3821,11 @@
               },
               "Content-Length": {
                 "type": "string",
-                "default": "177"
+                "default": "238"
               },
               "Date": {
                 "type": "string",
-                "default": "Tue, 18 Dec 2018 12:06:08 GMT"
+                "default": "Tue, 18 Jun 2019 19:29:10 GMT"
               }
             }
           }
@@ -9437,6 +9398,8 @@
         "cpfCnpjDestino": "05477622750",
         "tipoContaOrigem": 1,
         "tipoContaDestino": 2,
+        "nomeTitularDestino": "Max",
+        "finalidade": 1,
         "valor": 1.23
       },
       "type": "object",
@@ -9458,6 +9421,13 @@
           "type": "integer",
           "format": "int32"
         },
+        "nomeTitularDestino": {
+          "type": "string"
+        },
+        "finalidade": {
+          "type": "integer",
+          "format": "int32"
+        },
         "valor": {
           "type": "number",
           "format": "double"
@@ -9469,6 +9439,8 @@
         "cpfCnpjDestino",
         "tipoContaOrigem",
         "tipoContaDestino",
+        "nomeTitularDestino",
+        "finalidade",
         "valor"
       ]
     },
@@ -9606,72 +9578,6 @@
         "nomeTitularDestino",
         "finalidade",
         "valor"
-      ]
-    },
-    "/transferencia/ted": {
-      "title": "/transferencia/ted",
-      "example": {
-        "idContaOrigem": {
-          "agencia": "039",
-          "numeroConta": "010021456"
-        },
-        "idContaDestino": {
-          "banco": "19",
-          "agencia": "6546",
-          "numeroConta": "6516565656"
-        },
-        "tipoContaOrigem": 2,
-        "tipoContaDestino": 1,
-        "finalidade": 1,
-        "cpfCnpjDestino": "04923027584",
-        "nomeTitularDestino": "Max",
-        "valor": 4.56,
-        "NTA": "V000063"
-      },
-      "type": "object",
-      "properties": {
-        "idContaOrigem": {
-          "$ref": "#/definitions/IdContaOrigem"
-        },
-        "idContaDestino": {
-          "$ref": "#/definitions/IdContaDestino3"
-        },
-        "tipoContaOrigem": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "tipoContaDestino": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "finalidade": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "cpfCnpjDestino": {
-          "type": "string"
-        },
-        "nomeTitularDestino": {
-          "type": "string"
-        },
-        "valor": {
-          "type": "number",
-          "format": "double"
-        },
-        "NTA": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "idContaOrigem",
-        "idContaDestino",
-        "tipoContaOrigem",
-        "tipoContaDestino",
-        "finalidade",
-        "cpfCnpjDestino",
-        "nomeTitularDestino",
-        "valor",
-        "NTA"
       ]
     },
     "/transferencia/doc/validacaorequest": {
@@ -9950,11 +9856,11 @@
         "agencia": "039",
         "numeroConta": "010021456",
         "sequenciaTitular": 1,
-        "agenciaPrevistaSaque": "039",
-        "data": "2019-05-13",
+        "agenciaPrevistaSaque": 39,
+        "data": "2019-06-21",
         "justificativa": "TESTE",
         "valor": 12345.64,
-        "tipoConta": "CONTA_POUPANCA"
+        "tipoConta": "CONTA_CORRENTE"
       },
       "type": "object",
       "properties": {
@@ -9969,7 +9875,8 @@
           "format": "int32"
         },
         "agenciaPrevistaSaque": {
-          "type": "string"
+          "type": "integer",
+          "format": "int32"
         },
         "data": {
           "type": "string"
@@ -10002,11 +9909,12 @@
         "agencia": "039",
         "numeroConta": "010021456",
         "sequenciaTitular": 1,
-        "tipoConta": 2,
-        "agenciaPrevistaSaque": "039",
-        "data": "2018-12-26T07:42:51",
+        "agenciaPrevistaSaque": "39",
+        "nomeAgenciaPrevistaSaque": "AREIA BRANCA",
+        "data": "2019-06-21T03:00:00+00:00",
         "valor": 12345.64,
-        "justificativa": "TESTE"
+        "justificativa": "TESTE",
+        "tipoConta": "CONTA_CORRENTE"
       },
       "type": "object",
       "properties": {
@@ -10020,11 +9928,10 @@
           "type": "integer",
           "format": "int32"
         },
-        "tipoConta": {
-          "type": "integer",
-          "format": "int32"
-        },
         "agenciaPrevistaSaque": {
+          "type": "string"
+        },
+        "nomeAgenciaPrevistaSaque": {
           "type": "string"
         },
         "data": {
@@ -10036,17 +9943,21 @@
         },
         "justificativa": {
           "type": "string"
+        },
+        "tipoConta": {
+          "type": "string"
         }
       },
       "required": [
         "agencia",
         "numeroConta",
         "sequenciaTitular",
-        "tipoConta",
         "agenciaPrevistaSaque",
+        "nomeAgenciaPrevistaSaque",
         "data",
         "valor",
-        "justificativa"
+        "justificativa",
+        "tipoConta"
       ]
     },
     "/provisionamentos1": {
