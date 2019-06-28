@@ -3525,6 +3525,61 @@
         }
       }
     },
+    "/transferencia/ted/parametros": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "/transferencia/ted/parametros",
+        "tags": [
+          "Transferência"
+        ],
+        "operationId": "TransferenciaTedParametrosGet",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/~1transferencia~1ted~1parametros"
+            },
+            "examples": {
+              "application/json": {
+                "horarioPermiteTED": true,
+                "horarioLimiteTED": "19:00"
+              }
+            },
+            "headers": {
+              "Server": {
+                "type": "string",
+                "default": "Apache-Coyote/1.1"
+              },
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "53"
+              },
+              "Date": {
+                "type": "string",
+                "default": "Thu, 27 Jun 2019 18:27:10 GMT"
+              }
+            }
+          }
+        }
+      }
+    },
     "/clubevantagens/disponiveis": {
       "get": {
         "description": "TODO: Add Description",
@@ -9774,6 +9829,26 @@
         "finalidade",
         "descricao",
         "valor"
+      ]
+    },
+    "/transferencia/ted/parametros": {
+      "title": "/transferencia/ted/parametros",
+      "example": {
+        "horarioPermiteTED": true,
+        "horarioLimiteTED": "19:00"
+      },
+      "type": "object",
+      "properties": {
+        "horarioPermiteTED": {
+          "type": "boolean"
+        },
+        "horarioLimiteTED": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "horarioPermiteTED",
+        "horarioLimiteTED"
       ]
     },
     "/clubevantagens/disponivei": {
