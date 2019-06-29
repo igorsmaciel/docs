@@ -5866,6 +5866,122 @@
           }
         }
       }
+    },
+    "/recarga/operadoras": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "/recarga/operadoras",
+        "tags": [
+          "Recarga"
+        ],
+        "operationId": "RecargaOperadorasGet",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/~1recarga~1operadora"
+              }
+            },
+            "examples": {
+              "application/json": [
+                {
+                  "codigoOperadora": 2,
+                  "nomeOperadora": "Claro"
+                },
+                {
+                  "codigoOperadora": 11,
+                  "nomeOperadora": "Embratel"
+                },
+                {
+                  "codigoOperadora": 3,
+                  "nomeOperadora": "Oi"
+                },
+                {
+                  "codigoOperadora": 8,
+                  "nomeOperadora": "Oi-Fixo"
+                },
+                {
+                  "codigoOperadora": 4,
+                  "nomeOperadora": "Tim"
+                },
+                {
+                  "codigoOperadora": 1,
+                  "nomeOperadora": "Vivo"
+                },
+                {
+                  "codigoOperadora": 7,
+                  "nomeOperadora": "Brasil Telecom"
+                },
+                {
+                  "codigoOperadora": 9,
+                  "nomeOperadora": "CTBC-Celular"
+                },
+                {
+                  "codigoOperadora": 10,
+                  "nomeOperadora": "CTBC-Fixo"
+                },
+                {
+                  "codigoOperadora": 14,
+                  "nomeOperadora": "L Economia"
+                },
+                {
+                  "codigoOperadora": 15,
+                  "nomeOperadora": "L E Familia"
+                },
+                {
+                  "codigoOperadora": 16,
+                  "nomeOperadora": "Nextel"
+                },
+                {
+                  "codigoOperadora": 12,
+                  "nomeOperadora": "Sercomtel-Celular"
+                },
+                {
+                  "codigoOperadora": 13,
+                  "nomeOperadora": "Sercomtel-Fixo"
+                },
+                {
+                  "codigoOperadora": 17,
+                  "nomeOperadora": "Nexus"
+                }
+              ]
+            },
+            "headers": {
+              "Server": {
+                "type": "string",
+                "default": "Apache-Coyote/1.1"
+              },
+              "X-Powered-By": {
+                "type": "string",
+                "default": "Servlet 2.5; JBoss-5.0/JBossWeb-2.1"
+              },
+              "Content-Length": {
+                "type": "string",
+                "default": "751"
+              },
+              "Date": {
+                "type": "string",
+                "default": "Fri, 28 Jun 2019 20:41:36 GMT"
+              }
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -12329,6 +12445,27 @@
         "valor",
         "chave"
       ]
+    },
+    "/recarga/operadora": {
+      "title": "/recarga/operadora",
+      "example": {
+        "codigoOperadora": 2,
+        "nomeOperadora": "Claro"
+      },
+      "type": "object",
+      "properties": {
+        "codigoOperadora": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "nomeOperadora": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "codigoOperadora",
+        "nomeOperadora"
+      ]
     }
   },
   "tags": [
@@ -12361,6 +12498,9 @@
     },
     {
       "name": "Agencias"
+    },
+    {
+      "name": "Recarga"
     }
   ]
 }
