@@ -5982,6 +5982,80 @@
           }
         }
       }
+    },
+    "/recarga/operadoras/4/valores/79": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "/recarga/operadoras/{operadora}/valores/{DDD}",
+        "tags": [
+          "Recarga"
+        ],
+        "operationId": "RecargaOperadoras4Valores79Get",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/recarga": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "/recarga",
+        "tags": [
+          "Recarga"
+        ],
+        "operationId": "RecargaPost",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/~1recargarequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -12465,6 +12539,71 @@
       "required": [
         "codigoOperadora",
         "nomeOperadora"
+      ]
+    },
+    "/recargarequest": {
+      "title": "/recargarequest",
+      "example": {
+        "idConta": {
+          "agencia": "015",
+          "numeroConta": "010000010"
+        },
+        "codigoOperadora": 4,
+        "numeroFaixa": 0,
+        "numeroFilial": 1102000000,
+        "numeroRecarga": "chave_2001",
+        "subconta": 0,
+        "telefone": 79991321535,
+        "valor": 4,
+        "versaoFilial": 1
+      },
+      "type": "object",
+      "properties": {
+        "idConta": {
+          "$ref": "#/definitions/IdConta"
+        },
+        "codigoOperadora": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "numeroFaixa": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "numeroFilial": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "numeroRecarga": {
+          "type": "string"
+        },
+        "subconta": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "telefone": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "valor": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "versaoFilial": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "idConta",
+        "codigoOperadora",
+        "numeroFaixa",
+        "numeroFilial",
+        "numeroRecarga",
+        "subconta",
+        "telefone",
+        "valor",
+        "versaoFilial"
       ]
     }
   },
