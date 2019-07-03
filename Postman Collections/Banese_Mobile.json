@@ -9838,6 +9838,7 @@
           "numeroConta": "010021456"
         },
         "tipoContaOrigem": 1,
+        "tipoContaDestino": 1,
         "cpfCnpjDestino": "04923027584",
         "nomeTitularDestino": "Max",
         "mesmaTitularidade": false,
@@ -9853,6 +9854,10 @@
           "$ref": "#/definitions/IdContaOrigem"
         },
         "tipoContaOrigem": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "tipoContaDestino": {
           "type": "integer",
           "format": "int32"
         },
@@ -9878,6 +9883,7 @@
         "idContaDestino",
         "idContaOrigem",
         "tipoContaOrigem",
+        "tipoContaDestino",
         "cpfCnpjDestino",
         "nomeTitularDestino",
         "mesmaTitularidade",
@@ -9969,6 +9975,7 @@
           "numeroConta": "010021456"
         },
         "tipoContaOrigem": 1,
+        "tipoContaDestino": 2,
         "cpfCnpjDestino": "04923027584",
         "nomeTitularDestino": "Max",
         "mesmaTitularidade": false,
@@ -9985,6 +9992,10 @@
           "$ref": "#/definitions/IdContaOrigem"
         },
         "tipoContaOrigem": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "tipoContaDestino": {
           "type": "integer",
           "format": "int32"
         },
@@ -10013,6 +10024,7 @@
         "idContaDestino",
         "idContaOrigem",
         "tipoContaOrigem",
+        "tipoContaDestino",
         "cpfCnpjDestino",
         "nomeTitularDestino",
         "mesmaTitularidade",
