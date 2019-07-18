@@ -176,138 +176,198 @@
             },
             "examples": {
               "application/json": {
-                "dataInicio": "2018-07-11T10:12:53",
-                "dataFim": "2019-01-11T10:12:53",
+                "dataInicio": "2018-06-05T03:00:00+00:00",
+                "dataFim": "2018-12-18T03:00:00+00:00",
                 "paginacaoInicio": 0,
                 "paginacaoFim": 10,
                 "tipoConta": "CONTA_CORRENTE",
-                "saldoAtual": 2046189.23,
+                "saldoAtual": 8182.7,
                 "lancamentos": [
                   {
+                    "tipo": "C",
+                    "nsu": "0008F01",
+                    "nsuSistema": "V000143",
+                    "dataSistema": "2018-12-17T03:00:00+00:00",
+                    "data": "2018-12-27T19:43:57+00:00",
+                    "cdHistorico": 121,
+                    "valor": 0.5,
                     "agencia": "988",
-                    "canal": 7,
-                    "data": "2019-01-03T16:41:56",
-                    "dataSistema": "2018-12-21T00:00:00",
-                    "cdHistorico": 709,
-                    "nsuSistema": "V000067",
-                    "numeroDocumento": "0000067",
+                    "numeroDocumento": "0988001",
+                    "posto": "01",
+                    "sequencial": 29,
+                    "modalidade": 0,
+                    "historico": "TRANSF ON-LINE",
+                    "descricao": "",
+                    "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
                     "numeroTerminal": 1,
-                    "valor": 662.53,
-                    "tipo": "D",
-                    "descricao": "DUA",
-                    "historico": "ATM - COBRANCA"
+                    "canal": 7
                   },
                   {
-                    "agencia": "988",
-                    "canal": 7,
-                    "data": "2019-01-03T16:26:39",
-                    "dataSistema": "2018-12-21T00:00:00",
-                    "cdHistorico": 709,
-                    "nsuSistema": "V000063",
-                    "numeroDocumento": "0000063",
-                    "numeroTerminal": 1,
-                    "valor": 99,
                     "tipo": "D",
-                    "descricao": "DUA",
-                    "historico": "ATM - COBRANCA"
+                    "nsu": "19AD800",
+                    "nsuSistema": "V105176",
+                    "dataSistema": "2018-12-17T03:00:00+00:00",
+                    "data": "2018-12-26T17:18:30+00:00",
+                    "cdHistorico": 703,
+                    "valor": 184.32,
+                    "agencia": "994",
+                    "numeroDocumento": "0105176",
+                    "posto": "00",
+                    "sequencial": 28,
+                    "modalidade": 0,
+                    "historico": "ATM - ENERGISA",
+                    "descricao": "",
+                    "numeroTerminal": 1,
+                    "canal": 7
                   },
                   {
-                    "agencia": "988",
-                    "canal": 7,
-                    "data": "2019-01-03T16:10:43",
-                    "dataSistema": "2018-12-21T00:00:00",
-                    "cdHistorico": 709,
-                    "nsuSistema": "V000060",
-                    "numeroDocumento": "0000060",
+                    "tipo": "C",
+                    "nsu": "19AD800",
+                    "nsuSistema": "V105176",
+                    "dataSistema": "2018-12-17T03:00:00+00:00",
+                    "data": "2018-12-17T03:00:00+00:00",
+                    "cdHistorico": 84,
+                    "valor": 184.32,
+                    "agencia": "994",
+                    "numeroDocumento": "0105176",
+                    "posto": "00",
+                    "sequencial": 27,
+                    "modalidade": 0,
+                    "historico": "LIB EMPR COMERC",
+                    "descricao": "",
                     "numeroTerminal": 1,
-                    "valor": 77.79,
-                    "tipo": "D",
-                    "descricao": "teste",
-                    "historico": "ATM - COBRANCA"
+                    "canal": 7
                   },
                   {
+                    "tipo": "C",
+                    "nsu": "0007001",
+                    "nsuSistema": "V000112",
+                    "dataSistema": "2018-12-17T03:00:00+00:00",
+                    "data": "2018-12-26T17:17:40+00:00",
+                    "cdHistorico": 121,
+                    "valor": 0.5,
                     "agencia": "988",
-                    "canal": 7,
-                    "data": "2019-01-03T16:03:07",
-                    "dataSistema": "2018-12-21T00:00:00",
-                    "cdHistorico": 709,
-                    "nsuSistema": "V000057",
-                    "numeroDocumento": "0000057",
+                    "numeroDocumento": "0988001",
+                    "posto": "01",
+                    "sequencial": 26,
+                    "modalidade": 0,
+                    "historico": "TRANSF ON-LINE",
+                    "descricao": "",
+                    "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
                     "numeroTerminal": 1,
-                    "valor": 77.79,
-                    "tipo": "D",
-                    "descricao": "Energisa janeiro",
-                    "historico": "ATM - COBRANCA"
+                    "canal": 7
                   },
                   {
-                    "agencia": "988",
-                    "canal": 7,
-                    "data": "2019-01-03T16:01:36",
-                    "dataSistema": "2018-12-21T00:00:00",
-                    "cdHistorico": 709,
-                    "nsuSistema": "V000051",
-                    "numeroDocumento": "0000051",
-                    "numeroTerminal": 1,
-                    "valor": 99,
                     "tipo": "D",
-                    "descricao": "Energisa janeiro",
-                    "historico": "ATM - COBRANCA"
+                    "nsu": "19AD700",
+                    "nsuSistema": "V105175",
+                    "dataSistema": "2018-12-17T03:00:00+00:00",
+                    "data": "2018-12-26T17:14:49+00:00",
+                    "cdHistorico": 703,
+                    "valor": 184.32,
+                    "agencia": "994",
+                    "numeroDocumento": "0105175",
+                    "posto": "00",
+                    "sequencial": 25,
+                    "modalidade": 0,
+                    "historico": "ATM - ENERGISA",
+                    "descricao": "",
+                    "numeroTerminal": 1,
+                    "canal": 7
                   },
                   {
-                    "agencia": "988",
-                    "canal": 7,
-                    "data": "2019-01-03T15:47:32",
-                    "dataSistema": "2018-12-21T00:00:00",
-                    "cdHistorico": 709,
-                    "nsuSistema": "V000047",
-                    "numeroDocumento": "0000047",
+                    "tipo": "C",
+                    "nsu": "19AD700",
+                    "nsuSistema": "V105175",
+                    "dataSistema": "2018-12-17T03:00:00+00:00",
+                    "data": "2018-12-17T03:00:00+00:00",
+                    "cdHistorico": 84,
+                    "valor": 184.32,
+                    "agencia": "994",
+                    "numeroDocumento": "0105175",
+                    "posto": "00",
+                    "sequencial": 24,
+                    "modalidade": 0,
+                    "historico": "LIB EMPR COMERC",
+                    "descricao": "",
                     "numeroTerminal": 1,
-                    "valor": 99,
-                    "tipo": "D",
-                    "descricao": "Energisa janeiro",
-                    "historico": "ATM - COBRANCA"
+                    "canal": 7
                   },
                   {
+                    "tipo": "C",
+                    "nsu": "0006E01",
+                    "nsuSistema": "V000110",
+                    "dataSistema": "2018-12-17T03:00:00+00:00",
+                    "data": "2018-12-21T20:05:27+00:00",
+                    "cdHistorico": 121,
+                    "valor": 0.5,
                     "agencia": "988",
-                    "canal": 7,
-                    "data": "2019-01-03T15:45:39",
-                    "dataSistema": "2018-12-21T00:00:00",
-                    "cdHistorico": 709,
-                    "nsuSistema": "V000046",
-                    "numeroDocumento": "0000046",
+                    "numeroDocumento": "0988001",
+                    "posto": "01",
+                    "sequencial": 23,
+                    "modalidade": 0,
+                    "historico": "TRANSF ON-LINE",
+                    "descricao": "",
+                    "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
                     "numeroTerminal": 1,
-                    "valor": 99,
-                    "tipo": "D",
-                    "descricao": "Energisa janeiro",
-                    "historico": "ATM - COBRANCA"
+                    "canal": 7
                   },
                   {
+                    "tipo": "C",
+                    "nsu": "0006C01",
+                    "nsuSistema": "V000108",
+                    "dataSistema": "2018-12-17T03:00:00+00:00",
+                    "data": "2018-12-21T19:55:22+00:00",
+                    "cdHistorico": 121,
+                    "valor": 0.5,
                     "agencia": "988",
-                    "canal": 7,
-                    "data": "2019-01-03T15:40:56",
-                    "dataSistema": "2018-12-21T00:00:00",
-                    "cdHistorico": 709,
-                    "nsuSistema": "V000045",
-                    "numeroDocumento": "0000045",
+                    "numeroDocumento": "0988001",
+                    "posto": "01",
+                    "sequencial": 22,
+                    "modalidade": 0,
+                    "historico": "TRANSF ON-LINE",
+                    "descricao": "",
+                    "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
                     "numeroTerminal": 1,
-                    "valor": 99,
-                    "tipo": "D",
-                    "descricao": "Energisa janeiro",
-                    "historico": "ATM - COBRANCA"
+                    "canal": 7
                   },
                   {
+                    "tipo": "C",
+                    "nsu": "0006A01",
+                    "nsuSistema": "V000106",
+                    "dataSistema": "2018-12-17T03:00:00+00:00",
+                    "data": "2018-12-21T19:52:20+00:00",
+                    "cdHistorico": 121,
+                    "valor": 0.5,
                     "agencia": "988",
-                    "canal": 7,
-                    "data": "2019-01-03T15:31:53",
-                    "dataSistema": "2018-12-21T00:00:00",
-                    "cdHistorico": 709,
-                    "nsuSistema": "V000039",
-                    "numeroDocumento": "0000039",
+                    "numeroDocumento": "0988001",
+                    "posto": "01",
+                    "sequencial": 21,
+                    "modalidade": 0,
+                    "historico": "TRANSF ON-LINE",
+                    "descricao": "",
+                    "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
                     "numeroTerminal": 1,
-                    "valor": 99,
-                    "tipo": "D",
-                    "descricao": "Energisa janeiro",
-                    "historico": "ATM - COBRANCA"
+                    "canal": 7
+                  },
+                  {
+                    "tipo": "C",
+                    "nsu": "0006801",
+                    "nsuSistema": "V000104",
+                    "dataSistema": "2018-12-17T03:00:00+00:00",
+                    "data": "2018-12-21T19:40:43+00:00",
+                    "cdHistorico": 121,
+                    "valor": 0.5,
+                    "agencia": "988",
+                    "numeroDocumento": "0988001",
+                    "posto": "01",
+                    "sequencial": 20,
+                    "modalidade": 0,
+                    "historico": "TRANSF ON-LINE",
+                    "descricao": "",
+                    "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
+                    "numeroTerminal": 1,
+                    "canal": 7
                   }
                 ]
               }
@@ -323,11 +383,11 @@
               },
               "Content-Length": {
                 "type": "string",
-                "default": "2521"
+                "default": "3757"
               },
               "Date": {
                 "type": "string",
-                "default": "Fri, 11 Jan 2019 13:12:53 GMT"
+                "default": "Wed, 17 Jul 2019 13:05:38 GMT"
               }
             }
           }
@@ -4186,6 +4246,51 @@
         }
       }
     },
+    "/pagamentos/convenios/parcelado": {
+      "post": {
+        "description": "TODO: Add Description",
+        "summary": "/pagamentos/convenios/parcelado",
+        "tags": [
+          "Pagamentos"
+        ],
+        "operationId": "PagamentosConveniosParceladoPost",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/~1pagamentos~1convenios~1parceladorequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
     "/pagamentos/titulos/03395780300001091019201551000261816891230102": {
       "get": {
         "description": "TODO: Add Description",
@@ -6118,138 +6223,198 @@
     "/contas/{conta}/extrato": {
       "title": "/contas/{conta}/extrato",
       "example": {
-        "dataInicio": "2018-07-11T10:12:53",
-        "dataFim": "2019-01-11T10:12:53",
+        "dataInicio": "2018-06-05T03:00:00+00:00",
+        "dataFim": "2018-12-18T03:00:00+00:00",
         "paginacaoInicio": 0,
         "paginacaoFim": 10,
         "tipoConta": "CONTA_CORRENTE",
-        "saldoAtual": 2046189.23,
+        "saldoAtual": 8182.7,
         "lancamentos": [
           {
+            "tipo": "C",
+            "nsu": "0008F01",
+            "nsuSistema": "V000143",
+            "dataSistema": "2018-12-17T03:00:00+00:00",
+            "data": "2018-12-27T19:43:57+00:00",
+            "cdHistorico": 121,
+            "valor": 0.5,
             "agencia": "988",
-            "canal": 7,
-            "data": "2019-01-03T16:41:56",
-            "dataSistema": "2018-12-21T00:00:00",
-            "cdHistorico": 709,
-            "nsuSistema": "V000067",
-            "numeroDocumento": "0000067",
+            "numeroDocumento": "0988001",
+            "posto": "01",
+            "sequencial": 29,
+            "modalidade": 0,
+            "historico": "TRANSF ON-LINE",
+            "descricao": "",
+            "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
             "numeroTerminal": 1,
-            "valor": 662.53,
-            "tipo": "D",
-            "descricao": "DUA",
-            "historico": "ATM - COBRANCA"
+            "canal": 7
           },
           {
-            "agencia": "988",
-            "canal": 7,
-            "data": "2019-01-03T16:26:39",
-            "dataSistema": "2018-12-21T00:00:00",
-            "cdHistorico": 709,
-            "nsuSistema": "V000063",
-            "numeroDocumento": "0000063",
-            "numeroTerminal": 1,
-            "valor": 99,
             "tipo": "D",
-            "descricao": "DUA",
-            "historico": "ATM - COBRANCA"
+            "nsu": "19AD800",
+            "nsuSistema": "V105176",
+            "dataSistema": "2018-12-17T03:00:00+00:00",
+            "data": "2018-12-26T17:18:30+00:00",
+            "cdHistorico": 703,
+            "valor": 184.32,
+            "agencia": "994",
+            "numeroDocumento": "0105176",
+            "posto": "00",
+            "sequencial": 28,
+            "modalidade": 0,
+            "historico": "ATM - ENERGISA",
+            "descricao": "",
+            "numeroTerminal": 1,
+            "canal": 7
           },
           {
-            "agencia": "988",
-            "canal": 7,
-            "data": "2019-01-03T16:10:43",
-            "dataSistema": "2018-12-21T00:00:00",
-            "cdHistorico": 709,
-            "nsuSistema": "V000060",
-            "numeroDocumento": "0000060",
+            "tipo": "C",
+            "nsu": "19AD800",
+            "nsuSistema": "V105176",
+            "dataSistema": "2018-12-17T03:00:00+00:00",
+            "data": "2018-12-17T03:00:00+00:00",
+            "cdHistorico": 84,
+            "valor": 184.32,
+            "agencia": "994",
+            "numeroDocumento": "0105176",
+            "posto": "00",
+            "sequencial": 27,
+            "modalidade": 0,
+            "historico": "LIB EMPR COMERC",
+            "descricao": "",
             "numeroTerminal": 1,
-            "valor": 77.79,
-            "tipo": "D",
-            "descricao": "teste",
-            "historico": "ATM - COBRANCA"
+            "canal": 7
           },
           {
+            "tipo": "C",
+            "nsu": "0007001",
+            "nsuSistema": "V000112",
+            "dataSistema": "2018-12-17T03:00:00+00:00",
+            "data": "2018-12-26T17:17:40+00:00",
+            "cdHistorico": 121,
+            "valor": 0.5,
             "agencia": "988",
-            "canal": 7,
-            "data": "2019-01-03T16:03:07",
-            "dataSistema": "2018-12-21T00:00:00",
-            "cdHistorico": 709,
-            "nsuSistema": "V000057",
-            "numeroDocumento": "0000057",
+            "numeroDocumento": "0988001",
+            "posto": "01",
+            "sequencial": 26,
+            "modalidade": 0,
+            "historico": "TRANSF ON-LINE",
+            "descricao": "",
+            "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
             "numeroTerminal": 1,
-            "valor": 77.79,
-            "tipo": "D",
-            "descricao": "Energisa janeiro",
-            "historico": "ATM - COBRANCA"
+            "canal": 7
           },
           {
-            "agencia": "988",
-            "canal": 7,
-            "data": "2019-01-03T16:01:36",
-            "dataSistema": "2018-12-21T00:00:00",
-            "cdHistorico": 709,
-            "nsuSistema": "V000051",
-            "numeroDocumento": "0000051",
-            "numeroTerminal": 1,
-            "valor": 99,
             "tipo": "D",
-            "descricao": "Energisa janeiro",
-            "historico": "ATM - COBRANCA"
+            "nsu": "19AD700",
+            "nsuSistema": "V105175",
+            "dataSistema": "2018-12-17T03:00:00+00:00",
+            "data": "2018-12-26T17:14:49+00:00",
+            "cdHistorico": 703,
+            "valor": 184.32,
+            "agencia": "994",
+            "numeroDocumento": "0105175",
+            "posto": "00",
+            "sequencial": 25,
+            "modalidade": 0,
+            "historico": "ATM - ENERGISA",
+            "descricao": "",
+            "numeroTerminal": 1,
+            "canal": 7
           },
           {
-            "agencia": "988",
-            "canal": 7,
-            "data": "2019-01-03T15:47:32",
-            "dataSistema": "2018-12-21T00:00:00",
-            "cdHistorico": 709,
-            "nsuSistema": "V000047",
-            "numeroDocumento": "0000047",
+            "tipo": "C",
+            "nsu": "19AD700",
+            "nsuSistema": "V105175",
+            "dataSistema": "2018-12-17T03:00:00+00:00",
+            "data": "2018-12-17T03:00:00+00:00",
+            "cdHistorico": 84,
+            "valor": 184.32,
+            "agencia": "994",
+            "numeroDocumento": "0105175",
+            "posto": "00",
+            "sequencial": 24,
+            "modalidade": 0,
+            "historico": "LIB EMPR COMERC",
+            "descricao": "",
             "numeroTerminal": 1,
-            "valor": 99,
-            "tipo": "D",
-            "descricao": "Energisa janeiro",
-            "historico": "ATM - COBRANCA"
+            "canal": 7
           },
           {
+            "tipo": "C",
+            "nsu": "0006E01",
+            "nsuSistema": "V000110",
+            "dataSistema": "2018-12-17T03:00:00+00:00",
+            "data": "2018-12-21T20:05:27+00:00",
+            "cdHistorico": 121,
+            "valor": 0.5,
             "agencia": "988",
-            "canal": 7,
-            "data": "2019-01-03T15:45:39",
-            "dataSistema": "2018-12-21T00:00:00",
-            "cdHistorico": 709,
-            "nsuSistema": "V000046",
-            "numeroDocumento": "0000046",
+            "numeroDocumento": "0988001",
+            "posto": "01",
+            "sequencial": 23,
+            "modalidade": 0,
+            "historico": "TRANSF ON-LINE",
+            "descricao": "",
+            "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
             "numeroTerminal": 1,
-            "valor": 99,
-            "tipo": "D",
-            "descricao": "Energisa janeiro",
-            "historico": "ATM - COBRANCA"
+            "canal": 7
           },
           {
+            "tipo": "C",
+            "nsu": "0006C01",
+            "nsuSistema": "V000108",
+            "dataSistema": "2018-12-17T03:00:00+00:00",
+            "data": "2018-12-21T19:55:22+00:00",
+            "cdHistorico": 121,
+            "valor": 0.5,
             "agencia": "988",
-            "canal": 7,
-            "data": "2019-01-03T15:40:56",
-            "dataSistema": "2018-12-21T00:00:00",
-            "cdHistorico": 709,
-            "nsuSistema": "V000045",
-            "numeroDocumento": "0000045",
+            "numeroDocumento": "0988001",
+            "posto": "01",
+            "sequencial": 22,
+            "modalidade": 0,
+            "historico": "TRANSF ON-LINE",
+            "descricao": "",
+            "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
             "numeroTerminal": 1,
-            "valor": 99,
-            "tipo": "D",
-            "descricao": "Energisa janeiro",
-            "historico": "ATM - COBRANCA"
+            "canal": 7
           },
           {
+            "tipo": "C",
+            "nsu": "0006A01",
+            "nsuSistema": "V000106",
+            "dataSistema": "2018-12-17T03:00:00+00:00",
+            "data": "2018-12-21T19:52:20+00:00",
+            "cdHistorico": 121,
+            "valor": 0.5,
             "agencia": "988",
-            "canal": 7,
-            "data": "2019-01-03T15:31:53",
-            "dataSistema": "2018-12-21T00:00:00",
-            "cdHistorico": 709,
-            "nsuSistema": "V000039",
-            "numeroDocumento": "0000039",
+            "numeroDocumento": "0988001",
+            "posto": "01",
+            "sequencial": 21,
+            "modalidade": 0,
+            "historico": "TRANSF ON-LINE",
+            "descricao": "",
+            "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
             "numeroTerminal": 1,
-            "valor": 99,
-            "tipo": "D",
-            "descricao": "Energisa janeiro",
-            "historico": "ATM - COBRANCA"
+            "canal": 7
+          },
+          {
+            "tipo": "C",
+            "nsu": "0006801",
+            "nsuSistema": "V000104",
+            "dataSistema": "2018-12-17T03:00:00+00:00",
+            "data": "2018-12-21T19:40:43+00:00",
+            "cdHistorico": 121,
+            "valor": 0.5,
+            "agencia": "988",
+            "numeroDocumento": "0988001",
+            "posto": "01",
+            "sequencial": 20,
+            "modalidade": 0,
+            "historico": "TRANSF ON-LINE",
+            "descricao": "",
+            "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
+            "numeroTerminal": 1,
+            "canal": 7
           }
         ]
       },
@@ -6296,45 +6461,42 @@
     "Lancamento": {
       "title": "Lancamento",
       "example": {
+        "tipo": "C",
+        "nsu": "0008F01",
+        "nsuSistema": "V000143",
+        "dataSistema": "2018-12-17T03:00:00+00:00",
+        "data": "2018-12-27T19:43:57+00:00",
+        "cdHistorico": 121,
+        "valor": 0.5,
         "agencia": "988",
-        "canal": 7,
-        "data": "2019-01-03T16:41:56",
-        "dataSistema": "2018-12-21T00:00:00",
-        "cdHistorico": 709,
-        "nsuSistema": "V000067",
-        "numeroDocumento": "0000067",
+        "numeroDocumento": "0988001",
+        "posto": "01",
+        "sequencial": 29,
+        "modalidade": 0,
+        "historico": "TRANSF ON-LINE",
+        "descricao": "",
+        "complementoSistema": "015 01/061626-6 FREDERICO SANTOS DO VALE",
         "numeroTerminal": 1,
-        "valor": 662.53,
-        "tipo": "D",
-        "descricao": "DUA",
-        "historico": "ATM - COBRANCA"
+        "canal": 7
       },
       "type": "object",
       "properties": {
-        "agencia": {
+        "tipo": {
           "type": "string"
         },
-        "canal": {
-          "type": "integer",
-          "format": "int32"
+        "nsu": {
+          "type": "string"
         },
-        "data": {
+        "nsuSistema": {
           "type": "string"
         },
         "dataSistema": {
           "type": "string"
         },
+        "data": {
+          "type": "string"
+        },
         "cdHistorico": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "nsuSistema": {
-          "type": "string"
-        },
-        "numeroDocumento": {
-          "type": "string"
-        },
-        "numeroTerminal": {
           "type": "integer",
           "format": "int32"
         },
@@ -6342,29 +6504,58 @@
           "type": "number",
           "format": "double"
         },
-        "tipo": {
+        "agencia": {
+          "type": "string"
+        },
+        "numeroDocumento": {
+          "type": "string"
+        },
+        "posto": {
+          "type": "string"
+        },
+        "sequencial": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "modalidade": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "historico": {
           "type": "string"
         },
         "descricao": {
           "type": "string"
         },
-        "historico": {
+        "complementoSistema": {
           "type": "string"
+        },
+        "numeroTerminal": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "canal": {
+          "type": "integer",
+          "format": "int32"
         }
       },
       "required": [
-        "agencia",
-        "canal",
-        "data",
-        "dataSistema",
-        "cdHistorico",
-        "nsuSistema",
-        "numeroDocumento",
-        "numeroTerminal",
-        "valor",
         "tipo",
+        "nsu",
+        "nsuSistema",
+        "dataSistema",
+        "data",
+        "cdHistorico",
+        "valor",
+        "agencia",
+        "numeroDocumento",
+        "posto",
+        "sequencial",
+        "modalidade",
+        "historico",
         "descricao",
-        "historico"
+        "numeroTerminal",
+        "canal"
       ]
     },
     "/contas/{conta}/extrato/resumo": {
@@ -10476,6 +10667,40 @@
       "required": [
         "agencia",
         "numeroConta"
+      ]
+    },
+    "/pagamentos/convenios/parceladorequest": {
+      "title": "/pagamentos/convenios/parceladorequest",
+      "example": {
+        "codigoBarras": "856000000062625300260027227583629208190228000005",
+        "idConta": {
+          "agencia": "039",
+          "numeroConta": "010021456"
+        },
+        "descricao": "DUA",
+        "valor": 662.53
+      },
+      "type": "object",
+      "properties": {
+        "codigoBarras": {
+          "type": "string"
+        },
+        "idConta": {
+          "$ref": "#/definitions/IdConta"
+        },
+        "descricao": {
+          "type": "string"
+        },
+        "valor": {
+          "type": "number",
+          "format": "double"
+        }
+      },
+      "required": [
+        "codigoBarras",
+        "idConta",
+        "descricao",
+        "valor"
       ]
     },
     "/pagamentos/titulos/{codigoBarras}": {
