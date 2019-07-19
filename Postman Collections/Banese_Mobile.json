@@ -110,14 +110,14 @@
         }
       }
     },
-    "/contas/039010021456/extrato": {
+    "/contas/015010859070/extrato": {
       "get": {
         "description": "TODO: Add Description",
         "summary": "/contas/{conta}/extrato",
         "tags": [
           "Conta"
         ],
-        "operationId": "Contas039010021456ExtratoGet",
+        "operationId": "Contas015010859070ExtratoGet",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -10672,35 +10672,287 @@
     "/pagamentos/convenios/parceladorequest": {
       "title": "/pagamentos/convenios/parceladorequest",
       "example": {
-        "codigoBarras": "856000000062625300260027227583629208190228000005",
+        "codigoConvenioCredito": "0",
+        "codigoCarencia": "D",
         "idConta": {
-          "agencia": "039",
-          "numeroConta": "010021456"
+          "numeroConta": "10859070",
+          "agencia": "15"
         },
-        "descricao": "DUA",
-        "valor": 662.53
+        "codigoCalculoJuros": "1",
+        "valor": "177.04",
+        "numeroTitular": "1",
+        "taxaIofAdicional": "0.38",
+        "taxaIofNormal": "0.0082",
+        "simulacoes": {
+          "vencimentoContrato": "2019-08-18T03:00:00+00:00",
+          "codigoVinculo": "1",
+          "cetAno": "62.8",
+          "numeroParcelas": "1",
+          "iofAdicional": "0.6728",
+          "tcir": "0",
+          "valorContrato": "177.04",
+          "valorParcela": "185.87",
+          "iofTotal": "1.1028",
+          "tac": "0",
+          "jurosAno": "51.11",
+          "vencimentoParcela1": "2019-08-18T03:00:00+00:00",
+          "iofNormal": "0.43",
+          "tacAdicional": "0",
+          "cetMes": "4.1447",
+          "jurosMes": "3.5"
+        },
+        "vinculos": {
+          "fontePagadora": {
+            "codigo": "000000000000000"
+          },
+          "codigo": "1",
+          "matricula": "0"
+        },
+        "nomeConvenio": "REC. DARF COD BARRA",
+        "valorTotal": "178.14",
+        "numeroMaximoParcelas": "1",
+        "codigoConvenio": "50064000",
+        "linhaCredito": {
+          "codigo": "2901",
+          "nome": "CREDI-RAPIDO PAGTO CONTAS"
+        },
+        "cpfCnpj": "02271343542",
+        "tipoPagamento": "1",
+        "codigoBarras": "856100000012770400649206611304302106001830191811",
+        "numeroMinimoParcelas": "1"
       },
       "type": "object",
       "properties": {
-        "codigoBarras": {
+        "codigoConvenioCredito": {
+          "type": "string"
+        },
+        "codigoCarencia": {
           "type": "string"
         },
         "idConta": {
           "$ref": "#/definitions/IdConta"
         },
-        "descricao": {
+        "codigoCalculoJuros": {
           "type": "string"
         },
         "valor": {
-          "type": "number",
-          "format": "double"
+          "type": "string"
+        },
+        "numeroTitular": {
+          "type": "string"
+        },
+        "taxaIofAdicional": {
+          "type": "string"
+        },
+        "taxaIofNormal": {
+          "type": "string"
+        },
+        "simulacoes": {
+          "$ref": "#/definitions/Simulacoes"
+        },
+        "vinculos": {
+          "$ref": "#/definitions/Vinculos"
+        },
+        "nomeConvenio": {
+          "type": "string"
+        },
+        "valorTotal": {
+          "type": "string"
+        },
+        "numeroMaximoParcelas": {
+          "type": "string"
+        },
+        "codigoConvenio": {
+          "type": "string"
+        },
+        "linhaCredito": {
+          "$ref": "#/definitions/LinhaCredito"
+        },
+        "cpfCnpj": {
+          "type": "string"
+        },
+        "tipoPagamento": {
+          "type": "string"
+        },
+        "codigoBarras": {
+          "type": "string"
+        },
+        "numeroMinimoParcelas": {
+          "type": "string"
         }
       },
       "required": [
-        "codigoBarras",
+        "codigoConvenioCredito",
+        "codigoCarencia",
         "idConta",
-        "descricao",
-        "valor"
+        "codigoCalculoJuros",
+        "valor",
+        "numeroTitular",
+        "taxaIofAdicional",
+        "taxaIofNormal",
+        "simulacoes",
+        "vinculos",
+        "nomeConvenio",
+        "valorTotal",
+        "numeroMaximoParcelas",
+        "codigoConvenio",
+        "linhaCredito",
+        "cpfCnpj",
+        "tipoPagamento",
+        "codigoBarras",
+        "numeroMinimoParcelas"
+      ]
+    },
+    "Simulacoes": {
+      "title": "Simulacoes",
+      "example": {
+        "vencimentoContrato": "2019-08-18T03:00:00+00:00",
+        "codigoVinculo": "1",
+        "cetAno": "62.8",
+        "numeroParcelas": "1",
+        "iofAdicional": "0.6728",
+        "tcir": "0",
+        "valorContrato": "177.04",
+        "valorParcela": "185.87",
+        "iofTotal": "1.1028",
+        "tac": "0",
+        "jurosAno": "51.11",
+        "vencimentoParcela1": "2019-08-18T03:00:00+00:00",
+        "iofNormal": "0.43",
+        "tacAdicional": "0",
+        "cetMes": "4.1447",
+        "jurosMes": "3.5"
+      },
+      "type": "object",
+      "properties": {
+        "vencimentoContrato": {
+          "type": "string"
+        },
+        "codigoVinculo": {
+          "type": "string"
+        },
+        "cetAno": {
+          "type": "string"
+        },
+        "numeroParcelas": {
+          "type": "string"
+        },
+        "iofAdicional": {
+          "type": "string"
+        },
+        "tcir": {
+          "type": "string"
+        },
+        "valorContrato": {
+          "type": "string"
+        },
+        "valorParcela": {
+          "type": "string"
+        },
+        "iofTotal": {
+          "type": "string"
+        },
+        "tac": {
+          "type": "string"
+        },
+        "jurosAno": {
+          "type": "string"
+        },
+        "vencimentoParcela1": {
+          "type": "string"
+        },
+        "iofNormal": {
+          "type": "string"
+        },
+        "tacAdicional": {
+          "type": "string"
+        },
+        "cetMes": {
+          "type": "string"
+        },
+        "jurosMes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "vencimentoContrato",
+        "codigoVinculo",
+        "cetAno",
+        "numeroParcelas",
+        "iofAdicional",
+        "tcir",
+        "valorContrato",
+        "valorParcela",
+        "iofTotal",
+        "tac",
+        "jurosAno",
+        "vencimentoParcela1",
+        "iofNormal",
+        "tacAdicional",
+        "cetMes",
+        "jurosMes"
+      ]
+    },
+    "Vinculos": {
+      "title": "Vinculos",
+      "example": {
+        "fontePagadora": {
+          "codigo": "000000000000000"
+        },
+        "codigo": "1",
+        "matricula": "0"
+      },
+      "type": "object",
+      "properties": {
+        "fontePagadora": {
+          "$ref": "#/definitions/FontePagadora"
+        },
+        "codigo": {
+          "type": "string"
+        },
+        "matricula": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "fontePagadora",
+        "codigo",
+        "matricula"
+      ]
+    },
+    "FontePagadora": {
+      "title": "FontePagadora",
+      "example": {
+        "codigo": "000000000000000"
+      },
+      "type": "object",
+      "properties": {
+        "codigo": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "codigo"
+      ]
+    },
+    "LinhaCredito": {
+      "title": "LinhaCredito",
+      "example": {
+        "codigo": "2901",
+        "nome": "CREDI-RAPIDO PAGTO CONTAS"
+      },
+      "type": "object",
+      "properties": {
+        "codigo": {
+          "type": "string"
+        },
+        "nome": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "codigo",
+        "nome"
       ]
     },
     "/pagamentos/titulos/{codigoBarras}": {
@@ -11434,7 +11686,7 @@
           "$ref": "#/definitions/IdConta"
         },
         "linhaCredito": {
-          "$ref": "#/definitions/LinhaCredito"
+          "$ref": "#/definitions/LinhaCredito1"
         },
         "matricula": {
           "type": "integer",
@@ -11505,23 +11757,8 @@
         "valorMaximoParcela"
       ]
     },
-    "FontePagadora": {
-      "title": "FontePagadora",
-      "example": {
-        "codigo": "013009717000146"
-      },
-      "type": "object",
-      "properties": {
-        "codigo": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "codigo"
-      ]
-    },
-    "LinhaCredito": {
-      "title": "LinhaCredito",
+    "LinhaCredito1": {
+      "title": "LinhaCredito1",
       "example": {
         "codigo": 853
       },
@@ -11596,10 +11833,10 @@
           "$ref": "#/definitions/IdConta"
         },
         "fontePagadora": {
-          "$ref": "#/definitions/FontePagadora1"
+          "$ref": "#/definitions/FontePagadora2"
         },
         "linhaCredito": {
-          "$ref": "#/definitions/LinhaCredito1"
+          "$ref": "#/definitions/LinhaCredito2"
         },
         "identificacao": {
           "$ref": "#/definitions/Identificacao"
@@ -11756,8 +11993,8 @@
         "matricula"
       ]
     },
-    "FontePagadora1": {
-      "title": "FontePagadora1",
+    "FontePagadora2": {
+      "title": "FontePagadora2",
       "example": {
         "codigo": "010436979000107",
         "nome": "FUNDAÇÃO HOSPITALAR DE SAÚDE - SE"
@@ -11776,8 +12013,8 @@
         "nome"
       ]
     },
-    "LinhaCredito1": {
-      "title": "LinhaCredito1",
+    "LinhaCredito2": {
+      "title": "LinhaCredito2",
       "example": {
         "codigo": 3602,
         "nome": "CREDI-RAPIDO 13º SALARIO PARC (2ª Parc.)"
@@ -12140,7 +12377,7 @@
         "vinculos": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Vinculo"
+            "$ref": "#/definitions/Vinculos1"
           }
         }
       },
@@ -12150,8 +12387,8 @@
         "vinculos"
       ]
     },
-    "Vinculo": {
-      "title": "Vinculo",
+    "Vinculos1": {
+      "title": "Vinculos1",
       "example": {
         "codigo": 1,
         "fontePagadora": {
@@ -12283,7 +12520,7 @@
           "format": "int32"
         },
         "fontePagadora": {
-          "$ref": "#/definitions/FontePagadora1"
+          "$ref": "#/definitions/FontePagadora2"
         },
         "produtos": {
           "type": "array",
@@ -12496,12 +12733,12 @@
           "format": "int32"
         },
         "linhaCredito": {
-          "$ref": "#/definitions/LinhaCredito"
+          "$ref": "#/definitions/LinhaCredito1"
         },
         "simulacoes": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Simulaco"
+            "$ref": "#/definitions/Simulacoes1"
           }
         }
       },
@@ -12519,8 +12756,8 @@
         "simulacoes"
       ]
     },
-    "Simulaco": {
-      "title": "Simulaco",
+    "Simulacoes1": {
+      "title": "Simulacoes1",
       "example": {
         "vencimentoContrato": "2025-02-11T03:00:00+00:00",
         "vencimentoParcela1": "2019-03-11T03:00:00+00:00",
