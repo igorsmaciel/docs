@@ -4501,6 +4501,13 @@
             "required": false,
             "default": "Bearer {token}",
             "type": "string"
+          },
+          {
+            "name": "externos",
+            "in": "query",
+            "required": true,
+            "type": "boolean",
+            "description": ""
           }
         ],
         "responses": {
@@ -10678,6 +10685,7 @@
           "numeroConta": "10859070",
           "agencia": "15"
         },
+        "descricao": "Convênio parcelado",
         "codigoCalculoJuros": "1",
         "valor": "177.04",
         "numeroTitular": "1",
@@ -10732,6 +10740,9 @@
         "idConta": {
           "$ref": "#/definitions/IdConta"
         },
+        "descricao": {
+          "type": "string"
+        },
         "codigoCalculoJuros": {
           "type": "string"
         },
@@ -10785,6 +10796,7 @@
         "codigoConvenioCredito",
         "codigoCarencia",
         "idConta",
+        "descricao",
         "codigoCalculoJuros",
         "valor",
         "numeroTitular",
