@@ -5935,6 +5935,49 @@
         }
       }
     },
+    "/utils/feriados": {
+      "get": {
+        "description": "TODO: Add Description",
+        "summary": "/utils/feriados",
+        "tags": [
+          "Utils"
+        ],
+        "operationId": "UtilsFeriadosGet",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": false,
+            "default": "Bearer {token}",
+            "type": "string"
+          },
+          {
+            "name": "dtInicio",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "dtFim",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
     "/agencias": {
       "get": {
         "description": "TODO: Add Description",
